@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+<script language="javascript" type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".click").click(function(){
+  $(".tip").fadeIn(200);
+  });
+  
+  $(".tiptop a").click(function(){
+  $(".tip").fadeOut(200);
+});
+
+  $(".sure").click(function(){
+  $(".tip").fadeOut(100);
+});
+
+  $(".cancel").click(function(){
+  $(".tip").fadeOut(100);
+});
+
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">系统管理</a></li>
+    <li><a href="#">角色管理</a></li>
+
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+    
+ <div class="chauxnJS jsTool">
+    <span style="float:left;">
+    <a href="#" class="huibtn_a click" style=" margin-left:6px" id="btnAdd" >添加</a></span>
+    <span style="float:right;">
+    <div class="pagin" style="margin:0; width:180px;">
+    <div class="message">共<i class="blue">1256</i>条记录</div>
+    <div class="vocation paginList" style=" margin:4px 6px 0 6px;right:0px;">
+    <select class="select3">
+    <option>当前查看10条</option>
+    <option>当前查看30条</option>
+    <option>当前查看50条</option></select>
+    </div>
+    
+    </div>
+    </span>
+    </div>
+      <table class="tablelist">
+        <thead>
+          <tr>
+            <th width="20%">角色名称</th>
+            <th width="10%">状态</th>
+                
+            <th width="10%">操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>管理员</td>
+            <td>启用</td>
+              
+            <td> <a href="#" id="btnEdit" class="tablelink click">编辑</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="system_4.3.1.html" class="tablelink">设置权限</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="tablelink">删 除</a> </td>
+          </tr>
+           <tr>
+            <td>教师</td>
+            <td>启用</td>
+              
+            <td> <a href="#" id="btnEdit" class="tablelink click">编辑</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="system_4.3.1.html" class="tablelink">设置权限</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="tablelink">删 除</a> </td>
+          </tr>
+		  
+		    <tr>
+            <td>培训机构管理员</td>
+            <td>启用</td>
+              
+             <td> <a href="#" id="btnEdit" class="tablelink click">编辑</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="system_4.3.1.html" class="tablelink">设置权限</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="tablelink">删 除</a> </td>
+          </tr>
+		  
+		  
+		  
+        </tbody>
+      </table>
+      <div class="pagin">
+    	<div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+        <ul class="paginList">
+        <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+        <li class="paginItem"><a href="javascript:;">1</a></li>
+        <li class="paginItem current"><a href="javascript:;">2</a></li>
+        <li class="paginItem"><a href="javascript:;">3</a></li>
+        <li class="paginItem"><a href="javascript:;">4</a></li>
+        <li class="paginItem"><a href="javascript:;">5</a></li>
+        <li class="paginItem more"><a href="javascript:;">...</a></li>
+        <li class="paginItem"><a href="javascript:;">10</a></li>
+        <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+        </ul>
+    </div>
+    </div> 
+ 
+
+<div class="tip">
+  <div class="tiptop"><span>编辑角色</span><a></a></div>
+        
+      <div class="tipinfo">
+      <div class="tipright" style="padding:0; margin:0;"></div>
+        <table border="0" cellspacing="0" cellpadding="0" style="margin:0 auto; line-height:42px;">
+	 <tr>
+     <td width="63">角色名称:</td><td width="171">   <input name="input" type="text" class="scinput" /></td>
+    </tr>
+	 <tr>
+     <td>状态:</td><td>  <input type="radio" name="radio" id="radio" value="radio" />
+    启用<input type="radio" name="radio" id="radio" value="radio" />
+    禁用</td>
+    </tr>
+	 <tr>
+     <td>备注:</td><td>   <input name="input" type="text" class="scinput" /></td>
+    </tr>
+	
+  <tr>
+</table>
+        
+      </div>
+        
+        <div class="tipbtn">
+        <input name="" type="button"  class="sure" value="保 存" />&nbsp;
+        <input name="" type="button"  class="cancel" value="取 消" />
+        </div>
+    
+</div>
+    
+    </div> </div>
+</body>
+
+</html>

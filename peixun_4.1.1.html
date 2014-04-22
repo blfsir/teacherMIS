@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">培训实施机构</a></li>
+    <li><a href="#">教师管理</a></li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    	   	
+	  
+
+      <div class="tabson">
+    
+    <ul class="forminfo">
+	
+	 <li>
+        <p class="xmTool">培训项目：<b>2014普通高中教师职务培训</b></p>
+      </li>
+	  
+	  
+	
+ 
+	 <li>
+        <label>教师姓名：</label>
+        <div class="vocation">
+              <input name="input" type="text" class="dfinput" style="width:200px;margin-right:20px;" value="王科"/>
+            </div>
+<label>身份证号：</label><div class="vocation"> <input name="input" type="text" class="dfinput" style="width:200px;margin-right:20px;"/></div><label style="width:50px;">学 科：</label>
+        <div class="vocation" style="margin-right:20px;">
+          <select name="select" class="select3">
+          </select>
+        </div>
+      </li>
+      <li>
+        <label>地 区：</label><div class="vocation" style="margin-right:20px;"><select class="select3"></select></div><div class="vocation" style="margin-right:20px;"><select class="select3"></select></div><div class="vocation" style="margin-right:20px;"><select class="select3"></select></div><div class="vocation" style="margin-right:20px;"><select class="select3"></select></div><input name="input3" type="button" class="dian3" value="查 询"/>
+      </li>
+      </ul>
+      </div><table class="tablelist">
+      <thead>
+        <tr>
+         
+          <th width="4%">姓名</th>
+          <th width="10%">身份证号</th>
+          <th width="6%">学科</th>
+          <th width="6%">省</th>
+          <th width="6%">市</th>
+          <th width="6%">县</th>
+          <th width="6%">校</th>
+           <th width="10%">成绩</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          
+          <td>王科&nbsp;</td>
+          <td>123456789012345678&nbsp;</td>
+          <td>小学语文&nbsp;</td>
+          <td>广东省&nbsp;</td>
+          <td>广州市&nbsp;</td>
+          <td>白云区&nbsp;</td>
+          <td>第一小学&nbsp;</td>
+          <td>89</td>
+        </tr>
+      </tbody>
+    </table>
+    </div> 
+ 
+ 
+
+
+</body>
+
+</html>

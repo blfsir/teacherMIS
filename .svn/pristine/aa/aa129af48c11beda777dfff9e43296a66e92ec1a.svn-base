@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>欢迎登录后台管理系统</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="js/jquery.js"></script>
+<script src="js/cloud.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body style="background-color:#1c77ac; background-image:url(images/light.png); background-repeat:no-repeat; background-position:center top; overflow:hidden;">
+
+
+
+    <div id="mainBody">
+      <div id="cloud1" class="cloud"></div>
+      <div id="cloud2" class="cloud"></div>
+    </div> 
+
+
+<div class="logintop">    
+    <span>欢迎登录后台管理界面平台</span>    
+    <ul>
+    <li><a href="#">回首页</a></li>
+    <li><a href="#">帮助</a></li>
+    <li><a href="#">关于</a></li>
+    </ul>    
+    </div>
+    
+    
+    <div class="loginContent" style="margin-top:80px; padding: 40px 0;">
+    <div class="Uploadxu" style="padding-left:20px;"><span class="txtcolor">步骤1：输入您的账号信息</span><span class="loadx">&nbsp;</span><span>步骤2：获得密码找回邮件</span><span class="loadx">&nbsp;</span><span>步骤3：设置新密码</span></div>
+      <table border="0" cellspacing="0" cellpadding="0" style="line-height:40px; margin:0 auto; margin-top:20px;">
+        <tr>
+          <td width="110">用户名/身份证号：</td>
+          <td width="180"><input name="input2" type="text" class="scinput"/></td>
+        </tr>
+        <tr>
+          <td>邮 箱：</td>
+          <td><input name="input2" type="text" class="scinput"/></td>
+        </tr>
+        <tr>
+          <td>验证码：</td>
+          <td><input name="input2" type="text" class="scinput" style="width:100px;"/></td>
+        </tr>
+        <tr>
+          <td colspan="2"><span style="color:red;">提示：您输入的身份证号与邮箱不匹配，请重新输入</span></td>
+        </tr>
+        <tr>
+          <td><a href="#" class="dian3">找回密码</a></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    
+    
+    <div class="loginbm">中国教师教育网</div>
+	
+    
+</body>
+</html>

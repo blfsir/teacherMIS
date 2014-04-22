@@ -1,0 +1,745 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="teacherGLY_1.1.html">教师信息</a></li>
+    <li><a href="teacherGLY_1.1.html">教师信息管理</a></li>
+    <li>信息</li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+     <div class="chauxnJS jsTool">
+     <span style="float:left;"><h4 style="float:left;">王楠 老师的资料信息</h4><a href="teacherGLY_1.1.html" class="huibtn_a" style=" float:right; line-height:18px; margin:7px 0 0 10px;">返回</a></span>
+     <span style="float:right;"><!--<a href="#" class="huibtn_a" style="margin-right:8px;">上一个</a><a href="#" class="huibtn_a" style="margin-right:8px;">下一个</a>--></span>
+     </div>
+     <div class="tabformtitle" style="margin:0;"><span class="r"><a href="#"><img src="images/btn_modify.gif" title="修改" /></a>&nbsp;&nbsp;<a href="#"><img src="images/btn_shrink.gif" title="收起" /></a></span></div>
+    
+    
+    <dl class="teacherdlxinxi">
+    <dt><img src="images/u8_normal.jpg"  title="头像" /><a href="javascript:;" class="huibtn_a" style="display:block; text-align:center; margin-top:10px;" onclick="document.getElementById('XXshow').style.display='block';">修改头像</a></dt>
+    <dd><span class="titlewidth">用户名：</span><span>teacher001</span></dd>
+    <dd><span class="titlewidth">密码：</span><span>123456</span></dd>
+    <dd><span class="titlewidth">姓名：</span><span>张天</span></dd>
+    <dd><span class="titlewidth">性别：</span><span>男</span></dd>
+    <dd><span class="titlewidth">用户状态：</span><span>在职</span></dd>
+    
+    <dd><span class="titlewidth">身份证号：</span><span>132928344398</span></dd>
+    <dd><span class="titlewidth">教师编号：</span><span>134439329288</span></dd>
+    <dd><span class="titlewidth">所在学校：</span><span><a href="javascript:;" class="huibtn_a" id="Xschool">选择</a></span></dd>
+    </dl>
+    
+    <div id="toolsli" class="toolsli">
+    <ul class="toollist">
+    <li><a href="#tab1" class="currentab"><img src="images/i07.png" /></a><h2>教师信息</h2></li>
+    <li><a href="#tab2"><img src="images/i02.png" /></a><h2>审核情况</h2></li>
+    <li><a href="#tab3"><img src="images/i06.png" /></a><h2>工作记录</h2></li>
+    <li><a href="#tab4"><img src="images/i05.png" /></a><h2>培训记录</h2></li>
+    <li><a href="teacherGLY_1.1.1.1.html"><img src="images/i01.png" /></a><h2>预览打印</h2></li>      
+    </ul>
+    </div>
+    
+    <div id="tab1" class="tabson">
+     
+         <div class="tabformtitle"><span class="l">基本信息</span> <span class="r"><a href="#"><img src="images/btn_modify.gif" title="修改" /></a>&nbsp;&nbsp;<a href="#"><img src="images/btn_shrink.gif" title="收起" /></a></span></div>
+    
+    <div class="contentBox">
+    <table border="0" cellspacing="0" cellpadding="0" style="display:block;" class="tab1">
+      <tr>
+        <td width="85">曾用名：</td>
+        <td width="202"><input name="input26" type="text" class="scinput"/></td>
+        <td width="27">&nbsp;</td>
+        <td width="73">姓名全拼：</td>
+        <td width="213"><input name="input" type="text" class="scinput"/></td>
+      </tr>
+      <tr>
+        <td>出生日期：</td>
+        <td><input name="input13" type="text" class="scinput"/></td>
+        <td>&nbsp;</td>
+        <td>政治面貌：</td>
+        <td><select name="select2" class="select2">
+        </select></td>
+      </tr>
+      <tr>
+        <td>籍 贯：</td>
+        <td><input name="input12" type="text" class="scinput"/></td>
+        <td>&nbsp;</td>
+        <td>民 族：</td>
+        <td><input name="input12" type="text" class="scinput"/></td>
+      </tr>
+      <tr>
+        <td>手机号码：</td>
+        <td><input name="input2" type="text" class="scinput"/></td>
+        <td>&nbsp;</td>
+        <td>联系电话：</td>
+        <td><input name="input14" type="text" class="scinput"/></td>
+      </tr>
+      <tr>
+        <td>QQ：</td>
+        <td><input name="input3" type="text" class="scinput"/></td>
+        <td>&nbsp;</td>
+        <td>Email：</td>
+        <td><input name="input4" type="text" class="scinput"/></td>
+      </tr>
+      <tr>
+        <td>家庭住址：</td>
+        <td><input name="input5" type="text" class="scinput"/></td>
+        <td>&nbsp;</td>
+        <td>婚姻状况：</td>
+        <td><input type="radio" name="radio" value="radio" />
+已婚
+  <input type="radio" name="radio" value="radio" />
+未婚</td>
+      </tr>
+      <tr>
+        <td>健康状况</td>
+        <td><input name="input6" type="text" class="scinput"/></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+    </div>
+    
+    
+    
+    
+    <div class="tabformtitle"><span class="l">教育经历</span> <span class="r"><a href="#"><img src="images/btn_save1.gif" title="修改" /></a>&nbsp;&nbsp;<a href="#"><img src="images/btn_shrink.gif" title="收起" /></a></span></div>
+    
+    <div class="contentBox">
+    <table border="0" cellspacing="0" cellpadding="0" style="display:block;" class="tab1">
+      <tr>
+        <td width="85">第一学历：</td>
+        <td width="102"><select name="select" class="select3">
+			<option>未取得</option>
+			<option>初中</option>
+			<option>高中</option>
+			<option>中专</option>
+			<option>大专</option>
+			<option>本科</option>
+			<option>硕士研究生</option>
+			<option>博士研究生</option>
+			<option>博士后</option>
+			</select></td>
+        <td width="85">获得学位：</td>
+        <td width="102"><select name="select" class="select3">
+			<option>未取得</option>
+			<option>学士</option>
+			<option>硕士</option>
+			<option>博士</option>
+			</select></td>
+        <td width="85">毕业时间：</td>
+        <td><input name="input" type="text" class="scinput" style="width:80px;" value="2014-02-02"/></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>毕业院校：</td>
+        <td colspan="2"><input name="input" type="text" class="scinput"/></td>
+        <td>毕业专业：</td>
+        <td colspan="2"><input name="input13" type="text" class="scinput"/></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="85">第二学历：</td>
+        <td width="102"><select name="select" class="select3">
+			<option>未取得</option>
+			<option>初中</option>
+			<option>高中</option>
+			<option>中专</option>
+			<option>大专</option>
+			<option>本科</option>
+			<option>硕士研究生</option>
+			<option>博士研究生</option>
+			<option>博士后</option>
+			</select></td>
+        <td width="85">获得学位：</td>
+        <td width="102"><select name="select" class="select3">
+			<option>未取得</option>
+			<option>学士</option>
+			<option>硕士</option>
+			<option>博士</option>
+			</select></td>
+        <td width="85">毕业时间：</td>
+        <td><input name="input" type="text" class="scinput" style="width:80px;" value="2014-02-02"/></td>
+        <td>&nbsp;—删除</td>
+      </tr>
+      <tr>
+        <td>毕业院校：</td>
+        <td colspan="2"><input name="input" type="text" class="scinput"/></td>
+        <td>毕业专业：</td>
+        <td colspan="2"><input name="input13" type="text" class="scinput"/></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="7" align="center"><input type="button" name="" value="+添加一次教育经历" /></td>
+      </tr>
+	</table>
+    </div>
+    
+    
+    
+   <div class="tabformtitle"><span class="l">工作信息</span> <span class="r"><a href="#"><img src="images/btn_modify.gif" title="修改" /></a>&nbsp;&nbsp;<a href="#"><img src="images/btn_shrink.gif" title="收起" /></a></span></div>
+    
+    <div class="contentBox">
+    <table width="645" border="0" cellpadding="0" cellspacing="0" class="tab1" style="display:block;">
+      <tr>
+        <td width="96">教师资格种类：</td>
+        <td width="212"><select name="select6" class="select2">
+        </select></td>
+        <td width="10">&nbsp;</td>
+        <td width="113">获教师资格证时间：</td>
+        <td width="169"><select name="select7" class="select2">
+        </select></td>
+      </tr>
+      <tr>
+        <td>教师资格证书号：</td>
+        <td><input name="input13" type="text" class="scinput"/></td>
+        <td>&nbsp;</td>
+        <td>参加工作时间：</td>
+        <td><select name="select2" class="select2">
+        </select></td>
+      </tr>
+      <tr>
+        <td>任教时间：</td>
+        <td><select name="select8" class="select2">
+        </select></td>
+        <td>&nbsp;</td>
+        <td>(评)教师职称：</td>
+        <td><select name="select9" class="select2">
+        </select></td>
+      </tr>
+      <tr>
+        <td>(评)职称时间：</td>
+        <td><select name="select11" class="select2">
+        </select></td>
+        <td>&nbsp;</td>
+        <td>(聘)教师职称：</td>
+        <td><select name="select10" class="select2">
+        </select></td>
+      </tr>
+      <tr>
+        <td>(聘)职称时间：</td>
+        <td><select name="select12" class="select2">
+        </select></td>
+        <td>&nbsp;</td>
+        <td>学校行政职务：</td>
+        <td><input name="input4" type="text" class="scinput"/></td>
+      </tr>
+      <tr>
+        <td>当前任教学段：</td>
+        <td><input type="radio" name="radio" value="radio" />
+小学
+  <input type="radio" name="radio" value="radio" />
+中学</td>
+        <td>&nbsp;</td>
+        <td>当前任教学科：</td>
+        <td><input type="checkbox" name="checkbox" value="checkbox" />
+英语
+  <input type="checkbox" name="checkbox" value="checkbox" />
+数学</td>
+      </tr>
+      <tr>
+        <td>是否学科带头人：</td>
+        <td><input type="radio" name="radio" value="radio" />
+是
+  <input type="radio" name="radio" value="radio" /> 
+  否
+</td>
+        <td>&nbsp;</td>
+        <td>是否骨干教师：</td>
+        <td><input type="radio" name="radio" value="radio" />
+是
+  <input type="radio" name="radio" value="radio" /> 
+  否
+</td>
+      </tr>
+      <tr>
+        <td>是否为班主任：</td>
+        <td><input type="radio" name="radio" value="radio" />
+是
+  <input type="radio" name="radio" value="radio" /> 
+  否
+</td>
+        <td>&nbsp;</td>
+        <td>是否为特级教师：</td>
+        <td><input type="radio" name="radio" value="radio" />
+是
+  <input type="radio" name="radio" value="radio" />
+否 </td>
+      </tr>
+      <tr>
+        <td>国培计划农村骨干教师：</td>
+        <td><input type="radio" name="radio" value="radio" />
+是
+  <input type="radio" name="radio" value="radio" />
+否 </td>
+        <td>&nbsp;</td>
+        <td>民办学校专职教师：</td>
+        <td><input type="radio" name="radio" value="radio" />
+是
+  <input type="radio" name="radio" value="radio" />
+否 </td>
+      </tr>
+      <tr>
+        <td>特岗教师：</td>
+        <td><input type="radio" name="radio" value="radio" />
+是
+  <input type="radio" name="radio" value="radio" />
+否 </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+    </div> 
+    
+   <!--
+    
+    <div class="tabformtitle"><span class="l">审核情况</span> <span class="r"><a href="#"><img src="images/btn_modify.gif" title="修改" /></a>&nbsp;&nbsp;<a href="#"><img src="images/btn_shrink.gif" title="收起" /></a></span></div>
+    
+    <div class="contentBox">
+    <table border="0" cellspacing="0" cellpadding="0" style="display:block;" class="tab1">
+      <tr>
+        <td width="85">学校审核人：</td>
+        <td width="202"><input name="input26" type="text" class="scinput"/></td>
+        <td width="27">&nbsp;</td>
+        <td width="73">审核时间：</td>
+        <td width="213"><select name="select13" class="select2">
+        </select></td>
+      </tr>
+      <tr>
+        <td>通过审核：</td>
+        <td><input type="radio" name="radio" value="radio" />
+是
+  <input type="radio" name="radio" value="radio" />
+否 </td>
+        <td>&nbsp;</td>
+        <td>审核意见：</td>
+        <td><input name="input8" type="text" class="scinput"/></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>县区审核人：</td>
+        <td><input name="input9" type="text" class="scinput"/></td>
+        <td>&nbsp;</td>
+        <td>审核时间：</td>
+        <td><select name="select14" class="select2">
+        </select></td>
+      </tr>
+      <tr>
+        <td>通过审核：</td>
+        <td><input type="radio" name="radio" value="radio" />
+          是
+          <input type="radio" name="radio" value="radio" />
+          否 </td>
+        <td>&nbsp;</td>
+        <td>审核意见：</td>
+        <td><input name="input9" type="text" class="scinput"/></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>市级审核人：</td>
+        <td><input name="input9" type="text" class="scinput"/></td>
+        <td>&nbsp;</td>
+        <td>审核时间：</td>
+        <td><select name="select14" class="select2">
+        </select></td>
+      </tr>
+      <tr>
+        <td>通过审核：</td>
+        <td><input type="radio" name="radio" value="radio" />
+          是
+          <input type="radio" name="radio" value="radio" />
+          否 </td>
+        <td>&nbsp;</td>
+        <td>审核意见：</td>
+        <td><input name="input9" type="text" class="scinput"/></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>学校审核人：</td>
+        <td><input name="input9" type="text" class="scinput"/></td>
+        <td>&nbsp;</td>
+        <td>审核时间：</td>
+        <td><select name="select14" class="select2">
+        </select></td>
+      </tr>
+      <tr>
+        <td>通过审核：</td>
+        <td><input type="radio" name="radio" value="radio" />
+          是
+          <input type="radio" name="radio" value="radio" />
+          否 </td>
+        <td>&nbsp;</td>
+        <td>审核意见：</td>
+        <td><input name="input9" type="text" class="scinput"/></td>
+      </tr>
+      </table>
+    </div> 
+    
+   -->  
+     
+    </div>
+    
+    
+    <div id="tab2" class="tabson" >
+     
+         <div class="tabformtitle"><span class="l">审核情况</span> <span class="r"><a href="#"><img src="images/btn_modify.gif" title="修改" /></a>&nbsp;&nbsp;<a href="#"><img src="images/btn_shrink.gif" title="收起" /></a></span></div>
+    
+    <div class="contentBox">
+    <table border="0" cellspacing="0" cellpadding="0" style="display:block;" class="tab1">
+      <tr>
+        <td width="85">审核状态：</td>
+        <td colspan="4">未审核/审核通过/审核不通过</td>
+      </tr>
+      <tr>
+        <td>审核人：</td>
+        <td width="202">XXX</td>
+        <td width="27">&nbsp;</td>
+        <td width="73">审核时间：</td>
+        <td width="213">2014年4月1日</td>
+      </tr>
+      <tr>
+        <td>审核意见：</td>
+        <td>通过</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      </table>
+    </div>
+      <div class="tabformtitle"><span class="l">信息变更记录</span> <span class="r"><a href="#"><img src="images/btn_modify.gif" title="修改" /></a>&nbsp;&nbsp;<a href="#"><img src="images/btn_shrink.gif" title="收起" /></a></span></div>
+    
+    <div class="contentBox">
+    <table border="0" cellspacing="0" cellpadding="0" style="display:block;" class="tab1 hui">
+      <tr>
+        <td width="85">申请人：</td>
+        <td>XXX</td>
+        <td width="27">&nbsp;</td>
+        <td width="85">申请时间：</td>
+        <td>2014年4月1日</td>
+        <td width="27">&nbsp;</td>
+        <td width="85">变更详情：</td>
+        <td><a href="#" class="tablelink">【查看】</a></td>
+      </tr>
+      <tr>
+        <td width="85">审核状态：</td>
+        <td>审核通过</td>
+        <td width="27">&nbsp;</td>
+        <td width="85">审核人：</td>
+        <td>XXX</td>
+        <td width="27">&nbsp;</td>
+        <td width="85">审核时间：</td>
+        <td>2014年4月1日</td>
+      </tr>
+      <tr>
+        <td>审核意见：</td>
+        <td colspan="7">审核通过</td>
+      </tr>
+      </table>
+    <table border="0" cellspacing="0" cellpadding="0" style="display:block;" class="tab1">
+      <tr>
+        <td width="85">申请人：</td>
+        <td>XXX</td>
+        <td width="27">&nbsp;</td>
+        <td width="85">申请时间：</td>
+        <td>2014年4月1日</td>
+        <td width="27">&nbsp;</td>
+        <td width="85">变更详情：</td>
+        <td><a href="#" class="tablelink">【查看】</a></td>
+      </tr>
+      <tr>
+        <td width="85">审核状态：</td>
+        <td>审核通过</td>
+        <td width="27">&nbsp;</td>
+        <td width="85">审核人：</td>
+        <td>XXX</td>
+        <td width="27">&nbsp;</td>
+        <td width="85">审核时间：</td>
+        <td>2014年4月1日</td>
+      </tr>
+      <tr>
+        <td>审核意见：</td>
+        <td colspan="7">审核通过</td>
+      </tr>
+      </table>
+    <table border="0" cellspacing="0" cellpadding="0" style="display:block;" class="tab1 hui">
+      <tr>
+        <td width="85">申请人：</td>
+        <td>XXX</td>
+        <td width="27">&nbsp;</td>
+        <td width="85">申请时间：</td>
+        <td>2014年4月1日</td>
+        <td width="27">&nbsp;</td>
+        <td width="85">变更详情：</td>
+        <td><a href="#" class="tablelink">【查看】</a></td>
+      </tr>
+      <tr>
+        <td width="85">审核状态：</td>
+        <td>审核通过</td>
+        <td width="27">&nbsp;</td>
+        <td width="85">审核人：</td>
+        <td>XXX</td>
+        <td width="27">&nbsp;</td>
+        <td width="85">审核时间：</td>
+        <td>2014年4月1日</td>
+      </tr>
+      <tr>
+        <td width="85">审核意见：</td>
+        <td colspan="7">审核通过</td>
+      </tr>
+    </table>
+    <a href="#" class="tablelink">更多&gt;&gt;</a></div>
+     
+    </div>
+    
+    
+    <div id="tab3" class="tabson" >
+    <div class="tabformtitle"><span class="l">工作记录</span> <span class="r"><a href="#"><img src="images/btn_modify.gif" title="修改" /></a>&nbsp;&nbsp;<a href="#"><img src="images/btn_shrink.gif" title="收起" /></a></span></div>
+    
+    <div class="contentBox">
+      <table border="0" cellspacing="0" cellpadding="0" style="display:block;" class="tab1">
+        <tr class="hui">
+          <td>操作人：</td>
+          <td width="33">XXX</td>
+          <td width="27">&nbsp;</td>
+          <td width="85">操作时间：</td>
+          <td width="97">2014年4月1日</td>
+          <td width="63">&nbsp;</td>
+          <td width="85">调动详情：</td>
+          <td width="125"><a href="#" class="tablelink">【展开-查看层】</a></td>
+        </tr>
+        <tr class="hui">
+          <td width="85"><p align="left">原地区和学校：<span lang="EN-US" xml:lang="EN-US"></span></p></td>
+          <td colspan="3">&nbsp;</td>
+          <td><p align="left">目标地区和学校：<span lang="EN-US" xml:lang="EN-US"></span></p></td>
+          <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>操作人：</td>
+          <td width="33">XXX</td>
+          <td width="27">&nbsp;</td>
+          <td width="85">操作时间：</td>
+          <td width="97">2014年4月1日</td>
+          <td width="63">&nbsp;</td>
+          <td width="85">调动详情：</td>
+          <td width="125"><a href="#" class="tablelink">【展开-查看层】</a></td>
+        </tr>
+        <tr>
+          <td width="85"><p align="left">原地区和学校：<span lang="EN-US" xml:lang="EN-US"></span></p></td>
+          <td colspan="3">&nbsp;</td>
+          <td><p align="left">目标地区和学校：<span lang="EN-US" xml:lang="EN-US"></span></p></td>
+          <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr class="hui">
+          <td>操作人：</td>
+          <td width="33">XXX</td>
+          <td width="27">&nbsp;</td>
+          <td width="85">操作时间：</td>
+          <td width="97">2014年4月1日</td>
+          <td width="63">&nbsp;</td>
+          <td width="85">调动详情：</td>
+          <td width="125"><a href="#" class="tablelink">【展开-查看层】</a></td>
+        </tr>
+        <tr class="hui">
+          <td width="85"><p align="left">原地区和学校：<span lang="EN-US" xml:lang="EN-US"></span></p></td>
+          <td colspan="3">&nbsp;</td>
+          <td><p align="left">目标地区和学校：<span lang="EN-US" xml:lang="EN-US"></span></p></td>
+          <td colspan="3">&nbsp;</td>
+        </tr>
+      </table>
+    </div>
+    </div>
+    
+    <div id="tab4" class="tabson">
+      <div class="tabformtitle"><span class="l">培训记录</span> <span class="r"><a href="#"><img src="images/btn_modify.gif" title="修改" /></a>&nbsp;&nbsp;<a href="#"><img src="images/btn_shrink.gif" title="收起" /></a></span></div>
+    
+    <div class="contentBox">
+    <table border="0" cellspacing="0" cellpadding="0" style="display:block;" class="tab1">
+      <tr class="hui">
+        <td width="76">项目编号：</td>
+        <td width="120">&nbsp;</td>
+        <td width="27">&nbsp;</td>
+        <td width="76">项目名称：</td>
+        <td width="120">&nbsp;</td>
+        <td width="27">&nbsp;</td>
+        <td width="76">起止时间：</td>
+        <td width="120">&nbsp;</td>
+      </tr>
+      <tr class="hui">
+        <td>是否合格：</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>学时/学分：</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>审核状态：</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="76">项目编号：</td>
+        <td width="120">&nbsp;</td>
+        <td width="27">&nbsp;</td>
+        <td width="76">项目名称：</td>
+        <td width="120">&nbsp;</td>
+        <td width="27">&nbsp;</td>
+        <td width="76">起止时间：</td>
+        <td width="120">&nbsp;</td>
+      </tr>
+      <tr>
+        <td>是否合格：</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>学时/学分：</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>审核状态：</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr class="hui">
+        <td width="76">项目编号：</td>
+        <td width="120">&nbsp;</td>
+        <td width="27">&nbsp;</td>
+        <td width="76">项目名称：</td>
+        <td width="120">&nbsp;</td>
+        <td width="27">&nbsp;</td>
+        <td width="76">起止时间：</td>
+        <td width="120">&nbsp;</td>
+      </tr>
+      <tr class="hui">
+        <td>是否合格：</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>学时/学分：</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>审核状态：</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="76">项目编号：</td>
+        <td width="120">&nbsp;</td>
+        <td width="27">&nbsp;</td>
+        <td width="76">项目名称：</td>
+        <td width="120">&nbsp;</td>
+        <td width="27">&nbsp;</td>
+        <td width="76">起止时间：</td>
+        <td width="120">&nbsp;</td>
+      </tr>
+      <tr>
+        <td>是否合格：</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>学时/学分：</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>审核状态：</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+    <a href="#" class="tablelink">更多&gt;&gt;</a> </div>
+    
+    </div>
+    <div id="tab5" class="tabson"><div class="tabformtitle"><span class="l">打印预览</span> <span class="r"><a href="#"><img src="images/btn_modify.gif" title="修改" /></a>&nbsp;&nbsp;<a href="#"><img src="images/btn_shrink.gif" title="收起" /></a></span></div>
+    
+    
+</div>
+    
+<div id="XXshow" style="display:none;">
+   <div class="tiptop"><span>选择头像</span><a href="javascript:;" onclick="document.getElementById('XXshow').style.display='none';"></a></div>
+   <div class="XXshowContent">
+     <table border="0" cellspacing="0" cellpadding="0" style="margin:40px auto;">
+  <tr>
+    <td></td>
+    <td><input name="" type="file" /></td>
+  </tr>
+  <tr>
+    <td>图像：</td>
+    <td><div style="height:200px; width:200px; border:1px solid #eee; margin-top:10px;"></div><p style=" width:200px;text-align:center; margin-top:10px;">200×200</p></td>
+  </tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+    <tr>
+          <td align="center"><input type="button" class="btn" value="确定"/></td>
+          <td width="30">&nbsp;</td>
+          <td  align="center"><input type="button" class="btn" value="取 消" onclick="document.getElementById('XXshow').style.display='none';"/></td>
+      </tr>
+    </table>
+
+  </div>
+  
+  
+</div>
+</body>
+
+</html>
+<script type="text/javascript"> 
+
+     (function(){var dep={"jQuery":"js/jquery.js"};var init=function(){(function($){$.fn.idTabs=function(){var s={};for(var i=0;i<arguments.length;++i){var a=arguments[i];switch(a.constructor){case Object:$.extend(s,a);break;case Boolean:s.change=a;break;case Number:s.start=a;break;case Function:s.click=a;break;case String:if(a.charAt(0)=='.')s.currentab=a;else if(a.charAt(0)=='!')s.event=a;else s.start=a;break;}}
+if(typeof s['return']=="function")
+s.change=s['return'];return this.each(function(){$.idTabs(this,s);});}
+$.idTabs=function(tabs,options){var meta=($.metadata)?$(tabs).metadata():{};var s=$.extend({},$.idTabs.settings,meta,options);if(s.currentab.charAt(0)=='.')s.currentab=s.currentab.substr(1);if(s.event.charAt(0)=='!')s.event=s.event.substr(1);if(s.start==null)s.start=-1;var showId=function(){if($(this).is('.'+s.currentab))
+return s.change;var id="#"+this.href.split('#')[1];var aList=[];var idList=[];$("a",tabs).each(function(){if(this.href.match(/#/)){aList.push(this);idList.push("#"+this.href.split('#')[1]);}});if(s.click&&!s.click.apply(this,[id,idList,tabs,s]))return s.change;for(i in aList)$(aList[i]).removeClass(s.currentab);for(i in idList)$(idList[i]).hide();$(this).addClass(s.currentab);$(id).show();return s.change;}
+var list=$("a[href*='#']",tabs).unbind(s.event,showId).bind(s.event,showId);list.each(function(){$("#"+this.href.split('#')[1]).hide();});var test=false;if((test=list.filter('.'+s.currentab)).length);else if(typeof s.start=="number"&&(test=list.eq(s.start)).length);else if(typeof s.start=="string"&&(test=list.filter("[href*='#"+s.start+"']")).length);if(test){test.removeClass(s.currentab);test.trigger(s.event);}
+return s;}
+$.idTabs.settings={start:0,change:false,click:null,currentab:".currentab",event:"!click"};$.idTabs.version="2.2";$(function(){$(".idTabs").idTabs();});})(jQuery);}
+var check=function(o,s){s=s.split('.');while(o&&s.length)o=o[s.shift()];return o;}
+var head=document.getElementsByTagName("head")[0];var add=function(url){var s=document.createElement("script");s.type="text/javascript";s.src=url;head.appendChild(s);}
+var s=document.getElementsByTagName('script');var src=s[s.length-1].src;var ok=true;for(d in dep){if(check(this,d))continue;ok=false;add(dep[d]);}if(ok)return init();add(src);})();  
+
+      $("#toolsli ul").idTabs(); 
+    </script>
+    

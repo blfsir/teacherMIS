@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body><br /><br />
+<div class="tanchuC">
+  <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="116">将此学员调整到：</td>
+    <td width="174"><select name="" style="width:100px; height:26px;"></select></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><a href="培训项目管理.html" class="dian1">确定</a></td>
+    <td style="padding-left:20px;"><a href="培训项目管理.html" class="dian2">取消</a></td>
+  </tr>
+</table>
+</div>
+
+
+<div style=" width:290px;border:1px solid #ccc; padding:40px; background-color: #F6F6F6;"><table border="0" cellspacing="0" cellpadding="0" style="line-height:40px;">
+  <tr>
+    <td colspan=3><strong>评价培训项目：</strong></td>
+    <td width="121"></td>
+    
+  </tr>
+  <tr>
+  <td width="40"></td>
+    <td width="20"><input name="" type="radio" value="" /></td>
+    <td width="91">非常满意</td>
+    <td width="121"></td>
+  </tr>
+  <tr>
+  <td width="40"></td>
+    <td width="20"><input name="" type="radio" value="" /></td>
+    <td width="91">满意</td>
+    <td width="121"></td>
+  </tr>
+  <tr>
+  <td width="40"></td>
+    <td width="20"><input name="" type="radio" value="" /></td>
+    <td width="91">一般</td>
+    <td width="121"></td>
+  </tr>
+  <tr>
+  <td width="40"></td>
+    <td width="20"><input name="" type="radio" value="" /></td>
+    <td width="91">不满意</td>
+    <td width="121"></td>
+  </tr>
+  <tr>
+  <td width="40"></td>
+    <td width="20"><input name="" type="radio" value="" /></td>
+    <td width="91">非常不满意</td>
+    <td width="121"></td>
+  </tr>
+  <tr>
+  <td width="40"></td>
+    <td width="20"></td>
+    <td width="91"></td>
+    <td width="121"><a href="#" class="dian2">提交评价</a></td>
+  </tr>
+</table></div>
+
+
+<div class="tanchuC">
+  <table border="0" cellspacing="0" cellpadding="0" style="line-height:40px;">
+    <tr>
+    <td width="72">是否通过：</td>
+    <td class="short"><input type="radio" name="radio" id="radio2" value="radio" />
+      通过
+      <input type="radio" name="radio" id="radio3" value="radio" />
+      不通过</td>
+    </tr>
+  <tr>
+    <td>审核意见：</td>
+    <td rowspan="2"><label for="textarea"></label>
+      <textarea name="textarea" style="width:240px; max-width:240px; height:60px;"></textarea></td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>
+      <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="130" align="center"><a href="#" class="dian1">提交审核</a></td>
+    <td width="130" align="center"><a href="#" class="dian2">取 消</a></td>
+  </tr>
+</table>
+
+    </td>
+    </tr>
+</table>
+
+</div>
+
+<h2>1.3.1发起调动</h2>
+<div class="tanchuC">
+  <table border="0" cellspacing="0" cellpadding="0" style="line-height:40px;">
+  <tr>
+    <td width="72">教师编号：</td>
+    <td><input type="text" name="textfield" id="textfield"/></td>
+    </tr>
+  <tr>
+    <td width="72">姓名：</td>
+    <td><input type="text" name="textfield2" id="textfield2" /></td>
+    </tr>
+  <tr>
+    <td width="72">性别：</td>
+    <td class="short"><input type="radio" name="radio" id="radio2" value="radio" />
+      男
+      <input type="radio" name="radio" id="radio3" value="radio" />
+      女</td>
+    </tr>
+  <tr>
+    <td width="72">地区：</td>
+    <td><select name="select" id="select">
+    </select></td>
+    </tr>
+  <tr>
+    <td width="72">原学校：</td>
+    <td><input type="text" name="textfield3" id="textfield3" /></td>
+    </tr>
+    <tr>
+    <td width="72">目的学校：</td>
+    <td><select name="select2" id="select2">
+    </select></td>
+    </tr>
+  <tr>
+    <td>调动理由：</td>
+    <td rowspan="2"><label for="textarea"></label>
+      <textarea name="textarea" style="width:240px; max-width:240px; height:60px;"></textarea></td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>
+      <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="130"></td>
+    <td width="130" align="center"><a href="#" class="dian1">提 交</a></td>
+  </tr>
+</table>
+
+    </td>
+    </tr>
+</table>
+
+</div>
+<h2>1.3.2审核调动</h2>
+<div class="tanchuC">
+  <table border="0" cellspacing="0" cellpadding="0" style="line-height:40px;">
+  <tr>
+    <td width="72">教师编号：</td>
+    <td>1232345396855-7687y6548903247t63</td>
+    </tr>
+  <tr>
+    <td width="72">姓名：</td>
+    <td>陈某某</td>
+    </tr>
+  <tr>
+    <td width="72">性别：</td>
+    <td class="short">
+      男</td>
+    </tr>
+  <tr>
+    <td width="72">地区：</td>
+    <td>广东某某地</td>
+    </tr>
+  <tr>
+    <td width="72">原学校：</td>
+    <td>第一中学</td>
+    </tr>
+    <tr>
+    <td width="72">目的学校：</td>
+    <td><select name="select2" id="select2" style="width:80px;">
+    </select><select name="select2" id="select2" style="width:80px;">
+    </select><select name="select2" id="select2" style="width:80px;">
+    </select></td>
+    </tr>
+  <tr>
+    <td>调动理由：</td>
+    <td style="line-height:24px;">啊搜索到了符合我佛而红枫叶日of好的开始规划</td>
+      
+    </tr>
+    <tr>
+    <td width="72">审核状态：</td>
+    <td class="short">
+      <input type="radio" name="radio" id="radio" value="radio" />
+通过
+<input type="radio" name="radio" id="radio4" value="radio" />
+不通过</td>
+    </tr>
+    <tr>
+    <td>审核意见：</td>
+    <td rowspan="2"><label for="textarea"></label>
+      <textarea name="textarea" style="width:240px; max-width:240px; height:60px;"></textarea></td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    </tr>
+ <tr>
+    <td>&nbsp;</td>
+    <td>
+      <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="130"></td>
+    <td width="130"><a href="#" class="dian1">提 交</a></td>
+  </tr>
+</table>
+
+    </td>
+    </tr>
+</table>
+
+</div>
+
+
+<h2>1.41发起离退休</h2>
+<div class="tanchuC">
+  <table border="0" cellspacing="0" cellpadding="0" style="line-height:40px;">
+  <tr>
+    <td width="72">教师编号：</td>
+    <td><input type="text" name="textfield" id="textfield"/></td>
+    </tr>
+  <tr>
+    <td width="72">姓名：</td>
+    <td><input type="text" name="textfield2" id="textfield2" /></td>
+    </tr>
+  <tr>
+    <td>离休原因：</td>
+    <td rowspan="2"><label for="textarea"></label>
+      <textarea name="textarea" style="width:240px; max-width:240px; height:60px;"></textarea></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>
+      <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="130"></td>
+    <td width="130" align="center"><a href="#" class="dian1">提 交</a></td>
+  </tr>
+</table>
+
+    </td>
+    </tr>
+</table>
+
+</div>
+
+<h2>1.4.2审核离退休</h2>
+<div class="tanchuC">
+  <table border="0" cellspacing="0" cellpadding="0" style="line-height:40px;">
+  <tr>
+    <td width="72">教师编号：</td>
+    <td>1232345396855-7687y6548903247t63</td>
+    </tr>
+  <tr>
+    <td width="72">姓名：</td>
+    <td>陈某某</td>
+    </tr>
+  <tr>
+    <td>离休原因：</td>
+    <td style="line-height:24px;">啊搜索到了符合我佛而红枫叶日of好的开始规划</td>
+    
+  </tr>
+    <tr>
+    <td width="72">审核状态：</td>
+    <td class="short">
+      <input type="radio" name="radio" id="radio" value="radio" />
+通过
+<input type="radio" name="radio" id="radio4" value="radio" />
+不通过</td>
+    </tr>
+    <tr>
+    <td>审核意见：</td>
+    <td rowspan="2"><label for="textarea"></label>
+      <textarea name="textarea" style="width:240px; max-width:240px; height:60px;"></textarea></td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    </tr>
+ <tr>
+    <td>&nbsp;</td>
+    <td>
+      <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="130" align="center"><a href="#" class="dian1">提 交</a></td>
+    <td width="130" align="center"><a href="#" class="dian2">取 消</a></td>
+  </tr>
+</table>
+
+    </td>
+    </tr>
+</table>
+
+</div>
+
+</body>
+</html>

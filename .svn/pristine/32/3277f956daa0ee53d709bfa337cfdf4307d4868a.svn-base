@@ -1,0 +1,175 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+<script language="javascript" type="text/javascript"
+	src="My97DatePicker/WdatePicker.js"></script>
+
+<script type="text/javascript" src="js/page.commons.js"></script>
+
+
+<script type="text/javascript">
+	KE.show({
+		id : 'content7',
+		cssPath : './index.css'
+	});
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function(e) {
+		$(".select1").uedSelect({
+			width : 345
+		});
+		$(".select2").uedSelect({
+			width : 167
+		});
+		$(".select3").uedSelect({
+			width : 100
+		});
+	});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+		<span>位置：</span>
+		<ul class="placeul">
+			<li><a href="#">系统管理</a></li>
+			<li><a href="#">学校管理</a></li>
+			<li><a href="#">添加学校 </a></li>
+		</ul>
+	</div>
+
+	<div class="formbody">
+
+
+
+		<div class="tabson" id="txtBox">
+
+			<table border="0" cellspacing="0" cellpadding="0"
+				style="line-height: 40px; margin: 0 auto;">
+				<tr>
+					<td>所在地区：</td>
+					<td colspan="4"> <select name="select" class="select2">
+								<option>广东省</option>
+							</select></td>
+				</tr>
+				<tr>
+					<td width="84">学校名称:：</td>
+					<td width="260"><input name="input" type="text"
+						class="scinput" value=" " /></td>
+					<td width="60">&nbsp;</td>
+					<td>学校类型:：</td>
+					<td width="260"> <select class="select2 "> <option>小学</option>
+								<option>初中</option>
+								<option>高中</option>
+								<option>职高</option>
+					</select> </td>
+				</tr>
+				<tr>
+					<td width="84">联系人:：</td>
+					<td width="260"> <input name="input" type="text"
+						class="scinput" value=" " /></td>
+					<td width="60">&nbsp;</td>
+					<td>联系方式:：</td>
+					<td width="260"><input name="input" type="text"
+						class="scinput" value=" " /></td>
+				</tr>
+
+				<tr>
+					<td>联系地址：</td>
+					<td colspan="4"><input name="input4" type="text"
+						class="scinput" style="width: 571px;" /></td>
+				</tr>
+
+				<tr>
+					<td>备注：</td>
+					<td colspan="4"><textarea name="textarea"
+							style="width: 600px; height: 100px; max-width: 600px; border: 1px solid #ccc; border-color: #a7b5bc #ced9df #ced9df #a7b5bc;"></textarea></td>
+				</tr>
+			</table>
+
+			<table border="0" cellspacing="0" cellpadding="0"
+				style="margin: 0 auto;">
+				<tr>
+					<td><a href="#" class="dian3">保 存</a></td>
+					<td style="width: 30px;">&nbsp;</td>
+					<td><a href="#" class="dian3">取 消</a></td>
+				</tr>
+			</table>
+
+		</div>
+
+		<div class="chuang" id="chuang" style="display: none;">
+			<span style="text-align: right; padding: 10px 10px 0 0;"><a
+				href="#" title="关闭窗口" id="closed"><img src="images/guanbi.gif"
+					width="16" height="16" /></a></span>
+			<table border="0" cellspacing="0" cellpadding="0"
+				style="margin: 20px auto 0 auto; line-height: 42px;">
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="138"><input type="checkbox" name="checkbox"
+						id="checkbox" /> 教师网</td>
+					<td width="138"><input type="checkbox" name="checkbox2"
+						id="checkbox2" /> 果实网</td>
+					<td width="138"><input type="checkbox" name="checkbox3"
+						id="checkbox3" /> 继教网</td>
+					<td width="40">&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td colspan="3"><table border="0" cellspacing="0"
+							cellpadding="0" style="margin: 0 auto;">
+							<tr>
+								<td width="111"><a href="javascript:;" class="dian1"
+									id="baocun">保 存</a></td>
+								<td width="40">&nbsp;</td>
+								<td width="111"><a href="javascript:;" class="dian2"
+									id="quxiao">取 消</a></td>
+							</tr>
+						</table></td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+
+		</div>
+		<div class="black" style="display: none;" id="black"></div>
+</body>
+<script>
+	window.onload = function() {
+		var chuang = document.getElementById('chuang')
+		var black = document.getElementById('black')
+		var btn = document.getElementById('xz')
+		var closed = document.getElementById('closed')
+		var txtBox = document.getElementById('txtBox')
+		var baocun = document.getElementById('baocun')
+		var quxiao = document.getElementById('quxiao')
+
+		btn.onclick = function() {
+			openDiv();
+		}
+		closed.onclick = baocun.onclick = quxiao.onclick = function() {
+			closedDiv();
+		}
+		function openDiv() {
+			chuang.style.display = 'block';
+			black.style.display = 'block';
+			txtBox.style.display = 'none';
+		}
+		function closedDiv() {
+			chuang.style.display = 'none';
+			black.style.display = 'none';
+			txtBox.style.display = 'block';
+		}
+	}
+</script>
+</html>

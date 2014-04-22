@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">培训实施机构</a></li>
+    <li><a href="#">教师名额分配</a></li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+    
+
+      <div class="tabson">
+      <ul class="seachform">
+  <li>
+            <label>项目名称：</label>
+            <input name="input" type="text" class="scinput" />
+          </li>
+          <li>
+            <label>项目实施机构</label>
+            <input name="input3" type="text" class="scinput" />
+          </li>
+			<li>
+            <a href="#" class="dian3">查 询</a>
+          </li>
+           
+        </ul>
+      <div style="overflow:hidden; padding:24px 0 0 40px;"><span style=" width:100px; float:left;">教师分配方式：</span>
+        <div class="chooseTacher" style="float:left;">
+          <div class="chooseTool">
+              <ul>
+                <li><a href="javascript:;" id="no1" class="on" >按层级分配教师</a></li>
+                <li><a href="javascript:;"id="no2">按学科分配教师</a></li>
+              </ul>
+          </div>
+          <div class="txt" id="num1">
+         <div class="vocation" style="margin-right:20px;"><select class="select3"></select></div>
+         <div class="vocation" style="margin-right:20px;"><select class="select3"></select></div>
+         <div class="vocation" style="margin-right:20px;"><select class="select3"></select></div>
+         <div class="vocation" style="margin-right:20px;"><select class="select3"></select></div>
+         <div class="vocation" style="margin-right:20px;"><select class="select3"></select></div>
+         <div class="vocation" style="margin-right:20px;"><select class="select3"></select></div>
+          <a href="弹出层.html" target="_blank">分配教师</a>
+          </div>
+          <div class="txt" id="num2" style="display:none;">
+          
+       <p><input name="" type="checkbox" value="" />语文<input name="" type="checkbox" value="" />生物<input name="" type="checkbox" value="" />政治</p>
+       <p><input name="" type="checkbox" value="" />数学<input name="" type="checkbox" value="" />化学<input name="" type="checkbox" value="" />地理</p>
+       <p><input name="" type="checkbox" value="" />英语<input name="" type="checkbox" value="" />物理<input name="" type="checkbox" value="" />历史</p><a href="#" target="_blank">分配教师</a>
+          </div>
+          
+         <script>
+          var a1=document.getElementById('no1')
+		  var a2=document.getElementById('no2')
+		  var b1=document.getElementById('num1')
+		  var b2=document.getElementById('num2')
+         a1.onclick=function(){
+			 b1.style.display='block';
+			 b2.style.display='none';
+			 a1.className='on';
+			 a2.className=''
+			 }
+		a2.onclick=function(){
+			 b2.style.display='block';
+			 b1.style.display='none';
+			 a2.className='on';
+			 a1.className=''
+			 }
+         </script>
+        </div>
+        </div>
+      </div>
+  
+    </div> 
+ 
+ 
+
+
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+<script language="javascript" type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+	$("#tanqi").hide();
+	$("#tanqi2").hide();
+	$("#btnAdd").click(function(){
+		$("#tanqi").show();
+	});
+	
+	
+	$("#btnCancel").click(function(){
+		$("#tanqi").hide();
+	});
+	
+	
+	$("#btnEdit").click(function(){
+		$("#tanqi2").show();
+	});
+	
+	$("#btnCancel2").click(function(){
+		$("#tanqi2").hide();
+	});
+	
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">系统管理</a></li>
+    <li><a href="#">字典管理</a></li>
+
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+     <div class="tabson">
+       
+<ul class="seachform">
+<li><label>字典类型:</label></li>
+  <li>
+            
+              <select name="select" class="select2"><option>请选择...</option><option>学科</option><option>学段</option></select>
+          </li>
+           
+			 <li>
+            <input name="input2" type="button" class="dian3" value="查 询"/>
+          </li>
+           
+        </ul>
+	 
+		
+      </div>
+
+ <div class="chauxnJS jsTool">
+    <span style="float:left;">
+    <a href="#" class="huibtn_a click" style=" margin-left:6px" id="btnAdd" >添加</a></span>
+    <span style="float:right;">
+    <div class="pagin" style="margin:0; width:180px;">
+    <div class="message">共<i class="blue">1256</i>条记录</div>
+    <div class="vocation paginList" style=" margin:4px 6px 0 6px;right:0px;">
+    <select class="select3">
+    <option>当前查看10条</option>
+    <option>当前查看30条</option>
+    <option>当前查看50条</option></select>
+    </div>
+    
+    </div>
+    </span>
+    </div>
+      <table class="tablelist">
+        <thead>
+          <tr>
+		  <th width="25%">字曲类型</th>
+            <th width="25%">字典名称</th>
+            <th width="25%">字典编码</th>
+                
+            <th width="25%">操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>学科</td>
+            <td>语文</td>
+            <td>xk01</td>  
+            <td> <a href="#" id="btnEdit" class="tablelink">编辑</a> &nbsp;&nbsp;&nbsp;&nbsp;  <a href="#" class="tablelink">删 除</a> </td>
+          </tr>
+           <tr>
+            <td>学段</td>
+            <td>小学</td>
+            <td>xd01</td>  
+            <td> <a href="#" id="btnEdit" class="tablelink">编辑</a> &nbsp;&nbsp;&nbsp;&nbsp;  <a href="#" class="tablelink">删 除</a> </td>
+          </tr>
+		  
+		    <tr>
+            <td>培训形式</td>
+            <td>远程</td>
+            <td>px01</td>  
+             <td> <a href="#" id="btnEdit" class="tablelink">编辑</a>  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="tablelink">删 除</a> </td>
+          </tr>
+		  
+		  
+		  
+        </tbody>
+      </table>
+      <div class="pagin">
+    	<div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+        <ul class="paginList">
+        <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+        <li class="paginItem"><a href="javascript:;">1</a></li>
+        <li class="paginItem current"><a href="javascript:;">2</a></li>
+        <li class="paginItem"><a href="javascript:;">3</a></li>
+        <li class="paginItem"><a href="javascript:;">4</a></li>
+        <li class="paginItem"><a href="javascript:;">5</a></li>
+        <li class="paginItem more"><a href="javascript:;">...</a></li>
+        <li class="paginItem"><a href="javascript:;">10</a></li>
+        <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+        </ul>
+    </div>
+    </div> 
+ 
+   <div id="tanqi"   >
+	 
+	
+    <table border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+	 <tr>
+     <td>字典类型:</td><td>  <select name="select" class="select2"><option>请选择...</option><option>学科</option><option>学段</option></select> </td>
+    </tr>
+	
+	 <tr>
+     <td>字典名称:</td><td>   <input name="input" type="text" class="scinput" /></td>
+    </tr>
+	   
+  <tr>
+  
+   
+  <tr>
+    <td colspan="3"><table border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+  <tr>
+    <td><a href="#" class="dian3">确 定</a></td>
+    <td width="20">&nbsp;</td>
+    <td><a href="#" class="dian3" id="btnCancel">返 回</a></td>
+  </tr>
+</table>
+</td>
+    </tr>
+</table>
+</div>
+
+
+
+  <div id="tanqi2"   >
+	 
+	
+    <table border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+	  <tr>
+     <td>字典类型:</td><td> 学科 </td> 
+    </tr>
+		<tr>
+     <td>字典编码:</td><td>   xk01</td>
+    </tr>
+	 <tr>
+     <td>字典名称:</td><td>   <input name="input" type="text" class="scinput" value="语文" /></td>
+    </tr>
+
+	
+  <tr>
+  
+   
+  <tr>
+    <td colspan="3"><table border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+  <tr>
+    <td><a href="#" class="dian3">确 定</a></td>
+    <td width="20">&nbsp;</td>
+    <td><a href="#" class="dian3" id="btnCancel2">返 回</a></td>
+  </tr>
+</table>
+</td>
+    </tr>
+</table>
+</div>
+
+
+</body>
+
+</html>

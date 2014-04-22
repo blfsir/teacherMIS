@@ -1,0 +1,617 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<style>
+.moreChoose dd {width: 650px;}
+</style>
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+
+  <script type="text/javascript">
+	$(document).ready(function() {
+		$(".click").click(function() {
+			$(".tip").fadeIn(200);
+		});
+
+		$(".tiptop a").click(function() {
+			$(".tip").fadeOut(200);
+		});
+
+		$(".sure").click(function() {
+			$(".tip").fadeOut(100);
+			$("#divSchool").text("第一小学 + 第二小学");
+		});
+
+		$(".cancel").click(function() {
+			$(".tip").fadeOut(100);
+		});
+		
+
+  $(".click2").click(function(){
+  $(".tip2").fadeIn(200);
+  });
+  
+  $(".tip2top a").click(function(){
+  $(".tip2").fadeOut(200);
+});
+
+  $(".sure2").click(function(){
+  $(".tip2").fadeOut(100);
+});
+
+  $(".cancel2").click(function(){
+  $(".tip2").fadeOut(100);
+});
+
+	});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body style="position:relative;">
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="teacherGLY_1.1.html">教师信息</a></li>
+    <li>信息查询</li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    <div class="chauxnJS jsTool">
+     <span style="float:left;"><h4 style="float:left;">教师信息：</h4><a href="javascript:;" style=" float:left; line-height:18px; margin:7px 0 0 10px;" class="jq" id="btn2">按需筛选</a><a href="javascript:;" style=" float:left; line-height:18px; margin:7px 0 0 10px;" id="btn1">精确查询</a></span>
+     <span style="float:right;"><a href="teacherGLY_1.1.1.html" style="margin-right:8px;">添加教师</a><a href="teacherGLY_1.1.6.html" style="margin-right:8px;">批量导入</a></span>
+     </div>
+  <div>
+  
+  <div class="choose" id="jqDiv1" style="display:none;">
+    
+<table border="0" cellspacing="0" cellpadding="0" style="line-height:42px; margin:0 auto;">
+  <tr>
+    <td width="90">教师姓名：</td>
+    <td><input name="input13" type="text" class="dfinput" style="width:200px;"/></td>
+    <td width="90">&nbsp;</td>
+    <td width="90">教师编号：</td>
+    <td><input name="input3" type="text" class="dfinput" style="width:200px;"/></td>
+  </tr>
+  <tr>
+    <td>身份证号码：</td>
+    <td><input name="input4" type="text" class="dfinput" style="width:200px;"/></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="90">&nbsp;</td>
+    <td><a href="#" class="dian3">查 询</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+    
+   
+</div>
+    <div class="choose" id="jqDiv2">
+    
+    <dl>
+      <dt style="background-color:#fff;"><strong>已选条件：</strong></dt>
+      <dd>
+        <span>性别：男<a href="javascript:;"><img src="images/closed.jpg" width="9" height="9" title="删除"/></a></span></dd>
+        <dd>
+        <span>是/非学科带头人<a href="javascript:;" title="删除"><img src="images/closed.jpg" width="9" height="9" /></a></span></dd>
+        <dd><a href="#" class="tablelink" title="清空已选条件">清空选项</a></dd>
+    </dl>
+    <dl>
+      <dt>地区：</dt><dd>
+        <div class="vocation">
+          <select name="select" class="select3" id="area1"><option>请选择...</option></select>
+        </div>
+      </dd>
+      
+    </dl>
+    <dl><dt>学段：</dt><dd><input name="" type="checkbox" value="" />幼儿</dd><dd><input name="input" type="checkbox" value="" />初中</dd><dd><input name="input2" type="checkbox" value="" />高中</dd></dl>
+    <dl class="weizhi"><dt>学科：</dt><dd><input name="" type="checkbox" value="" />语文</dd><dd>
+      <input name="input" type="checkbox" value="" />数学</dd><dd>
+        <input name="input2" type="checkbox" value="" />英语</dd><dd><input name="" type="checkbox" value="" />语文</dd><dd>
+      <input name="input" type="checkbox" value="" />数学</dd><dd>
+        <input name="input2" type="checkbox" value="" />英语</dd><dd><input name="" type="checkbox" value="" />语文</dd><dd>
+      <input name="input" type="checkbox" value="" />数学</dd><dd>
+        <input name="input2" type="checkbox" value="" />英语</dd>
+          <a href="#" class="more">更多</a>
+        </dl>
+    <dl class="moreChoose">
+    <dt>更多选项：</dt>
+    <dd id="xuanze">
+      <ul id="xuanzeTool">
+        <li><a href="javascript:;">性别</a></li>
+        <li><a href="javascript:;">学科带头人</a></li>
+        <li><a href="javascript:;">骨干教师</a></li>
+        <li><a href="javascript:;">特级教师</a></li>
+        <li><a href="javascript:;">特岗教师</a></li>
+        <li><a href="javascript:;">农村骨干教师</a></li>
+        <li><a href="javascript:;">在职状态</a></li>
+       </ul>
+ 
+ <div style="display:none;">
+         <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><input type="radio" name="radio" id="radio" value="radio" /></td>
+    <td>男</td>
+    <td width="40">&nbsp;</td>
+    <td><input type="radio" name="radio" id="radio2" value="radio" /></td>
+    <td>女</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+       </div>
+   <div style="display:none;">
+         <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+       </div><div style="display:none;">
+         <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+       </div><div style="display:none;">
+         <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+       </div><div style="display:none;">
+         <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+       </div><div style="display:none;">
+         <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+       </div><div style="display:none;">
+         <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+       </div>
+      </dd>
+    </dl>
+       </div> 
+</div>
+   <script>
+  
+    window.onload=function(){
+		var oList=document.getElementById('xuanzeTool').getElementsByTagName('a')
+        var oDiv=document.getElementById('xuanze').getElementsByTagName('div')
+		var btn1=document.getElementById('btn1')
+		var btn2=document.getElementById('btn2')
+		var jqDiv1=document.getElementById('jqDiv1')
+		var jqDiv2=document.getElementById('jqDiv2')
+		for(i=0;i<oList.length;i++){
+		oList[i].index=i;
+		oList[i].onclick=function(){
+		
+		if(	  oDiv[this.index].style.display=='block'){
+			for(i=0;i<oList.length;i++){
+			 oList[i].className='';
+			 oDiv[i].style.display='none';
+		         }
+		} else{
+		  for(i=0;i<oList.length;i++){
+			 oList[i].className='';
+			 oDiv[i].style.display='none';
+		         }
+				 
+				 
+			  this.className='onthis'; 
+		 
+			  oDiv[this.index].style.display='block';
+							 
+
+		}
+		
+		     }
+		   }
+		   btn1.onclick=function(){
+			   btn1.className='jq';
+			   btn2.className='';
+			   jqDiv1.style.display='block';
+			   jqDiv2.style.display='none';
+			   }
+		   btn2.onclick=function(){
+			   btn2.className='jq';
+			   btn1.className='';
+			   jqDiv2.style.display='block';
+			   jqDiv1.style.display='none';
+			   }
+		 }
+  </script>
+    
+    <div class="chauxnJS jsTool">
+    <span style="float:left;">
+    <div class="vocation" style="margin:4px 6px 0 6px;">
+    <!--<select class="select3">
+    <option>批量选择</option>
+    <option>批量审核</option>
+    <option>批量删除</option></select>-->
+    </div><a href="#" class="huibtn_a click2" style="margin-right:8px;">批量审核</a>
+	<a href="javascript:if(confirm('确定要删除选中的教师吗？'));return false;" class="huibtn_a" style="margin-right:8px;">批量删除</a>
+	<a href="javascript:;" class="huibtn_a">导出教师花名册</a></span>
+    <span style="float:right;">
+    <div class="pagin" style="margin:0; width:180px;">
+    <div class="message">共<i class="blue">1256</i>条记录</div>
+    <div class="vocation paginList" style=" margin:4px 6px 0 6px;right:0px;">
+    <select class="select3">
+    <option>每页显示10条</option>
+    <option>每页显示30条</option>
+    <option>每页显示50条</option></select>
+    </div>
+    
+    </div>
+    </span>
+    </div>
+        <table class="tablelist">
+    	<thead>
+    	<tr>
+        <th><input name="" type="checkbox" value="" checked="checked"/></th>
+        <th>照片</th>
+        <th>姓名</th>
+        <th>身份证号</th>
+        <th>所属学校</th>
+        <th>任教学段</th>
+        <th>任教学科</th>
+        <th>用户状态</th>
+        <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td><input name="" type="checkbox" value="" /></td>
+        <td><img src="images/icon01.png" title="头像45×45" /></td>
+        <td>王楠</td>
+        <td><a href="teacherGLY_1.1.1.html">123456789012345678</a></td>
+        <td><ol><li title="北京">衡水市</li><li title="北京市">县级</li><li title="海淀区">某某某某学校</li></ol></td>
+        <td>高中</td>
+        <td>英语</td>
+        <td>未审核</td>
+        <td><p><a href="teacherGLY_1.1.1.html" class="tablelink">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="tablelink"> 删除</a></p><p><a href="teacherGLY_1.1.1.html" class="tablelink">审核</a></p></td>
+        </tr> 
+        
+        <tr>
+        <td><input name="" type="checkbox" value="" /></td>
+        <td><img src="images/icon01.png" title="头像45×45" /></td>
+        <td>王楠</td>
+        <td><a href="teacherGLY_1.1.1.html">123456789012345678</a></td>
+        <td><ol><li title="北京">衡水市</li><li title="北京市">县级</li><li title="海淀区">某某某某学校</li></ol></td>
+        <td>高中</td>
+        <td>英语</td>
+        <td>审核不通过</td>
+        <td><p><a href="teacherGLY_1.1.1.html" class="tablelink">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="tablelink"> 删除</a></p></td>
+        </tr>
+        
+        <tr>
+        <td><input name="" type="checkbox" value="" /></td>
+        <td><img src="images/icon01.png" title="头像45×45" /></td>
+        <td>王楠</td>
+        <td><a href="teacherGLY_1.1.1.html">123456789012345678</a></td>
+        <td><ol><li title="北京">衡水市</li><li title="北京市">县级</li><li title="海淀区">某某某某学校</li></ol></td>
+        <td>高中</td>
+        <td>英语</td>
+        <td>在职</td>
+        <td><p><a href="teacherGLY_1.1.1.html" class="tablelink">编辑</a></p></td>
+        </tr>
+        
+        <tr>
+        <td><input name="" type="checkbox" value="" /></td>
+        <td><img src="images/icon01.png" title="头像45×45" /></td>
+        <td>王楠</td>
+        <td><a href="teacherGLY_1.1.1.html">123456789012345678</a></td>
+        <td><ol><li title="北京">衡水市</li><li title="北京市">县级</li><li title="海淀区">某某某某学校</li></ol></td>
+        <td>高中</td>
+        <td>英语</td>
+        <td>已离退休</td>
+        <td>--</td>
+        </tr>
+        
+                
+        </tbody>
+    </table>
+    
+   
+    <div class="pagin">
+<div class="message">共<i class="blue">296</i>条记录 每页 30 条，当前第&nbsp;<i class="blue">2&nbsp;</i>页 / 共&nbsp;<i class="blue">10</i>&nbsp;页</div>
+        <ul class="paginList">
+        <li class="paginItem"><a href="javascript:;">首页</a></li>
+        <li class="paginItem"><a href="javascript:;" class="longer">上一页</a></li>
+        <li class="paginItem"><a href="javascript:;">1</a></li>
+        <li class="paginItem"><a href="javascript:;">2</a></li>
+        <li class="paginItem"><a href="javascript:;">3</a></li>
+        <li class="paginItem current"><a href="javascript:;">4</a></li>
+        <li class="paginItem"><a href="javascript:;">5</a></li>
+        <li class="paginItem"><a href="javascript:;">6</a></li>
+        <li class="paginItem"><a href="javascript:;">7</a></li><!--
+        <li class="paginItem more"><a href="javascript:;">...</a></li>
+        <li class="paginItem"><a href="javascript:;">10</a></li>-->
+        <li class="paginItem"><a href="javascript:;" class="longer">下一页</a></li>
+        <li class="paginItem"><a href="javascript:;">末页</a></li>
+        </ul>
+    </div>
+    
+    
+<div id="XXshow" style="display:block;">
+   <div class="tiptop"><span>选择地区</span><a href="#"></a></div>
+  <ol class="xuanDQ">
+    <li>已选：</li>
+    <li class="area"><span><a href="#">河北省</a></span></li>
+    <li>></li>
+    <li class="area"><span><a href="#">衡水市</a></span></li>
+    <li style="float:right"><a href="#" class="souXX">确 定</a></li>
+  </ol>
+  <div class="XXshowContent">
+    <div class="XXshowL">
+      <dl>
+        <dt></dt>
+        <dd><a href="#">黑龙江省</a></dd>
+        <dd><a href="#">吉林省</a></dd>
+        <dd><a href="#">辽宁省</a></dd>
+        <dd><a href="#">内蒙古自治区</a></dd>
+      </dl>
+      <dl>
+        <dt></dt>
+        <dd><a href="#">黑龙江省</a></dd>
+        <dd><a href="#">吉林省</a></dd>
+        <dd><a href="#">辽宁省</a></dd>
+        <dd><a href="#">内蒙古自治区</a></dd>
+      </dl>
+      <dl>
+        <dt></dt>
+        <dd><a href="#">黑龙江省</a></dd>
+        <dd><a href="#">吉林省</a></dd>
+        <dd><a href="#">辽宁省</a></dd>
+        <dd><a href="#">内蒙古自治区</a></dd>
+      </dl>
+      <dl>
+        <dt></dt>
+        <dd><a href="#">黑龙江省</a></dd>
+        <dd><a href="#">吉林省</a></dd>
+        <dd><a href="#">辽宁省</a></dd>
+        <dd><a href="#">内蒙古自治区</a></dd>
+      </dl>
+      <dl>
+        <dt></dt>
+        <dd><a href="#">黑龙江省</a></dd>
+        <dd><a href="#">吉林省</a></dd>
+        <dd><a href="#">辽宁省</a></dd>
+        <dd><a href="#">内蒙古自治区</a></dd>
+      </dl>
+      <dl>
+        <dt></dt>
+        <dd><a href="#">黑龙江省</a></dd>
+        <dd><a href="#">吉林省</a></dd>
+        <dd><a href="#">辽宁省</a></dd>
+        <dd><a href="#">内蒙古自治区</a></dd>
+      </dl>
+      <dl>
+        <dt></dt>
+        <dd><a href="#">黑龙江省</a></dd>
+        <dd><a href="#">吉林省</a></dd>
+        <dd><a href="#">辽宁省</a></dd>
+        <dd><a href="#">内蒙古自治区</a></dd>
+      </dl>
+      <dl>
+        <dt></dt>
+        <dd><a href="#">黑龙江省</a></dd>
+        <dd><a href="#">吉林省</a></dd>
+        <dd><a href="#">辽宁省</a></dd>
+        <dd><a href="#">内蒙古自治区</a></dd>
+      </dl>
+     </div>
+    <div class="XXshowR">
+    <div class="xuan">
+    <ul>
+      <!--<li><a href="#">确定</a></li>-->
+      <li><a href="#">返回上一级</a></li>
+    </ul>
+    <ol class="xuanDQ"><li class="area-"><span><input type="checkbox" /><a href="#" class="tablelink">衡水市</a></span></li><!--
+      <li class="area"><span><a href="#">衡水</a></span></li>
+    <li>></li>
+    <li class="area"><span><a href="#">衡水</a></span></li>
+    <li>></li>
+    <li class="area"><span><a href="#">衡水</a></span></li>
+    <li>></li>
+    <li class="area"><span><a href="#">衡水</a></span></li>
+    <li>></li>
+    <li class="area nowThis"><span><a href="#">腾村寺上幼儿园</a></span><a href="#" class="closed" title="删除"><img src="images/closed2.jpg" width="9" height="9" /></a></li>-->
+    </ol>
+    </div>
+    <div class="yincang">
+    <!--<p class="zhuyi"><cite style="float:left;">注意点击选中，双击进入。</cite><cite style="float:right; margin-top:4px; margin-right:5px;"><a href="#" title="删除"><img src="images/closed2.jpg" width="9" height="9" /></a></cite></p>-->
+
+    <dl>
+      <!--<dt><input type="checkbox" /><a href="#" class="tablelink">河北</a></dt>-->
+      <dd><input type="checkbox" /><a href="#" class="tablelink">廊坊</a><!--<img src="images/more.jpg" width="13" height="13" />--></dd>
+      <dd><input type="checkbox" /><a href="#" class="tablelink">保定</a></dd>
+      <dd><input type="checkbox" /><a href="#" class="tablelink">廊坊</a></dd>
+      <dd><input type="checkbox" /><a href="#" class="tablelink">保定</a></dd>
+      <dd><input type="checkbox" /><a href="#" class="tablelink">廊坊</a></dd>
+      <dd><input type="checkbox" /><a href="#" class="tablelink">保定</a></dd>
+    </dl>
+    <div class="sanji"><!--<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="60">学段：</td>
+    <td width="100"><input type="radio" />幼儿园</td>
+    <td width="80"><input type="radio" />小学</td>
+    <td width="80"><input type="radio" />初中</td>
+    <td width="80"><input type="radio" />高中</td>
+    <td width="117"><input name="input5" type="text" class="scinput" style="width:100px;"/></td>
+    <td width="71"><a href="#" title="搜索" class="sou"><img src="images/fdj.jpg" width="16" height="16" /></a></td>
+  </tr>
+</table>-->
+<table border="0" cellspacing="0" cellpadding="0" width="400" style="margin:0 auto; line-height:32px;">
+  <tr>
+    <td width="200"><a href="#" class="tablelink">腾村寺上幼儿园</a></td>
+    <td width="200"><a href="#" class="tablelink">河北省衡水市枣强县王常幼儿园</a></td>
+  </tr>
+  <tr>
+    <td width="200"><a href="#" class="tablelink">腾村寺上幼儿园</a></td>
+    <td width="200"><a href="#" class="tablelink">河北省衡水市枣强县王常幼儿园</a></td>
+  </tr>
+  <tr>
+    <td width="200"><a href="#" class="tablelink">腾村寺上幼儿园</a></td>
+    <td width="200"><a href="#" class="tablelink">河北省衡水市枣强县王常幼儿园</a></td>
+  </tr>
+  <tr>
+    <td width="200"><a href="#" class="tablelink">腾村寺上幼儿园</a></td>
+    <td width="200"><a href="#" class="tablelink">河北省衡水市枣强县王常幼儿园</a></td>
+  </tr>
+  <tr>
+    <td width="200"><a href="#" class="tablelink">腾村寺上幼儿园</a></td>
+    <td width="200"><a href="#" class="tablelink">河北省衡水市枣强县王常幼儿园</a></td>
+  </tr>
+  <tr>
+    <td width="200" class="bgColor"><a href="#" class="tablelink">腾村寺上幼儿园</a></td>
+    <td width="200"><a href="#" class="tablelink">河北省衡水市枣强县王常幼儿园</a></td>
+  </tr>
+  <tr>
+    <td width="200"><a href="#" class="tablelink">腾村寺上幼儿园</a></td>
+    <td width="200"><a href="#" class="tablelink">河北省衡水市枣强县王常幼儿园</a></td>
+  </tr>
+</table>
+
+    </div>
+    
+    </div>  
+    </div>
+   <div style="clear:both"></div>
+  </div>
+  
+  
+</div>
+
+
+    
+</body>
+
+</html>

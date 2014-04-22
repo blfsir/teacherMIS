@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+<script language="javascript" type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">继教信息</a></li>
+    <li><a href="jixuMegT_2.5.html">继教考核查询</a></li>
+    <li>年度继教详情</li>
+
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+    
+
+      <div class="tabson">
+       
+<ul class="seachform">
+  
+          <li>
+            <label>培训年度：</label>
+            <input type="text" class="Wdate scinput" style="height:32px;line-height:32px;border-color:#a7b5bc #ced9df #ced9df #a7b5bc;" onclick="WdatePicker()" /> -- <input type="text" class="Wdate scinput" style="height:32px; line-height:32px;border-color:#a7b5bc #ced9df #ced9df #a7b5bc;" onclick="WdatePicker()" />
+          </li>
+			 <li>
+            <input name="input2" type="button" class="dian3" value="查 询"/>
+          </li>
+		  
+        </ul>
+	 
+		
+      </div>
+      
+      <div class="chauxnJS jsTool">
+    <span style="float:left;">
+    <a href="jixuMegT_2.5.html" class="huibtn_a" style=" margin-left:6px">返回</a></span>
+    <span style="float:right;">
+    
+    </span>
+    </div>
+      <table class="tablelist">
+        <thead>
+          <tr>
+            <th>项目编号</th>
+            <th>项目名称</th>
+            <th >结束时间</th>
+            <th>上报学科</th>
+            <th>成绩</th>
+            
+            <th>获得学时</th>
+            <th>获得学分</th>
+            <th>状态</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>12344556</td>
+            <td>2014普通高中教师职务培训</td>
+            <td>2014-01-01至<br />
+            2014-11-01</td>
+            <td>语文</td>
+            <td>合格</td>
+            <td>30学时</td>
+            <td>10学分</td>
+            <td>未上报</td>
+          </tr>
+         <tr>
+            <td>1234455</td>
+            <td>2014中小学教师全员培训</td>
+            <td>2014-01-01至<br />
+            2014-11-01</td>
+            <td>信息技术</td>
+            <td><i>不合格</i></td>
+            <td>-</td>
+            <td>-</td>
+            <td><i>审核不通过</i></td>
+          </tr>
+         
+		 
+		      <tr>
+            <td>12345</td>
+            <td>2014中小学教师职务培训</td>
+            <td>2014-01-01至<br />
+              2014-11-01</td>
+            <td>信息技术</td>
+            <td><i>不合格</i></td>
+            <td>-</td>
+            <td>-</td>
+            <td><i>审核中</i></td>
+          </tr>
+		  
+		  
+        </tbody>
+      </table>
+      
+    </div> 
+ 
+ 
+
+
+</body>
+
+</html>

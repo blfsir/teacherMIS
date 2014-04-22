@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+<script language="javascript" type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">个人中心</a></li>
+    <li><a href="#">个人信息</a></li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+    
+
+      <div class="tabson">
+      <h4 style="padding:0 0 20px 40px;">个人信息：</h4>
+      <table border="0" cellspacing="0" cellpadding="0" style="line-height:40px; margin:0 auto;">
+		<tr>
+            <td width="84">用户名：</td>
+          <td width="173"> 	 orgadmin01 
+		  </td>
+          <td width="60">&nbsp;</td>
+          <td width="84">姓名：</td>
+          <td width="171"  ><input name="input" type="text" class="scinput" value="教师网"/></td>
+        </tr>
+		
+		
+		<tr>
+          <td>培训实施机构：</td>
+          <td>教师网</td>
+          <td>&nbsp;</td>
+          <td>联系电话：</td><td><input name="input" type="text" class="scinput" value="13718160952"/></td>
+        </tr>
+       
+      </table>
+      
+      
+      <table border="0" cellspacing="0" cellpadding="0" style="margin:0 auto; margin-top:30px;">
+  <tr>
+    <td><a href="#" class="dian3">保 存</a></td>
+    <td style="width:30px;">&nbsp;</td>
+    <td><a href="#" class="dian3">取 消</a></td>
+  </tr>
+</table>
+
+    </div> 
+</div>
+</body>
+</html>

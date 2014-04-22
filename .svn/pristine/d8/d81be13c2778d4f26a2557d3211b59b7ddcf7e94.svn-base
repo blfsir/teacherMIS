@@ -1,0 +1,443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="teacherGLY_1.1.html">教师信息</a></li>
+    <li>调动管理</li>
+    <li>发起调动</li>
+    </ul>
+    </div>
+    
+    <div class="rightinfo">
+    <div class="chauxnJS jsTool">
+     <span style="float:left;"><h4 style="float:left;">教师信息：</h4><a href="javascript:;" style=" float:left; line-height:18px; margin:7px 0 0 10px;" id="btn1">精确查询</a><a href="javascript:;" style=" float:left; line-height:18px; margin:7px 0 0 10px;" class="jq" id="btn2">按需筛选</a></span>
+     <span style="float:right;"><a href="#" style="margin-right:8px;">添加教师</a><a href="#" style="margin-right:8px;">批量导入</a></span>
+     </div>
+  <div>
+  
+  <div class="choose" id="jqDiv1" style="display:none;">
+    
+<table border="0" cellspacing="0" cellpadding="0" style="line-height:42px; margin:0 auto;">
+  <tr>
+    <td width="90">教师姓名：</td>
+    <td><input name="input13" type="text" class="dfinput" style="width:200px;"/></td>
+    <td width="90">&nbsp;</td>
+    <td width="90">教师编号：</td>
+    <td><input name="input3" type="text" class="dfinput" style="width:200px;"/></td>
+  </tr>
+  <tr>
+    <td>身份证号码：</td>
+    <td><input name="input4" type="text" class="dfinput" style="width:200px;"/></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="90">&nbsp;</td>
+    <td><a href="#" class="dian3">查 询</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+    
+   
+</div>
+    <div class="choose" id="jqDiv2">
+    
+    <dl>
+      <dt style="background-color:#fff;"><strong>已选条件：</strong></dt>
+      <dd>
+        <span>性别：男<a href="javascript:;"><img src="images/closed.jpg" width="9" height="9" title="删除"/></a></span></dd>
+        <dd>
+        <span>学科带头人：王先科<a href="javascript:;" title="删除"><img src="images/closed.jpg" width="9" height="9" /></a></span></dd>
+    </dl>
+    <dl>
+      <dt>地区：</dt><dd>
+        <div class="vocation">
+          <select name="select" class="select3">
+            <option>单选输入框</option>
+          </select>
+        </div>
+      </dd>
+      <dd>
+        <div class="vocation">
+          <select name="select2" class="select3">
+            <option>单选输入框</option>
+          </select>
+        </div>
+      </dd>
+      <dd>
+        <div class="vocation">
+          <select name="select3" class="select3">
+            <option>单选输入框</option>
+          </select>
+        </div>
+      </dd>
+    </dl>
+    <dl><dt>学段：</dt><dd><input name="" type="checkbox" value="" />幼儿</dd><dd><input name="input" type="checkbox" value="" />初中</dd><dd><input name="input2" type="checkbox" value="" />高中</dd></dl>
+    <dl class="weizhi"><dt>学科：</dt><dd><input name="" type="checkbox" value="" />语文</dd><dd>
+      <input name="input" type="checkbox" value="" />数学</dd><dd>
+        <input name="input2" type="checkbox" value="" />英语</dd><dd><input name="" type="checkbox" value="" />语文</dd><dd>
+      <input name="input" type="checkbox" value="" />数学</dd><dd>
+        <input name="input2" type="checkbox" value="" />英语</dd><dd><input name="" type="checkbox" value="" />语文</dd><dd>
+      <input name="input" type="checkbox" value="" />数学</dd><dd>
+        <input name="input2" type="checkbox" value="" />英语</dd>
+          <a href="#" class="more">更多</a>
+      </dl>
+    <dl class="moreChoose">
+    <dt>更多选项：</dt>
+    <dd id="xuanze">
+      <ul id="xuanzeTool">
+        <li><a href="javascript:;">性别</a></li>
+        <li><a href="javascript:;">学科带头人</a></li>
+        <li><a href="javascript:;">骨干教师</a></li>
+        <li><a href="javascript:;">特级教师</a></li>
+        <li><a href="javascript:;">特岗教师</a></li>
+        <li><a href="javascript:;">农村骨干教师</a></li>
+        <li><a href="javascript:;">在职状态</a></li>
+       </ul>
+ 
+ <div style="display:none;">
+         <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><input type="radio" name="radio" id="radio" value="radio" /></td>
+    <td>男</td>
+    <td width="40">&nbsp;</td>
+    <td><input type="radio" name="radio" id="radio2" value="radio" /></td>
+    <td>女</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+       </div>
+   <div style="display:none;">
+         <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+       </div><div style="display:none;">
+         <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+       </div><div style="display:none;">
+         <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+       </div><div style="display:none;">
+         <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+       </div><div style="display:none;">
+         <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+       </div><div style="display:none;">
+         <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+       </div>
+      </dd>
+    </dl>
+    </div> 
+</div>
+   <script>
+  
+    window.onload=function(){
+		var oList=document.getElementById('xuanzeTool').getElementsByTagName('a')
+        var oDiv=document.getElementById('xuanze').getElementsByTagName('div')
+		var btn1=document.getElementById('btn1')
+		var btn2=document.getElementById('btn2')
+		var jqDiv1=document.getElementById('jqDiv1')
+		var jqDiv2=document.getElementById('jqDiv2')
+		for(i=0;i<oList.length;i++){
+		oList[i].index=i;
+		oList[i].onclick=function(){
+		
+		if(	  oDiv[this.index].style.display=='block'){
+			for(i=0;i<oList.length;i++){
+			 oList[i].className='';
+			 oDiv[i].style.display='none';
+		         }
+		} else{
+		  for(i=0;i<oList.length;i++){
+			 oList[i].className='';
+			 oDiv[i].style.display='none';
+		         }
+				 
+				 
+			  this.className='onthis'; 
+		 
+			  oDiv[this.index].style.display='block';
+							 
+
+		}
+		
+		     }
+		   }
+		   btn1.onclick=function(){
+			   btn1.className='jq';
+			   btn2.className='';
+			   jqDiv1.style.display='block';
+			   jqDiv2.style.display='none';
+			   }
+		   btn2.onclick=function(){
+			   btn2.className='jq';
+			   btn1.className='';
+			   jqDiv2.style.display='block';
+			   jqDiv1.style.display='none';
+			   }
+		 }
+  </script>
+  <div class="tabson">
+    
+    
+    <ul class="seachform">
+    
+    <li><label>教师编号：</label><input name="" type="text" class="scinput" /></li>
+    <li><label>姓名：</label><input name="" type="text" class="scinput" /></li>
+    <li><label>原地区：</label>  
+    <div class="vocation">
+    <select class="select3">
+    <option>北京</option>
+    <option>天津</option>
+    </select>
+    </div>
+    </li>
+    
+    <li>  
+    <div class="vocation">
+    <select class="select3">
+    <option>海淀</option>
+    <option>朝阳</option>
+    </select>
+    </div>
+    </li>
+    
+    <li>  
+    <div class="vocation">
+    <select class="select3">
+    <option>知春路</option>
+    <option>中关村</option>
+    </select>
+    </div>
+    </li>
+    
+    <li><label>&nbsp;</label><input type="button" class="scbtn" value="查 询"/></li>
+    
+    </ul>
+    
+    </div>
+  <table class="tablelist">
+   	 <thead>
+    	<tr>
+        <th width="50%">跨校调动</th>
+        <th width="50%">校内调动</th>
+        </tr>
+     </thead>
+        <tbody>
+        
+                
+        </tbody>
+    </table>
+   <table class="tablelist">
+   	 <thead>
+    	<tr>
+        <th>目标市县校</th>
+        <th>调动说明</th>
+        <th>在职状态</th>
+        <th>审核状态</th>
+        <th>操作</th>
+        </tr>
+     </thead>
+        <tbody>
+        
+        <tr>
+        <td>高中</td>
+        <td>英语</td>
+        <td>&nbsp;</td>
+        <td><ol><li title="省级审核">省级<i class="sort"><img src="images/shgbg.png" /></i></li><li title="市级审核">市级<i class="sort"><img src="images/shghuibg.png" /></i></li><li title="县级审核">县级<i class="sort"><img src="images/shgbg.png" /></i></li><li title="校级审核">校级<i class="sort"><img src="images/shghuibg.png" /></i></li></ol></td>
+        <td><p><a href="#" class="tablelink">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="tablelink"> 删除</a></p><p><a href="#" class="tablelink">审核</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=" " class="tablelink">记录</a></p></td>
+        </tr>
+        
+                
+        </tbody>
+    </table>
+    
+   
+    <div class="pagin">
+  <div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+        <ul class="paginList">
+        <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+        <li class="paginItem"><a href="javascript:;">1</a></li>
+        <li class="paginItem current"><a href="javascript:;">2</a></li>
+        <li class="paginItem"><a href="javascript:;">3</a></li>
+        <li class="paginItem"><a href="javascript:;">4</a></li>
+        <li class="paginItem"><a href="javascript:;">5</a></li>
+        <li class="paginItem more"><a href="javascript:;">...</a></li>
+        <li class="paginItem"><a href="javascript:;">10</a></li>
+        <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+        </ul>
+    </div>
+    
+    
+    <div class="tip">
+    	<div class="tiptop"><span>提示信息</span><a></a></div>
+        
+      <div class="tipinfo">
+        <span><img src="images/ticon.png" /></span>
+        <div class="tipright">
+        <p>是否确认对信息的修改 ？</p>
+        <cite>如果是请点击确定按钮 ，否则请点取消。</cite>
+        </div>
+      </div>
+        
+        <div class="tipbtn">
+        <input name="" type="button"  class="sure" value="确定" />&nbsp;
+        <input name="" type="button"  class="cancel" value="取消" />
+        </div>
+    
+    </div>
+    
+    
+    
+    
+</div> 
+ 
+ 
+
+
+</body>
+
+</html>

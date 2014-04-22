@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="js/jquery.js"></script>
+
+<script type="text/javascript">
+$(function(){	
+	//导航切换
+	$(".menuson li").click(function(){
+		$(".menuson li.active").removeClass("active")
+		$(this).addClass("active");
+	});
+	
+	$('.title').click(function(){
+		var $ul = $(this).next('ul');
+		$('dd').find('ul').slideUp();
+		if($ul.is(':visible')){
+			$(this).next('ul').slideUp();
+		}else{
+			$(this).next('ul').slideDown();
+		}
+	});
+})	
+</script>
+
+
+</head>
+
+<body style="background:#f0f9fd;">
+	<div class="lefttop"><span></span>工具栏</div>
+    
+    <dl class="leftmenu">
+      <dd>
+		<div class="title">
+			<span><img src="images/leftico02.png" /></span>教师信息
+		</div>
+		<ul class="menuson">
+			<li><cite></cite><a href="teacherGLY_1.1a.html" target="rightFrame">教师信息导入</a><i></i></li>
+			<li><cite></cite><a href="teacherGLY_1.1.html" target="rightFrame">教师信息查询</a><i></i></li>
+			<li><cite></cite><a href="teacherGLY_1.1.html" target="rightFrame">教师信息管理</a><i></i></li>
+			<li><cite></cite><a href="teacherGLY_1.3.html" target="rightFrame">教师调动管理</a><i></i></li>
+			<li><cite></cite><a href="#" onclick="javascript:window.open('teacherGLY_1.3.html?ctype='+escape('编制调整'),'rightFrame')">编制调整管理</a><i></i></li>
+			<li><cite></cite><a href="#" onclick="javascript:window.open('teacherGLY_1.3.html?ctype='+escape('病休'),'rightFrame')">教师病休管理</a><i></i></li>
+			<li><cite></cite><a href="#" onclick="javascript:window.open('teacherGLY_1.3.html?ctype='+escape('离岗'),'rightFrame')">教师离岗管理</a><i></i></li>
+			<li><cite></cite><a href="#" onclick="javascript:window.open('teacherGLY_1.3.html?ctype='+escape('离退休'),'rightFrame')">教师离退休管理</a><i></i></li>
+			<li><cite></cite><a href="#" onclick="javascript:window.open('teacherGLY_1.3.html?ctype='+escape('死亡登记'),'rightFrame')">教师死亡登记管理</a><i></i></li>
+			<li><cite></cite><a href="#" onclick="javascript:window.open('teacherGLY_1.3.html?ctype='+escape('返聘'),'rightFrame')">教师返聘管理</a><i></i></li>
+		</ul>  
+	  </dd>
+	</dl>
+
+	<dl class="leftmenu">
+	  <dd>
+		<div class="title">
+			<span><img src="images/leftico02.png" /></span>教师信息审核
+		</div>
+		<ul class="menuson" style="display:none;">
+			<li><cite></cite><a href="teacherGLY_1.2.html" target="rightFrame">信息变更审核</a><i></i></li>
+			<li><cite></cite><a href="teacherGLY_1.3-.html" target="rightFrame">教师调动审核</a><i></i></li>
+			<li><cite></cite><a href="#" onclick="javascript:window.open('teacherGLY_1.3-.html?ctype='+escape('编制调整'),'rightFrame')">编制调整审核</a><i></i></li>
+			<li><cite></cite><a href="#" onclick="javascript:window.open('teacherGLY_1.3-.html?ctype='+escape('病休'),'rightFrame')">教师病休审核</a><i></i></li>
+			<li><cite></cite><a href="#" onclick="javascript:window.open('teacherGLY_1.3-.html?ctype='+escape('离岗'),'rightFrame')">教师离岗审核</a><i></i></li>
+			<li><cite></cite><a href="#" onclick="javascript:window.open('teacherGLY_1.3-.html?ctype='+escape('离退休'),'rightFrame')">教师离退休审核</a><i></i></li>
+			<li><cite></cite><a href="#" onclick="javascript:window.open('teacherGLY_1.3-.html?ctype='+escape('死亡登记'),'rightFrame')">教师死亡登记审核</a><i></i></li>
+			<li><cite></cite><a href="#" onclick="javascript:window.open('teacherGLY_1.3-.html?ctype='+escape('返聘'),'rightFrame')">教师返聘审核</a><i></i></li>
+		</ul>
+      </dd>
+    </dl>
+    
+</body>
+</html>

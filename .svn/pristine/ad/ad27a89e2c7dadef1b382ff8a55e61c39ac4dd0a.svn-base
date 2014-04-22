@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+<script language="javascript" type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".click").click(function(){
+  $(".tip").fadeIn(200);
+  });
+  
+  $(".tiptop a").click(function(){
+  $(".tip").fadeOut(200);
+});
+
+  $(".sure").click(function(){
+  $(".tip").fadeOut(100);
+});
+
+  $(".cancel").click(function(){
+  $(".tip").fadeOut(100);
+});
+
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="jixuMegT_2.4.html">继教信息</a></li>
+    <li>我的继教信息</li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+    
+
+      
+      
+      <div class="tabson">   
+<ul class="forminfo">
+    <li><label>项目状态：</label><cite><input name="" type="radio" value="" checked="checked" />未上报&nbsp;&nbsp;&nbsp;&nbsp;<input name="" type="radio" value="" />县未审核&nbsp;&nbsp;&nbsp;&nbsp;<input name="" type="radio" value="" />市未审核&nbsp;&nbsp;&nbsp;&nbsp;<input name="" type="radio" value="" />完成审核</cite></li>
+    
+    </ul>
+
+<ul class="seachform" style="padding-left:23px;">
+    
+    <li><label>项目名称：</label>
+        <div class="vocation">
+        <input name="input" type="text" value=" " class="scinput" />
+        </div>
+      </li>
+    
+    <li>
+        <label>培训年度：</label>
+            <input type="text" class="Wdate scinput" style="height:32px;line-height:32px;border-color:#a7b5bc #ced9df #ced9df #a7b5bc;" onclick="WdatePicker()" /> -- <input type="text" class="Wdate scinput" style="height:32px; line-height:32px;border-color:#a7b5bc #ced9df #ced9df #a7b5bc;" onclick="WdatePicker()" />
+      </li>
+    
+    
+    
+    <li><label>&nbsp;</label><input type="button" class="scbtn" value="查 询"/></li>
+    
+    </ul>      
+   </div>
+   
+   <div class="chauxnJS jsTool">
+    <span style="float:left;">
+   <!-- <a href="jixuMegGLY_2.3.1.html" class="huibtn_a" style=" margin-left:6px">添加</a>--></span>
+    <span style="float:right;">
+    <div class="pagin" style="margin:0; width:180px;">
+    <div class="message">共<i class="blue">1256</i>条记录</div>
+    <div class="vocation paginList" style=" margin:4px 6px 0 6px;right:0px;">
+    <select class="select3">
+    <option>当前查看10条</option>
+    <option>当前查看30条</option>
+    <option>当前查看50条</option></select>
+    </div>
+    
+    </div>
+    </span>
+    </div>
+    <table class="tablelist">
+    <thead>
+    <tr>
+    <th>项目编号</th>
+    <th>年度</th>
+    <th>项目名称</th>
+    <th>起止时间</th>
+    <th>学时</th>
+    <th>学科</th>
+    <th>成绩</th>
+    <th>证书编号</th>
+    <th>审核状态<i class="sort"><img src="images/px.gif" /></i></th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    
+    <tr>
+    <td>20130907</td>
+    <td>2014年</td>
+    <td>名称名称</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>已审核</td>
+      </tr>
+    
+    <tr>
+	<td>20130907</td>
+    <td>2014年</td>
+    <td>名称名称</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><i>未上报</i></td>
+      </tr>
+    
+    <tr>
+	<td>20130907</td>
+    <td>2014年</td>
+    <td>名称名称</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><i>市未审核</i></td>
+      </tr>
+    
+    <tr>
+	<td>20130907</td>
+    <td>2014年</td>
+    <td>名称名称</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><i>县未审核</i></td>
+      </tr>
+    
+    <tr>
+	<td>20130907</td>
+    <td>2014年</td>
+    <td>名称名称</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>已审核</td>
+      </tr>
+    
+    </tbody>
+    
+    </table>
+    
+    <div class="pagin">
+<div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+        <ul class="paginList">
+        <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+        <li class="paginItem"><a href="javascript:;">1</a></li>
+        <li class="paginItem current"><a href="javascript:;">2</a></li>
+        <li class="paginItem"><a href="javascript:;">3</a></li>
+        <li class="paginItem"><a href="javascript:;">4</a></li>
+        <li class="paginItem"><a href="javascript:;">5</a></li>
+        <li class="paginItem more"><a href="javascript:;">...</a></li>
+        <li class="paginItem"><a href="javascript:;">10</a></li>
+        <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+        </ul>
+    </div>
+    
+    
+    <div class="tip">
+    	<div class="tiptop"><span>年度考核修改</span><a></a></div>
+        
+      <div class="tipinfo">
+      <div class="tipright" style="padding:0; margin:0;">
+        <p>2014年度
+        <cite>北京市 海淀区 知春路</cite></p>
+        </div>
+        <ul class="forminfo" style="padding:0; margin:0;">
+    <li><label style="width:60px;">国培</label>  
+    <input name="" type="text" class="scinput">
+    </li>
+    <li><label style="width:60px;">省培</label>  
+    <input name="" type="text" class="scinput">
+    </li>
+    <li><label style="width:60px;">省培</label>  
+    <input name="" type="text" class="scinput">
+    </li>
+    <li><label style="width:60px;">校本</label>  
+    <input name="" type="text" class="scinput">
+    </li>
+    
+       
+    
+    </ul>
+        
+        
+      </div>
+        
+        <div class="tipbtn">
+        <input name="" type="button"  class="sure" value="保存" />&nbsp;
+        <input name="" type="button"  class="cancel" value="取消" />
+        </div>
+    
+    </div>
+    
+    </div> 
+ 
+ 
+
+
+</body>
+
+</html>

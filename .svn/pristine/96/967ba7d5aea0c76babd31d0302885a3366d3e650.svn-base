@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/jquery.treeview.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+<script language="javascript" type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="js/page.commons.js"></script>
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+
+</head>
+
+<body>
+
+<div class="place">
+		<span>位置：</span>
+		<ul class="placeul">
+			<li><a href="ssadmin.html">培训项目</a></li>
+
+			<li>继教信息板块</li>
+            <li>添加</li>
+  </ul>
+</div>
+
+<div class="formbody">
+
+  <ul class="seachform" >
+    <li><label>继教信息板块名称：</label><input name="" type="text" class="scinput" style="width:534px;"/></li>
+  </ul>
+    <ul class="seachform" >
+    <li><label>继教信息版块编码：</label><input name="" type="text" class="scinput"/></li>
+    
+    
+    <li>
+      <label>培训类型：</label>
+      <div class="vocation">
+    <select class="select3"></select>
+            </div></li>
+  </ul>
+  <ul class="seachform">
+    <li>
+            <label>计划开始日期：</label>
+            <div class="vocation" style="margin-left:24px;">
+    <select class="select3">
+    <option>2014年</option>
+    <option>2013年</option>
+    <option>2012年</option>
+    </select>
+            </div>
+          </li>
+    <li><label>计划结束日期：</label>  
+    <div class="vocation">
+    <select class="select3">
+    <option>2014年</option>
+    <option>2013年</option>
+    <option>2012年</option>
+    </select>
+    </div>
+    </li>
+  </ul>
+  
+  <ul class="seachform" style="padding-bottom:10px; height:100%">
+    <li>
+            <label>备注：</label>
+            <textarea name="" cols="" rows="" style="width:534px; border:#eee 1px solid; height:100px;border-color:#a7b5bc #ced9df #ced9df #a7b5bc;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px; margin-left:72px;"></textarea>
+    </li>
+  </ul>
+<div class="chauxnJS jsTool">
+				<span style="float: left;"> <a href="javascript:;"
+					class="huibtn_a  " id="btnAdd" style="margin-left: 6px">添加</a>&nbsp; 
+				</span> <span style="float: right;">
+					<div class="pagin" style="margin: 0; width: 180px;">
+						<div class="message">
+							共<i class="blue">1256</i>条记录
+						</div>
+						<div class="vocation paginList"
+							style="margin: 4px 6px 0 6px; right: 0px;">
+							<select class="select3">
+								<option>当前查看10条</option>
+								<option>当前查看30条</option>
+								<option>当前查看50条</option>
+							</select>
+						</div>
+
+					</div>
+				</span>
+			</div>
+
+<table class="tablelist">
+				<thead>
+					<tr>
+						<th  >继教信息板块名称</th>
+					 
+						<th  >计划周期</th>
+					 	<th  >开始日期</th>
+                        <th  >结束日期</th>
+						<th  >操作</th>
+						
+					</tr>
+				</thead>
+				<tbody>
+
+					<tr>
+
+						<td>学习培训计划</td>
+						<td>3年</td>
+						 <td>2016-4-1</td>
+                         <td>2017-4-1</td>
+						<td><a href="#" class="tablelink click">查看</a>&nbsp;&nbsp;<a
+							href="#" class="tablelink">编辑</a></td>
+						
+
+					</tr>
+
+
+					<tr>
+					  <td>学习培训计划</td>
+					  <td>3年</td>
+					  <td>2016-4-1</td>
+					  <td>2017-4-1</td>
+					  <td><a href="#" class="tablelink click">查看</a>&nbsp;&nbsp;<a
+							href="#" class="tablelink">编辑</a></td>
+					</tr>
+
+					<tr class='hideme'>
+					  <td>学习培训计划</td>
+					  <td>3年</td>
+					  <td>2016-4-1</td>
+					  <td>2017-4-1</td>
+					  <td><a href="#" class="tablelink click">查看</a>&nbsp;&nbsp;<a
+							href="#" class="tablelink">编辑</a></td>
+					</tr>
+</tbody>
+			</table>
+
+</div>
+
+</body>
+</html>

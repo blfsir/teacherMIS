@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".click").click(function() {
+			$(".tip").fadeIn(200);
+		});
+
+		$(".tiptop a").click(function() {
+			$(".tip").fadeOut(200);
+		});
+
+		$(".sure").click(function() {
+			$(".tip").fadeOut(100);
+		});
+
+		$(".cancel").click(function() {
+			$(".tip").fadeOut(100);
+		});
+
+		$("#btn_fp").click(function(){
+			$("#btn_bc").show();
+			$("#btn_qx").show();
+			$("#btn_fp").hide();
+			$("#txt_fp").removeAttr('readonly');
+		});
+	});
+	</script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+
+$('#tanqi2').hide();
+ $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+	$('#tanqi').hide();
+	$('#setSignup').click(function(){
+			//alert('set sign up');
+			
+			$('#tanqi').show();
+			
+		}
+	);
+	$('#btnOK').click(function(){
+		$('#tanqi').hide();
+		})
+	$('#btnQX').click(function(){
+	  $('#tanqi').hide();
+	  })
+	
+});
+
+function show2(){
+$('#tanqi2').show();
+}
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">培训项目管理</a></li>
+    <li><a href="#">培训名额分配</a></li>
+	 
+    </ul>
+    </div>
+     
+    <div class="formbody">
+    
+    
+
+      <div class="tabson">
+        <p class="xmTool">项目名称：<b>2014国培第一期</b>计划培训人数：<b>50000</b>  我的名额：<b>3000</b>    地区:<b>广州市</b> </p>  
+        <div> 
+         <table class="tablelist" style="margin-top:12px;">
+        <thead>
+          <tr>
+            <th width="20%">地区</th>
+			<th width="20%">计划分配名额</th>
+			 
+			 
+            <th width="20%">操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+           	<td><a href="xz4.1.1.html" class="tablelink" >天河区</a></td>
+			<td><input id="txt_fp" type="text" value="0" readonly="true"/> &nbsp;</td>
+			 
+				
+             <td><a id="btn_fp" href="#" class="tablelink  " >分配名额</a>&nbsp;&nbsp; <a id="btn_bc" style="display:none" href="#" class="tablelink  " >保存</a>&nbsp;&nbsp; <a style="display:none"  id="btn_qx" href="#" class="tablelink  " >取消</a> </td>
+          </tr>
+           <tr>
+           	<td><a href="xz4.1.1.html" class="tablelink" >白云区</a></td>
+			<td><input type="text" value="1000" readonly="true"/> &nbsp;</td>
+			 
+				 
+            <td><a href="#" class="tablelink">分配名额</a>&nbsp;&nbsp; </td> 
+          </tr>
+		   
+		    <tr>
+           	<td> 合计 </td>
+			<td><input type="text" value="1000" readonly="true"/> &nbsp;</td>
+				 
+            <td>  </td> 
+          </tr>
+		  
+        </tbody>
+      </table>
+		 </div>
+      </div>
+ 
+	
+	 
+
+
+    </div> 
+ 
+ 
+ <div id="tanqi" style="width:660px;padding:20px; margin:-130px 0 0 -340px;">
+     <div class="tabson">
+	  
+	   
+     <ul class="seachform">
+ 
+     <li> <p class="xmTool">项目名称：<b>2014普通高中教师职务培训</b>计划培训人数：<b>3000</b> </p></li>    
+		 
+           
+       </ul>
+	
+<ul class="seachform">
+ 
+            <li>
+            <label>地区：</label>
+       
+          </li>
+          <li>
+             <select name="select" class="select2"><option>果实网</option><option>教师网</option></select> 
+            
+          </li>
+		    
+           
+       </ul>
+		
+		
+		
+		
+	    
+		
+		
+     </div>
+     <table border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+  <tr>
+    <td width="111"><input name="input" type="button" class="dian3" value="确 定" id="btnOK"/></td>
+    <td width="100px">&nbsp;</td>
+    <td width="111"><input name="input3" type="button" class="dian3" value="取 消" id="btnQX"/></td>
+  </tr>
+</table>
+
+</div>
+		
+    <div class="tip">
+    	<div class="tiptop"><span>培训名额分配</span><a></a></div>
+        
+      <div class="tipinfo">
+      <div class="tipright" style="padding:0; margin:0;">
+        
+       
+        </div>
+		     <ul class="seachform">
+ 
+     <li> <p class="xmTool">项目名称：<b>2014普通高中教师职务培训</b> </p></li>    
+	          
+       </ul>
+	   
+	      <ul class="seachform">
+      <li> <p class="xmTool">地区：<b>广州市</b> </p></li>    
+           
+       </ul>
+	   
+	   
+        <ul class="forminfo" style="padding:0; margin:0;">
+		  <li><label style="width:100px;">计划分配人数:</label>  
+		<div class="vocation">
+		   <input name="input" value="2000" type="text" class="scinput" />
+		</div>
+    </li>
+	
+    <!--<li><label style="width:100px;">地区：</label>  
+		<div class="vocation">
+		   <input name="input2" type="text" class="scinput" colspan="4" value="天河区"/>
+          <input name="input2" type="button" value="选 择" class="btnXuan"/>
+		</div>
+    </li>-->
+    <li><label style="width:100px;">学科:</label>  
+		<div class="vocation">
+		   <input name="input2" type="text" class="scinput" colspan="4"  value="语文,数学"/>
+          <input name="input2" type="button" value="选 择" class="btnXuan"/>
+		</div>
+    </li>
+  
+    </ul>
+        
+        
+      </div>
+        
+        <div class="tipbtn">
+        <input name="" type="button"  class="sure" value="确定" />&nbsp;
+        <input name="" type="button"  class="cancel" value="取消" />
+        </div>
+    
+    </div>
+  <!-- <div id="tanqi" style="width:660px;padding:20px; margin:-130px 0 0 -340px;">
+     <div class="tabson">
+	  
+	   
+     <ul class="seachform">
+ 
+     <li> <p class="xmTool">项目名称：<b>2014普通高中教师职务培训</b>计划培训人数：<b>3000</b> </p></li>    
+		 
+           
+       </ul>
+	
+<ul class="seachform">
+ 
+            <li>
+            <label>培训实施机构：</label>
+       
+          </li>
+          <li>
+             <select name="select" class="select2"><option>果实网</option><option>教师网</option></select> 
+            
+          </li>
+		     <li>
+            <label>计划分配人数：</label>
+       
+          </li>
+          <li>
+			<input type="text" class="scinput" value="2000"/>
+            
+          </li>
+           
+       </ul>
+		
+		
+		
+		
+	   <ul class="seachform">
+  <li>
+            <label>地&nbsp;&nbsp;区：</label>
+           
+         </li>
+          <li>
+          <select name="select" class="select3"><option>广东省</option></select> 
+          </li>
+            <li>
+          <select name="select" class="select3"><option>广州市</option></select> 
+          </li>
+		  
+		  <li>
+          <select name="select" class="select3"><option>白云区</option></select> 
+          </li>
+		  <li>
+          <select name="select" class="select2"><option>第一小学</option></select> 
+          </li>
+		  
+        </ul>
+		  <ul class="seachform">
+           
+		  <li>
+            <label>学&nbsp;&nbsp;科：</label>
+       
+          </li>
+          <li>
+             <select name="select" class="select3"><option>语文</option><option>数学</option></select> 
+            
+          </li>
+	    </ul>
+		
+		
+     </div>
+     <table border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+  <tr>
+    <td width="111"><input name="input" type="button" class="dian3" value="确 定" id="btnOK"/></td>
+    <td width="100px">&nbsp;</td>
+    <td width="111"><input name="input3" type="button" class="dian3" value="取 消" id="btnQX"/></td>
+  </tr>
+</table>
+
+</div>-->
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+<script language="javascript" type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+
+
+ <script  type="text/javascript" src="js/page.commons.js"></script>
+ 
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">培训实施机构</a></li>
+    <li><a href="#">教师管理</a></li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+    
+
+      <div class="tabson">
+      <table border="0" cellspacing="0" cellpadding="0" style="line-height:42px; margin-left:40px;">
+        <tr>
+          <td width="60">项目名称：</td>
+          <td> <input name="input" type="text" class="scinput" /></td>
+          <td width="20">&nbsp;</td>
+          <td width="60">项目状态：</td>
+          <td><select name="select4" class="select2" style="margin-right:20px;">
+          </select></td>
+          <td width="20">&nbsp;</td>
+          <td width="60">项目年度: </td>
+          <td><select  class="select3 yearpicker" name="yearpicker"  ></td>
+          <td>
+          --
+          </td>
+         <td><select  class="select3 yearpicker" name="yearpicker" >
+         </td>
+          <td width="20"><a href="#" class="dian3">查 询</a></td>
+          
+        </tr>
+      </table>
+      </div><table class="tablelist">
+      <thead>
+        <tr>
+          
+          <th width="10%">项目</th>
+          <th width="4%">项目年度</th>
+          <th width="6%">项目状态</th>
+          <th width="6%">计划培训人数</th>
+          
+          <th width="6%">实际培训人数</th>
+          <th width="6%">学习率</th>
+          
+          <th width="6%">通过率</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2014普通高中教师职务培训</td>
+          <td>2014</td>
+          <td>已结束&nbsp;</td>
+          <td>50000&nbsp;</td>
+          <td>50000</td>
+          <td>90%&nbsp;</td>
+         
+          <td>80%&nbsp;</td>
+           
+        </tr>
+		 
+		
+      </tbody>
+    </table>
+      <div class="pagin">
+<div class="message">共<i class="blue">296</i>条记录 每页 30 条，当前第&nbsp;<i class="blue">2&nbsp;</i>页 / 共&nbsp;<i class="blue">10</i>&nbsp;页</div>
+        <ul class="paginList">
+        <li class="paginItem"><a href="javascript:;">首页</a></li>
+        <li class="paginItem"><a href="javascript:;" class="longer">上一页</a></li>
+        <li class="paginItem"><a href="javascript:;">1</a></li>
+        <li class="paginItem"><a href="javascript:;">2</a></li>
+        <li class="paginItem"><a href="javascript:;">3</a></li>
+        <li class="paginItem current"><a href="javascript:;">4</a></li>
+        <li class="paginItem"><a href="javascript:;">5</a></li>
+        <li class="paginItem"><a href="javascript:;">6</a></li>
+        <li class="paginItem"><a href="javascript:;">7</a></li><!--
+        <li class="paginItem more"><a href="javascript:;">...</a></li>
+        <li class="paginItem"><a href="javascript:;">10</a></li>-->
+        <li class="paginItem"><a href="javascript:;" class="longer">下一页</a></li>
+        <li class="paginItem"><a href="javascript:;">末页</a></li>
+        </ul>
+    </div>
+    </div> 
+ 
+ 
+
+
+</body>
+
+</html>

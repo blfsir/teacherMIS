@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+<style>
+.forminfo li {margin-bottom: -1px;}
+.forminfo li label {line-height: 22px;}
+</style>
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+	//$(".tip").attr("height","400");
+});
+</script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".click").click(function() {
+			$(".tip").fadeIn(200);
+		});
+
+		$(".tiptop a").click(function() {
+			$(".tip").fadeOut(200);
+		});
+
+		$(".sure").click(function() {
+			$(".tip").fadeOut(100);
+		});
+
+		$(".cancel").click(function() {
+			$(".tip").fadeOut(100);
+		});
+
+	});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="teacherGLY_1.1.html">教师信息管理</a></li>
+    <li>导入</li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+      <div class="Uploadxu"><span class="txtcolor">1.准备数据</span><span class="loadok">&nbsp;</span><span class="txtcolor">2.上传数据</span><span class="loadok">&nbsp;</span><span class="txtcolor">3.校验数据</span><span class="loadx">&nbsp;</span><span>4.提交数据</span></div>
+    
+    <div class="Uploadiv">
+    
+    <ul class="Uploadinfo">
+    <li><img src="images/tishi.png" />&nbsp;如存在异常数据，点击“查看异常”下载查找原因；多个附件异常可点击“合并下载”查看和编辑，以便下次导入。<br>&nbsp;&nbsp;&nbsp;&nbsp;已通过校验的数据将会在稍后提交到系统中去，无需再重复提交。</li>
+    <li>
+    <div class="filediv">
+    
+    <ol class="fileol"><li><img src="images/iconfile_ok.png" /></li><li>培训管理系统-系统管理员菜单及页面.xlsx</li><li>数据正常</li></ol>
+    <ol class="fileol"><li><img src="images/iconfile_x.png" /></li><li>培训管理系统-系统管理员菜单及页面.xlsx</li><li class="txtred">300条数据异常</li><li><a href="#">查看异常</a></li></ol>
+    
+    </div>
+    </li>
+    <li style="text-align:center;"><label>&nbsp;</label><input id="ff" type="file" value="ff" style="display:none"/>
+	<a href="javascript:;" class="huibtn_a click"><img src="images/shgbg.png" />数据校验规则</a>&nbsp;&nbsp;&nbsp;&nbsp;
+	<input name="" type="button" class="btn" value="合并下载" onclick="$('#ff').click();"/>&nbsp;&nbsp;&nbsp;&nbsp;<input name="" type="button" class="btn" value="提交"  onclick="window.open('teacherGLY_1.1.6-3.html','rightFrame');"/></li>
+    
+    </ul>
+    </div>
+</div>
+
+
+			<div class="tip" style="height:490px;">
+				<div class="tiptop">
+					<span>数据校验规则</span><a></a>
+				</div>
+
+				<div class="tipinfo" style="height:340px;">
+					<ul class="forminfo" style="padding: 0; margin: 0;">
+						<li><label style="width: 60px;">省市县：</label><label style="width: 320px;">选填，请从数据模板中的“政治面貌”字典中选择；</label></li><!--
+						<li><label style="width: 60px;">市：</label><label style="width: 320px;">选填，同上；</label></li>
+						<li><label style="width: 60px;">区县：</label><label style="width: 320px;">选填，同上；</label></li>-->
+						<li><label style="width: 60px;">学校名称：</label><label style="width: 320px;">必填，如果学校可能存在重名，请填好该学校所在省市县；</label></li>
+						<li><label style="width: 60px;">教师姓名：</label><label style="width: 320px;">必填，6个汉字以内；</label></li>
+						<li><label style="width: 60px;">身份证号：</label><label style="width: 320px;">必填，不可重复，必须是合格的18位数字；</label></li>
+						<li><label style="width: 60px;">用户名：</label><label style="width: 320px;">必填，不可重复，4-20位英文、数字或下划线组合，第1位必须为字母；</label></li>
+						<li><label style="width: 60px;">密码：</label><label style="width: 320px;">选填，不填时，使用随机6位字符；</label></li>
+						<li><label style="width: 60px;">教师编号：</label><label style="width: 320px;">选填，不可重复，无格式要求；</label></li>
+						<li><label style="width: 60px;">性别：</label><label style="width: 320px;">必填，只能是“男”或“女”；</label></li>
+						<li><label style="width: 60px;">政治面貌：</label><label style="width: 320px;">必填，请从数据模板中的“政治面貌”字典中选择；</label></li>
+						<li><label style="width: 110px;">教师资格证书号：</label><label style="width: 110px;">选填，无格式要求；</label></li>
+						<li><label style="width: 60px;">手机号码：</label><label style="width: 320px;">选填，必须为11位数字；</label></li>
+						<li><label style="width: 60px;">邮箱：</label><label style="width: 320px;">选填，必须为标准邮箱格式；</label></li>
+						<li><label style="width: 60px;">学段：</label><label style="width: 320px;">必填，请从数据模板中的“学段”字典中选择；</label></li>
+						<li><label style="width: 60px;">学科：</label><label style="width: 320px;">必填，请从数据模板中的“学科”字典中选择，支持多选，用“,”分开；</label></li>
+					</ul>
+				</div>
+
+				<div class="tipbtn">
+					<input name="" type="button" class="sure" value="确定" />
+				</div>
+			</div>
+
+</body>
+
+</html>

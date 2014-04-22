@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="teacherGLY_1.1.html">教师信息管理</a></li>
+    <li>导入</li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+    <div class="Uploadxu"><span class="txtcolor">1.准备数据</span><span class="loadx">&nbsp;</span><span>2.上传数据</span><span class="loadx">&nbsp;</span><span>3.校验数据</span><span class="loadx">&nbsp;</span><span>4.提交数据</span></div>
+    
+    <div class="Uploadiv">
+    
+    <ul class="Uploadinfo">
+    <li><img src="images/tishi.png" />&nbsp;首先请下载“数据模板”Excel并按要求准备数据，然后使用“上传附件”按钮进行上传。<em class="txtred">为保证上传质量和速度，建议每一万条数据制作成一个数据表文件。</em></li>
+    <li style="text-align:center;"><label>&nbsp;</label><input id="ff" type="file" value="ff" style="display:none"/>
+	<input name="" type="button" class="btn" value="数据模板" onclick="$('#ff').click();"/>&nbsp;&nbsp;&nbsp;&nbsp;<input name="" type="button" class="btn" value="上传附件"  onclick="window.open('teacherGLY_1.1.6-1.html','rightFrame');"/></li>
+    
+    </ul>
+    </div>
+</div>
+
+
+</body>
+
+</html>

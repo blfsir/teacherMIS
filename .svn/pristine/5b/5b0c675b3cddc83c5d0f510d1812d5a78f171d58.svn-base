@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+<script language="javascript" type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".click").click(function(){
+  $(".tip").fadeIn(200);
+  });
+  
+  $(".tiptop a").click(function(){
+  $(".tip").fadeOut(200);
+});
+
+  $(".sure").click(function(){
+  $(".tip").fadeOut(100);
+});
+
+  $(".cancel").click(function(){
+  $(".tip").fadeOut(100);
+});
+
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li>教师信息</li>
+    <li>教师信息管理</li>
+    <li>导入历史记录</li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+    
+
+      
+      
+      <div class="tabson">   
+<!--<ul class="forminfo">
+    <li><label>项目性质：</label><cite><input name="" type="radio" value="" checked="checked" />国培&nbsp;&nbsp;&nbsp;&nbsp;<input name="" type="radio" value="" />省培&nbsp;&nbsp;&nbsp;&nbsp;<input name="" type="radio" value="" />市培&nbsp;&nbsp;&nbsp;&nbsp;<input name="" type="radio" value="" />校本</cite></li>
+    
+    </ul>-->
+
+<ul class="seachform" style="padding-left:23px;">
+    
+    <li><label>操作年度：</label>  
+    <div class="vocation">
+    <select class="select3">
+    <option>2014年</option>
+    <option>2013年</option>
+    </select>
+    </div>
+    </li>
+    <li><label>操作时间：</label>  
+    <div class="vocation">
+    <select class="select1">
+    <option>2014年2月20日 16点30分</option>
+    <option>2014年2月10日 10点30分</option>
+    <option>2014年1月20日 12点30分</option>
+    <option>2014年1月10日 9点30分</option>
+    </select>
+    </div>
+    </li>
+    
+    
+    <li><label>&nbsp;</label><input type="button" class="scbtn" value="查 询"/></li>
+    <li><label>&nbsp;</label><input type="button" class="scbtn" value="返 回"/></li>
+    
+    </ul>
+    
+   </div>
+   
+    
+    
+    <div class="kuang" style="width:auto;">本次导入情况：
+	<br>&nbsp;&nbsp;&nbsp;&nbsp;已上传的附件：广州市天河区第一师范学院.xls；&nbsp;&nbsp;广州市天河区第二师范学院.xls；
+	<br>&nbsp;&nbsp;&nbsp;&nbsp;已成功导入记录：1234条教师信息；
+	<br>&nbsp;&nbsp;&nbsp;&nbsp;未导入的记录：123条教师信息，点击下载：附件；</div>
+    <div class="" style="width:auto;"><b>以下是已成功导入记录：</b></div>
+
+   <div class="chauxnJS jsTool" style="display:none;“>
+    <span style="float:left;"></span>
+    <span style="float:right;">
+    <div class="pagin" style="margin:0; width:180px;">
+    <div class="message">共<i class="blue">1256</i>条记录</div>
+    <div class="vocation paginList" style=" margin:4px 6px 0 6px;right:0px;">
+    <select class="select3">
+    <option>当前查看10条</option>
+    <option>当前查看30条</option>
+    <option>当前查看50条</option></select>
+    </div>
+    
+    </div>
+    </span>
+    </div>
+    <table class="tablelist">
+    	<thead>
+    	<tr>
+        <th width="7%">教师姓名</th>
+        <th width="10%">身份证号</th>
+        <th width="15%">省市县校</th>
+        <th width="9%">教师编号</th>
+        <th width="4%">性别</th>
+        <th width="7%">政治面貌</th>
+        <th width="7%">学段</th>
+        <th width="7%">学科</th>
+        </tr>
+        </thead>
+        <tbody>
+        
+        <tr>
+        <td>张三</td>
+        <td>372523190001011099</td>
+        <td>广东省广州市天河区第一师范学院</td>
+        <td>&nbsp;102234553233</td>
+        <td>&nbsp;男</td>
+        <td>&nbsp;党员</td>
+        <td>&nbsp;职高</td>
+        <td>&nbsp;语文</td>
+        </tr>
+        
+        <tr>
+        <td>李四</td>
+        <td>372523190001011099</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;语文</td>
+        </tr>
+    
+        </tbody>
+    </table>
+    
+    <div class="pagin">
+  <div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+        <ul class="paginList">
+        <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+        <li class="paginItem"><a href="javascript:;">1</a></li>
+        <li class="paginItem current"><a href="javascript:;">2</a></li>
+        <li class="paginItem"><a href="javascript:;">3</a></li>
+        <li class="paginItem"><a href="javascript:;">4</a></li>
+        <li class="paginItem"><a href="javascript:;">5</a></li>
+        <li class="paginItem more"><a href="javascript:;">...</a></li>
+        <li class="paginItem"><a href="javascript:;">10</a></li>
+        <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+        </ul>
+    </div>
+    
+    
+    <div class="tip">
+    	<div class="tiptop"><span>年度考核修改</span><a></a></div>
+        
+      <div class="tipinfo">
+      <div class="tipright" style="padding:0; margin:0;">
+        <p>2014年度
+        <cite>北京市 海淀区 知春路</cite></p>
+        </div>
+        <ul class="forminfo" style="padding:0; margin:0;">
+    <li><label style="width:60px;">国培</label>  
+    <input name="" type="text" class="scinput">
+    </li>
+    <li><label style="width:60px;">省培</label>  
+    <input name="" type="text" class="scinput">
+    </li>
+    <li><label style="width:60px;">省培</label>  
+    <input name="" type="text" class="scinput">
+    </li>
+    <li><label style="width:60px;">校本</label>  
+    <input name="" type="text" class="scinput">
+    </li>
+    </ul>
+        
+        
+      </div>
+        
+        <div class="tipbtn">
+        <input name="" type="button"  class="sure" value="保存" />&nbsp;
+        <input name="" type="button"  class="cancel" value="取消" />
+        </div>
+    
+    </div>
+    
+    </div> 
+ 
+ 
+
+
+</body>
+
+</html>

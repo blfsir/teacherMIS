@@ -1,0 +1,195 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+<script language="javascript" type="text/javascript"
+	src="My97DatePicker/WdatePicker.js"></script>
+
+<script type="text/javascript" src="js/page.commons.js"></script>
+
+
+<script type="text/javascript">
+	KE.show({
+		id : 'content7',
+		cssPath : './index.css'
+	});
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function(e) {
+		$(".select1").uedSelect({
+			width : 345
+		});
+		$(".select2").uedSelect({
+			width : 167
+		});
+		$(".select3").uedSelect({
+			width : 100
+		});
+	});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+		<span>位置：</span>
+		<ul class="placeul">
+			  <li><a href="jixuMegGLY_2.2.html">继教信息</a></li>
+    <li>年度证书模板设置</li>
+			<li><a href="#">添加模板 </a></li>
+		</ul>
+	</div>
+
+	<div class="formbody">
+
+
+
+		<div class="tabson" id="txtBox">
+
+			<table border="0" cellspacing="0" cellpadding="0"
+				style="line-height: 40px; margin: 0 auto;">
+				<tr>
+					<td>模板名称：</td>
+					<td colspan="4"> <input style="width:600px" name="input" value="" type="text" class="scinput" /></td>
+					<td> </td>
+				</tr>
+				
+				<tr>
+					<td>证书抬头：</td>
+					<td colspan="4"><textarea name="textarea"
+							style="width: 600px; height: 100px; max-width: 600px; border: 1px solid #ccc; border-color: #a7b5bc #ced9df #ced9df #a7b5bc;">证书编号:$code$ </textarea></td>
+					<td><a href="http://shanxi.fxl.teacheredu.cn/GuoPeiAdmin/Certificate/Edit/editor.htm?id=content&ReadCookie=0" class="huibtn_a">高级编辑</a>  </td>
+				</tr>
+				
+					<tr>
+					<td>证书正文：</td>
+					<td colspan="4"><textarea name="textarea"
+							style="width: 600px; height: 100px; max-width: 600px; border: 1px solid #ccc; border-color: #a7b5bc #ced9df #ced9df #a7b5bc;">教师姓名:$name$ 
+							成绩为 $grade$ 
+							学时为 $unit$ 
+							学分为 $point$
+							</textarea></td>
+					<td><a href="#" class="huibtn_a">高级编辑</a>  </td>
+				</tr>
+				
+					<tr>
+					<td>证书尾：</td>
+					<td colspan="4"><textarea name="textarea"
+							style="width: 600px; height: 100px; max-width: 600px; border: 1px solid #ccc; border-color: #a7b5bc #ced9df #ced9df #a7b5bc;"></textarea></td>
+					<td><a href="#" class="huibtn_a">高级编辑</a>  </td>
+				</tr>
+				
+					<tr>
+					<td>电子印章：</td>
+					<td colspan="4">
+						距左： <input name="" type="text" class="scinput" style="width:65px;">px 距顶： <input name="" type="text" class="scinput" style="width:65px;">px  	 宽度： <input name="" type="text" class="scinput" style="width:65px;">px 高度： <input name="" type="text" class="scinput" style="width:65px;">px 
+					</td>
+					<td><input type="checkbox">是否显示</input>  </td>
+				</tr>
+				
+				
+					
+					<tr>
+					<td>选择电子印章</td>
+					<td colspan="4">                                         <div id="panelimage" style="border-color:buttonshadow;border-width:1px;border-style:Solid;width:640px;overflow:auto;">
+	
+                                                    <table id="rblImageList" border="0" style="width:90%;">
+		<tr>
+			<td><input id="rblImageList_0" type="radio" name="rblImageList" value="3" checked="checked" /><label for="rblImageList_0"><img src="http://static.fxl.teacheredu.cn/fxlv4/html/jingtai/Certificate/shanxi/Dzyz/3.jpg" width=100 height=100 /></label></td><td></td><td></td><td></td><td></td>
+		</tr>
+	</table>
+                                                    <span id="lblImage" style="color:Red;display:none"></span>
+                                                 
+</div>
+</td>
+					<td><a href="#" class="huibtn_a">上传电子印章</a>  </td>
+				</tr>
+				
+				
+				 
+			</table>
+
+			<table border="0" cellspacing="0" cellpadding="0"
+				style="margin: 0 auto;">
+				<tr>
+					<td><a href="#" class="dian3">保 存</a></td>
+					<td style="width: 30px;">&nbsp;</td>
+					<td><a href="#" class="dian3">取 消</a></td>
+				</tr>
+			</table>
+
+		</div>
+
+		<div class="chuang" id="chuang" style="display: none;">
+			<span style="text-align: right; padding: 10px 10px 0 0;"><a
+				href="#" title="关闭窗口" id="closed"><img src="images/guanbi.gif"
+					width="16" height="16" /></a></span>
+			<table border="0" cellspacing="0" cellpadding="0"
+				style="margin: 20px auto 0 auto; line-height: 42px;">
+				<tr>
+					<td width="40">&nbsp;</td>
+					<td width="138"><input type="checkbox" name="checkbox"
+						id="checkbox" /> 教师网</td>
+					<td width="138"><input type="checkbox" name="checkbox2"
+						id="checkbox2" /> 果实网</td>
+					<td width="138"><input type="checkbox" name="checkbox3"
+						id="checkbox3" /> 继教网</td>
+					<td width="40">&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td colspan="3"><table border="0" cellspacing="0"
+							cellpadding="0" style="margin: 0 auto;">
+							<tr>
+								<td width="111"><a href="javascript:;" class="dian1"
+									id="baocun">保 存</a></td>
+								<td width="40">&nbsp;</td>
+								<td width="111"><a href="javascript:;" class="dian2"
+									id="quxiao">取 消</a></td>
+							</tr>
+						</table></td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+
+		</div>
+		<div class="black" style="display: none;" id="black"></div>
+</body>
+<script>
+	window.onload = function() {
+		var chuang = document.getElementById('chuang')
+		var black = document.getElementById('black')
+		var btn = document.getElementById('xz')
+		var closed = document.getElementById('closed')
+		var txtBox = document.getElementById('txtBox')
+		var baocun = document.getElementById('baocun')
+		var quxiao = document.getElementById('quxiao')
+
+		btn.onclick = function() {
+			openDiv();
+		}
+		closed.onclick = baocun.onclick = quxiao.onclick = function() {
+			closedDiv();
+		}
+		function openDiv() {
+			chuang.style.display = 'block';
+			black.style.display = 'block';
+			txtBox.style.display = 'none';
+		}
+		function closedDiv() {
+			chuang.style.display = 'none';
+			black.style.display = 'none';
+			txtBox.style.display = 'block';
+		}
+	}
+</script>
+</html>

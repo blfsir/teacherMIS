@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">继教信息管理</a></li>
+    <li><a href="#">继教信息登记</a></li>
+    <li><a href="#">信息查看</a></li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+    
+
+      <div class="tabson">
+      <table border="0" cellspacing="0" cellpadding="0" style="line-height:42px; margin:0 0 20px 40px;">
+        <tr>
+          <td width="89">地区：</td>
+          <td width="200"><div class="vocation">
+            <select name="select2" class="select2">
+              <option>湖南</option>
+              <option>湖北</option>
+              <option>河南</option>
+              <option>河北</option>
+              <option>江西</option>
+              <option>安徽</option>
+              <option>甘肃</option>
+              <option>宁夏</option>
+              <option>其他</option>
+            </select>
+          </div></td>
+          <td width="20">&nbsp;</td>
+          <td width="80">信息板块：</td>
+          <td width="300"><div class="vocation">
+            <select name="select3" class="select2">
+            </select>
+          </div></td>
+        </tr>
+        <tr>
+          <td>年度：</td>
+          <td><div class="vocation">
+            <select name="select2" class="select2">
+            </select>
+          </div></td>
+          <td>&nbsp;</td>
+          <td>选择：</td>
+          <td><input type="radio" name="radio" id="radio3" value="radio" />
+必修
+  <input type="radio" name="radio" id="radio4" value="radio" />
+选修</td>
+        </tr>
+        <tr>
+          <td><label>最低合格分数：</label></td>
+          <td>
+          <input name="input2" type="text" class="scinput"/></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><a href="#" class="dian3">查 询</a></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+      <table class="tablelist">
+        <thead>
+            <tr>
+              <th width="10%">项目编号</th>
+              <th width="10%">项目名称</th>
+              <th width="10%">开始时间</th>
+              <th width="10%">结束时间</th>
+              <th width="10%">学时</th>
+              <th width="10%">年度</th>
+              <th width="10%">学科</th>
+              <th width="10%">成绩</th>
+              <th width="10%">证书编号</th>
+              <th width="10%">状态</th>
+            </tr>
+        </thead>
+          <tbody>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+    <td colspan="10" height="40" style="padding-left:20px; text-align:left;"><a href="#" class="tablelink">打印项目证书</a></td>
+    </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pagin">
+    	<div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+        <ul class="paginList">
+        <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+        <li class="paginItem"><a href="javascript:;">1</a></li>
+        <li class="paginItem current"><a href="javascript:;">2</a></li>
+        <li class="paginItem"><a href="javascript:;">3</a></li>
+        <li class="paginItem"><a href="javascript:;">4</a></li>
+        <li class="paginItem"><a href="javascript:;">5</a></li>
+        <li class="paginItem more"><a href="javascript:;">...</a></li>
+        <li class="paginItem"><a href="javascript:;">10</a></li>
+        <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+        </ul>
+    </div>
+    </div> 
+ 
+ 
+
+
+</body>
+
+</html>

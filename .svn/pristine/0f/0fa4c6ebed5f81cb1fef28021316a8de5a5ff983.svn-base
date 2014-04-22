@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+<script language="javascript" type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="jixuMegGLY_2.2.html">继教信息</a></li>
+    <li><a href="jixuMegGLY_2.3.html">年度考核设置</a></li>
+    <li>添加</li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+    <div class="formtitle"><span>添加</span></div>
+    
+    	<ul class="forminfo">
+    <li><label>地区：</label>  
+    <div class="cityleft">
+    <select class="select3">
+    <option>北京</option>
+    <option>天津</option>
+    </select>
+    </div>
+    
+    <div class="cityleft">
+    <select class="select3">
+    <option>北京</option>
+    <option>天津</option>
+    </select>
+    </div>
+    
+    <div class="cityleft">
+    <select class="select3">
+    <option>北京</option>
+    <option>天津</option>
+    </select>
+    </div>
+    </li>
+    <li><label>培训年度：</label>
+            <input type="text" class="Wdate scinput" style="height:32px;line-height:32px;border-color:#a7b5bc #ced9df #ced9df #a7b5bc;" onclick="WdatePicker()" /> -- <input type="text" class="Wdate scinput" style="height:32px; line-height:32px;border-color:#a7b5bc #ced9df #ced9df #a7b5bc;" onclick="WdatePicker()" /></li>
+    <li><label>国培</label><input name="" type="text" class="dfinput" value=" " /><i>有说明就显示</i></li>
+    <li><label>省培</label><input name="" type="text" class="dfinput" value=" " /></li>
+    <li><label>市培</label><input name="" type="text" class="dfinput" value=" " /></li>
+    <li><label>校本</label><input name="" type="text" class="dfinput" value=" " /></li>
+    <li><label>&nbsp;</label><input name="" type="button" class="btn" value="保存"/>&nbsp;&nbsp;&nbsp;&nbsp;<input name="" type="button" class="btn" value="取消"/></li>
+    </ul>
+    
+       
+    
+</div>
+
+
+</body>
+
+</html>

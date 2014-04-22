@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="teacherGLY_1.1.html">教师信息</a></li>
+    <li>修改教师信息</li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+      <div class="tabson">
+    
+    <div class="kuang">带<b>*</b>号的为必填选项，其他为选填项。</div>
+  <div class="contentBox" id="ziliao">
+    <span class="toolZL"><a href="javascript:;" class="zhong">核心资料</a></span>
+    <table border="0" cellspacing="0" cellpadding="0" style="display:block;" class="tab1">
+      <tr>
+        <td width="88"><b style="color:red; margin-right:5px;">*</b>姓名：</td>
+        <td width="169"><input name="input26" type="text" class="scinput" value="张高强"/></td>
+        <td width="46">&nbsp;</td>
+        <td width="91"><b style="color:red; margin-right:5px;">*</b>性别：</td>
+        <td width="206"><input type="radio" name="radio" value="radio" />
+          男
+          <input type="radio" name="radio" value="radio" />
+          女</td>
+      </tr>
+      <tr>
+        <td><b style="color:red; margin-right:5px;">*</b>用户状态：</td>
+        <td><select name="select5" class="select2">
+        </select></td>
+        <td>&nbsp;</td>
+        <td><b style="color:red; margin-right:5px;">*</b>身份证号：</td>
+        <td><input name="input12" type="text" class="scinput" value="132344555666"/></td>
+        </tr>
+      <tr>
+        <td><b style="color:red; margin-right:5px;">*</b>教师编号：</td>
+        <td><input name="input12" type="text" class="scinput" value="45567888"/></td>
+        <td>&nbsp;</td>
+        <td><b style="color:red; margin-right:5px;">*</b>头像：</td>
+        <td><input type="file" name="fileField3" id="fileField3" /></td>
+        </tr>
+    </table>
+    <span class="toolZL"><a href="javascript:;">基本资料</a></span>
+      <table border="0" cellspacing="0" cellpadding="0" class="tab2">
+        <tr>
+          <td width="70">曾用名：</td>
+          <td width="170"><input name="input5" type="text" class="scinput"/></td>
+          <td width="40">&nbsp;</td>
+          <td width="70">姓名全拼：</td>
+          <td width="170"><input name="input27" type="text" class="scinput"/></td>
+        </tr>
+        <tr>
+          <td>出生日期：</td>
+          <td><input name="input29" type="text" class="scinput"/></td>
+          <td>&nbsp;</td>
+          <td>政治面貌：</td>
+          <td><input name="input" type="text" class="scinput"/></td>
+        </tr>
+        <tr>
+          <td>籍贯：</td>
+          <td><input name="input2" type="text" class="scinput"/></td>
+          <td>&nbsp;</td>
+          <td>民族：</td>
+          <td><select name="select2" class="select2">
+          </select></td>
+        </tr>
+        <tr>
+          <td>手机号码：</td>
+          <td><select name="select23" class="select2">
+          </select></td>
+          <td>&nbsp;</td>
+          <td>联系电话：</td>
+          <td><input name="input3" type="text" class="scinput"/></td>
+        </tr>
+        <tr>
+          <td>QQ：</td>
+          <td><input name="input3" type="text" class="scinput"/></td>
+          <td>&nbsp;</td>
+          <td>MSN：</td>
+          <td><input name="input3" type="text" class="scinput"/></td>
+        </tr>
+        <tr>
+          <td>Email：</td>
+          <td><input name="input7" type="text" class="scinput"/></td>
+          <td>&nbsp;</td>
+          <td>家庭住址：</td>
+          <td><input name="input7" type="text" class="scinput"/></td>
+        </tr>
+        <tr>
+          <td>健康状况：</td>
+          <td><input name="input3" type="text" class="scinput"/></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+      <span class="toolZL"><a href="javascript:;">教育经历</a></span>
+      <table border="0" cellpadding="0" cellspacing="0" class="tab3">
+        <tr>
+          <td>第一学历：</td>
+          <td><select name="select17" class="select2">
+          </select></td>
+          <td width="40">&nbsp;</td>
+          <td>毕业院校：</td>
+          <td><input name="input8" type="text" class="scinput"/></td>
+        </tr>
+        <tr>
+          <td>专业：</td>
+          <td><input name="input9" type="text" class="scinput"/></td>
+          <td>&nbsp;</td>
+          <td>毕业时间：</td>
+          <td><select name="select24" class="select2">
+          </select></td>
+        </tr>
+        <tr>
+          <td>最高学历：</td>
+          <td><select name="select25" class="select2">
+          </select></td>
+          <td>&nbsp;</td>
+          <td>毕业最高院校：</td>
+          <td><input name="input10" type="text" class="scinput"/></td>
+        </tr>
+        <tr>
+          <td>在职修读学历：</td>
+          <td><select name="select3" class="select2">
+          </select></td>
+          <td>&nbsp;</td>
+          <td>在职修读学位：</td>
+          <td><select name="select8" class="select2">
+          </select></td>
+        </tr>
+        <tr>
+          <td>已获最高学位：</td>
+          <td><select name="select7" class="select2">
+          </select></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          
+        </tr>
+        
+      </table>
+      <span class="toolZL"><a href="javascript:;">工作信息</a></span>
+      <table border="0" cellspacing="0" cellpadding="0" class="tab4">
+        <tr>
+          <td>教师资格种类：</td>
+          <td><input name="input11" type="text" class="scinput"/></td>
+          <td width="30">&nbsp;</td>
+          <td>参加工作时间：</td>
+          <td><input name="input27" type="text" class="scinput"/></td>
+        </tr>
+        <tr>
+          <td>（评）教师职称：</td>
+          <td><select name="select3" class="select2">
+          </select></td>
+          <td>&nbsp;</td>
+          <td>（评）职称时间：</td>
+          <td><input name="input4" type="text" class="scinput"/></td>
+        </tr>
+        <tr>
+          <td>（聘）教师职称：</td>
+          <td><select name="select4" class="select2">
+          </select></td>
+          <td>&nbsp;</td>
+          <td>（聘）教师职称：</td>
+          <td><input name="input4" type="text" class="scinput"/></td>
+        </tr>
+        <tr>
+          <td>学校行政职务：</td>
+          <td><select name="select6" class="select2">
+          </select></td>
+          <td>&nbsp;</td>
+          <td>当前任教学段：</td>
+          <td><input name="input4" type="text" class="scinput"/></td>
+        </tr>
+        <tr>
+          <td>当前任教学科：</td>
+          <td><input name="input4" type="text" class="scinput"/></td>
+          <td>&nbsp;</td>
+          <td>学科带头人：</td>
+          <td><input name="input4" type="text" class="scinput"/></td>
+        </tr>
+        <tr>
+          <td>骨干教师：</td>
+          <td><select name="select18" class="select2">
+          </select></td>
+          <td>&nbsp;</td>
+          <td>是否为班主任：</td>
+          <td><select name="select12" class="select2">
+          </select></td>
+        </tr>
+        <tr>
+          <td>是否为特级教师：</td>
+          <td><select name="select11" class="select2">
+          </select></td>
+          <td>&nbsp;</td>
+          <td>国培计划农村骨干教师：</td>
+          <td><select name="select9" class="select2">
+          </select></td>
+        </tr>
+        <tr>
+          <td>民办学校专职教师：</td>
+          <td><input name="input6" type="text" class="scinput"/></td>
+          <td>&nbsp;</td>
+          <td>特岗教师：</td>
+          <td><input name="input6" type="text" class="scinput"/></td>
+        </tr>
+        
+      </table>
+    </div>
+    <table border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+    <tr>
+          <td align="center"><input type="button" class="btn" value="保 存"/></td>
+          <td width="30">&nbsp;</td>
+          <td align="center"><input type="button" class="btn" value="提交审核"/></td>
+          <td width="30">&nbsp;</td>
+          <td  align="center"><input type="button" class="btn" value="取 消"/></td>
+      </tr>
+    </table>
+  </div>
+    </div> 
+ 
+ 
+
+
+</body>
+
+</html>

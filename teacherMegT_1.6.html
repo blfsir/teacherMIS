@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="teacherGLY_1.1.html">教师信息</a></li>
+    <li>信息变更审核</li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+ <div class="tabson">
+<ul class="seachform" style="padding-left:23px;">
+  
+  <li>
+    <label>操作时间：</label>
+    <div class="vocation">
+      <select name="select" class="select3">
+        <option>日期选择</option>
+      </select>
+    </div>
+  </li>
+    <li>
+      <label>变更类型：</label>  
+    <div class="vocation">
+    <select class="select3"><option>信息变更</option>
+		<option>调动</option>
+		<option>离退休</option></select>
+    </div>
+    </li>
+    
+    <li>
+      <label>审核状态：</label>  
+    <div class="vocation">
+    <select class="select3">
+		<option>未审核</option><option>审核通过</option>
+		<option>审核不通过</option></select>
+    </div>
+    </li>
+    <li><label>&nbsp;</label><input type="button" class="scbtn" value="查 询"/></li>
+     </ul>
+   </div>   
+      <div class="chauxnJS jsTool" style="display:none;">
+    <span style="float:left;">
+    <div class="vocation" style="margin:4px 6px 0 6px;">
+    <select class="select3">
+    <option>批量选择</option>
+    <option>审核通过</option>
+    <option>审核不通过</option>
+    <option>删除变更</option></select>
+    </div><a href="#" class="huibtn_a">确认</a></span>
+    <span style="float:right;">
+    <div class="pagin" style="margin:0; width:180px;">
+    <div class="message">共<i class="blue">1256</i>条记录</div>
+    <div class="vocation paginList" style=" margin:4px 6px 0 6px;right:0px;">
+    <select class="select3">
+    <option>当前查看10条</option>
+    <option>当前查看30条</option>
+    <option>当前查看50条</option></select>
+    </div>
+    
+    </div>
+    </span>
+    </div>
+      <table class="tablelist">
+    <thead>
+    <tr>
+    <th>操作人</th>
+    <th>操作时间</th>
+    <th>变更类型</th>
+    <th>审核状态<i class="sort"><img src="images/px.gif" /></i></th>
+    <th>最后审核时间</th>
+    <th>操作</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    
+    <tr>
+    <td>王皓然</td>
+    <td>2014-01-01</td>
+    <td>信息变更</td>
+    <td><i>未审核</i></td>
+    <td>--</td>
+    <td><a href="teacherMegT_1.6.1.html">查看详情</a></td>
+    </tr>
+
+    <tr>
+    <td>王皓然</td>
+    <td>2014-01-01</td>
+    <td>信息变更</td>
+    <td>审核不通过</td>
+    <td>2014-01-01</td>
+    <td><a href="teacherMegT_1.6.1.html">查看详情</a></td>
+    </tr>
+
+    <tr>
+    <td>王皓然</td>
+    <td>2014-01-01</td>
+    <td>信息变更</td>
+    <td>审核通过</td>
+    <td>2014-01-01</td>
+    <td><a href="teacherMegT_1.6.1.html">查看详情</a></td>
+    </tr>
+    
+    <tr>
+    <td>校管理员A</td>
+    <td>2014-01-01</td>
+    <td>调动</td>
+    <td>自动审核通过</td>
+    <td>2014-01-01</td>
+    <td><a href="teacherMegT_1.6.1.html">查看详情</a></td>
+    </tr>
+    
+    <tr>
+    <td>校管理员B</td>
+    <td>2014-01-01</td>
+    <td>离退休</td>
+    <td>自动审核通过</td>
+    <td>2014-01-01</td>
+    <td>--</td>
+    </tr>
+    
+    
+    
+    </tbody>
+    
+    </table>
+    
+    <div class="pagin" style="display:none;">
+<div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+        <ul class="paginList">
+        <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+        <li class="paginItem"><a href="javascript:;">1</a></li>
+        <li class="paginItem current"><a href="javascript:;">2</a></li>
+        <li class="paginItem"><a href="javascript:;">3</a></li>
+        <li class="paginItem"><a href="javascript:;">4</a></li>
+        <li class="paginItem"><a href="javascript:;">5</a></li>
+        <li class="paginItem more"><a href="javascript:;">...</a></li>
+        <li class="paginItem"><a href="javascript:;">10</a></li>
+        <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+        </ul>
+    </div>
+    </div> 
+ 
+	 
+
+
+</body>
+
+</html>

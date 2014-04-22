@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="teacherGLY_1.1.html">离退休管理</a></li>
+    <li>导入</li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+      <div class="Uploadxu"><span class="txtcolor">1.准备数据</span><span class="loadok">&nbsp;</span><span class="txtcolor">2.上传数据</span><span class="loadok">&nbsp;</span><span class="txtcolor">3.校验数据</span><span class="loadok">&nbsp;</span><span class="txtcolor">4.数据确认</span><span class="loadx">&nbsp;</span><span>5.提交数据</span></div>
+    
+    
+    <div class="Uploadiv">
+    
+    <ul class="Uploadinfo">
+    <li><img src="images/tishi.png" />&nbsp;如下是经校验符合要求的数据，请详细检查，确认！</li>
+    <li style="padding-bottom:0;">
+    <div class="filediv">
+    
+    
+    <table class="tablelist">
+    	<thead>
+    	<tr>
+        <th>教师姓名</th>
+        <th>身份证号</th>
+        <th>性别</th>
+        <th>所在地区</th>
+        <th>离退休类型</th>
+        <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        
+        <tr>
+        <td>贾迪</td>
+        <td>32013090720130907x</td>
+        <td>男</td>
+        <td>广州市天河区师范附属中学</td>
+        <td>退休</td>
+        <td><a href="#">删除</a></td>
+        </tr>
+        
+        <tr>
+        <td>贾迪</td>
+        <td>20130907</td>
+        <td>男</td>
+        <td>&nbsp;</td>
+        <td>退休</td>
+        <td><a href="#">删除</a></td>
+        </tr>
+    
+        </tbody>
+    </table>
+    
+    
+    
+    </div>
+    
+    </li>
+    <li style="padding-bottom:15px;">
+    <div class="pagin">
+    	<div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+        <ul class="paginList">
+        <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+        <li class="paginItem"><a href="javascript:;">1</a></li>
+        <li class="paginItem current"><a href="javascript:;">2</a></li>
+        <li class="paginItem"><a href="javascript:;">3</a></li>
+        <li class="paginItem"><a href="javascript:;">4</a></li>
+        <li class="paginItem"><a href="javascript:;">5</a></li>
+        <li class="paginItem more"><a href="javascript:;">...</a></li>
+        <li class="paginItem"><a href="javascript:;">10</a></li>
+        <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+        </ul>
+    </div>
+    </li>
+    <li style="text-align:center;"><label>&nbsp;</label><input id="ff" type="file" value="ff" style="display:none"/>
+	<input name="" type="button" class="btn" value="下载已删除" onclick="$('#ff').click();"/>&nbsp;&nbsp;&nbsp;&nbsp;<input name="" type="button" class="btn" value="确认并提交"  onclick="window.open('teacherGLY_1.4.6-4.html','rightFrame');"/></li>
+    
+    </ul>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+<script language="javascript" type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+<script  type="text/javascript" src="js/page.commons.js"></script>
+ 
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".click").click(function(){
+  $(".tip").fadeIn(200);
+  });
+  
+  $(".tiptop a").click(function(){
+  $(".tip").fadeOut(200);
+});
+
+  $(".sure").click(function(){
+  $(".tip").fadeOut(100);
+});
+
+  $(".cancel").click(function(){
+  $(".tip").fadeOut(100);
+});
+
+  $(".click2").click(function(){
+  $(".tip2").fadeIn(200);
+  });
+  
+  $(".tip2top a").click(function(){
+  $(".tip2").fadeOut(200);
+});
+
+  $(".sure2").click(function(){
+  $(".tip2").fadeOut(100);
+});
+
+  $(".cancel2").click(function(){
+  $(".tip2").fadeOut(100);
+});
+
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="jixuMegGLY_2.2.html">继教信息</a></li>
+    <li>继教信息管理</li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+<div class="tabson">   
+
+
+<ul class="seachform" >
+
+	<li><label>项目名称：</label>
+        <div class="vocation">
+        <input name="input" type="text" value=" " class="scinput" />
+        </div>
+      </li>
+
+	
+    <!--  
+    <li>
+            <label>培训年度：</label>
+            <input type="text" class="Wdate scinput" style="height:32px;line-height:32px;border-color:#a7b5bc #ced9df #ced9df #a7b5bc;" onclick="WdatePicker()" /> -- <input type="text" class="Wdate scinput" style="height:32px; line-height:32px;border-color:#a7b5bc #ced9df #ced9df #a7b5bc;" onclick="WdatePicker()" />
+          </li>-->
+      <li>
+            <label>培训年度：</label>
+             <div class="vocation"><select  class="select3 yearpicker" name="yearpicker" id="yearpicker"></select> -- 
+			 </div>
+          </li>
+		  <li>--</li>
+		   <li>
+            <div class="vocation">   <select  class="select3 yearpicker" name="yearpicker" id="yearpicker"></select>  
+			 </div> 
+          </li>
+    
+    <li><label>审核状态：</label>  
+    <div class="vocation">
+    <select class="select3">
+    <option>未审核</option>
+    <option>审核通过</option>
+    <option>审核不通过</option>
+    </select>
+    </div>
+    </li>
+    
+    
+          
+   
+    </ul>
+    <ul class="seachform">
+          <li>
+            <label>身份证号：</label>
+            <div class="vocation">
+              <input name="input" type="text" value=" " class="scinput" />
+            </div>
+          </li>
+          
+          <li>
+            <label>教师姓名：</label>
+            <div class="vocation">
+              <input name="input" type="text" value=" " class="scinput" />
+            </div>
+          </li>
+    
+    <li><label>参培所在地区：</label>  
+    <div class="vocation">
+    <select class="select3">
+    <option>北京</option>
+    <option>天津</option>
+    </select>
+    </div>
+    </li>
+    
+    <li>  
+    <div class="vocation">
+    <select class="select3">
+    <option>海淀</option>
+    <option>朝阳</option>
+    </select>
+    </div>
+    </li>
+    
+    <li>  
+    <div class="vocation">
+    <select class="select3">
+    <option>知春路</option>
+    <option>中关村</option>
+    </select>
+    </div>
+    </li>
+    
+    </ul>
+    <ul class="seachform">
+    <li><label style="width:45px;">&nbsp;</label></li>
+    <li><input type="button" class="scbtn" value="查 询"/></li>
+    </ul> 
+   </div>
+   
+   
+   
+      <div class="chauxnJS jsTool">
+    <span style="float:left;">
+    <div class="vocation" style="margin:4px 6px 0 6px;">
+    <select class="select3">
+    <option>批量选择</option>
+    <option>批量审核</option>
+    <option>批量删除</option></select>
+    </div><a href="#" class="huibtn_a click">确认</a></span>
+    <span style="float:right;">
+    <div class="pagin" style="margin:0; width:180px;">
+    <div class="message">共<i class="blue">1256</i>条记录</div>
+    <div class="vocation paginList" style=" margin:4px 6px 0 6px;right:0px;">
+    <select class="select3">
+    <option>当前查看10条</option>
+    <option>当前查看30条</option>
+    <option>当前查看50条</option></select>
+    </div>
+    
+    </div>
+    </span>
+    </div>
+      <table class="tablelist">
+    <thead>
+    <tr>
+    <th><input name="" type="checkbox" value=""/></th>
+    <th>年度</th>
+    <th>项目名称</th>
+    <th>身份证号</th>
+    <th>教师姓名</th>
+    <th>所在地区</th>
+    <th>是否合格</th>
+    <th>学时/学分</th>
+    <th>审核状态<i class="sort"><img src="images/px.gif" /></i></th>
+    <th>操作</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    
+    <tr>
+    <td><input name="" type="checkbox" value=""/></td>
+    <td>2013</td>
+    <td>名称名称</td>
+    <td>372823201309074222</td>
+    <td>王皓然</td>
+    <td>广州市天河区第一师范学校</td>
+    <td>合格</td>
+    <td>40学时/10学分</td>
+    <td>未审核</td>
+    <td><a href="#" class="tablelink click2">删除</a>&nbsp;&nbsp;<a href="#" class="tablelink click">审核</a></td>
+      </tr>
+    
+    <tr>
+	<td><input name="" type="checkbox" value=""/></td>
+    <td>2013</td>
+    <td>名称名称</td>
+    <td>372823201309074222</td>
+    <td>王皓然</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>审核通过</td>
+    <td><a href="#" class="tablelink ">删除</a>&nbsp;&nbsp;<a href="#" class="tablelink click">审核</a></td>
+      </tr>
+    
+    <tr>
+	<td><input name="" type="checkbox" value=""/></td>
+    <td>2013</td>
+    <td>名称名称</td>
+    <td>372823201309074222</td>
+    <td>王皓然</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><i>审核不通过</i></td>
+    <td><a href="#" class="tablelink ">删除</a>&nbsp;&nbsp;<a href="#" class="tablelink click">审核</a></td>
+      </tr>
+    
+    <tr>
+	<td><input name="" type="checkbox" value=""/></td>
+    <td>2013</td>
+    <td>名称名称</td>
+    <td>372823201309074222</td>
+    <td>王皓然</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><i>审核不通过</i></td>
+    <td><a href="#" class="tablelink ">删除</a>&nbsp;&nbsp;<a href="#" class="tablelink click">审核</a></td>
+      </tr>
+    
+    <tr>
+	<td><input name="" type="checkbox" value=""/></td>
+    <td>2013</td>
+    <td>名称名称</td>
+    <td>372823201309074222</td>
+    <td>王皓然</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>审核通过</td>
+    <td><a href="#" class="tablelink ">删除</a>&nbsp;&nbsp;<a href="#" class="tablelink click">审核</a></td>
+      </tr>
+    
+    </tbody>
+    
+    </table>
+    
+    <div class="pagin">
+  <div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+        <ul class="paginList">
+        <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+        <li class="paginItem"><a href="javascript:;">1</a></li>
+        <li class="paginItem current"><a href="javascript:;">2</a></li>
+        <li class="paginItem"><a href="javascript:;">3</a></li>
+        <li class="paginItem"><a href="javascript:;">4</a></li>
+        <li class="paginItem"><a href="javascript:;">5</a></li>
+        <li class="paginItem more"><a href="javascript:;">...</a></li>
+        <li class="paginItem"><a href="javascript:;">10</a></li>
+        <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+        </ul>
+    </div>
+    
+    
+    <div class="tip">
+    	<div class="tiptop"><span>继教信息审核</span><a></a></div>
+        
+      <div class="tipinfo">
+        <ul class="forminfo">
+    <li><label>是否通过</label><cite><input name="" type="radio" value="" checked="checked" />通过&nbsp;&nbsp;&nbsp;&nbsp;<input name="" type="radio" value="" />不通过</cite></li>
+   <li><label>审核意见</label><textarea name="" cols="" rows="" class="textinput" style=" width:230px; height:130px;"></textarea></li>
+    </ul>
+      </div>
+      <div class="tipbtn" style="padding-left:50px;">
+			<input name="" type="button"  class="sure" value="提交" />&nbsp;
+			<input name="" type="button"  class="cancel" value="取消" />
+      </div>
+    </div><br>
+    
+    <div class="tip2">
+    	<div class="tip2top"><span>继教信息删除</span><a></a></div>
+        
+      <div class="tip2info">
+        <ul class="forminfo">
+   <li><label>删除原因：</label><textarea name="" cols="" rows="" class="textinput" style=" width:230px; height:100px;"></textarea></li>
+    <li><label>提示：</label><cite>删除后，该教师在该项目中的继教信息将会丢失，除非在项目管理中再为该教师添加一份成绩。</cite></li>
+    </ul>
+      </div>
+      <div class="tip2btn" style="padding-left:50px;">
+			<input name="" type="button"  class="sure2" value="删除" />&nbsp;
+			<input name="" type="button"  class="cancel2" value="不删除" />
+      </div>
+    </div><br>
+    <div class="kuang" style="width:auto;">
+		<b>[地区]查询条件：</b>用于查询各教师在每个地区（学校）时参与培训获得的成绩；所以这里包括了该地区（学校）已调出教师在调出前的继教信息；<br><br></div>
+</div> 
+ 
+    
+ 
+
+
+</body>
+
+</html>

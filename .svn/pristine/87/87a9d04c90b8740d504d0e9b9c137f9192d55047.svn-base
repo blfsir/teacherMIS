@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="teacherGLY_1.1.html">教师信息</a></li>
+    <li>调动管理</li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+    <div id="usual1" class="usual"> 
+    
+    <div class="itab">
+  	<ul> 
+    <li><a href="#tab1" class="selected">调动管理</a></li> 
+    <li><a href="#tab2">发起调动</a></li> 
+  	</ul>
+    </div> 
+	
+    <div id="tab1" class="tabson">  
+      
+      <div class="tabson">
+    
+    
+    <ul class="seachform">
+    
+    <li><label>教师姓名：</label><input name="" type="text" class="scinput" /></li>
+    <li><label>身份证号：</label><input name="" type="text" class="scinput" /></li>
+    <li><label>原地区：</label>  
+    <div class="vocation">
+    <select class="select3">
+    <option>北京</option>
+    <option>天津</option>
+    </select>
+    </div>
+    </li>
+    
+    <li>  
+    <div class="vocation">
+    <select class="select3">
+    <option>海淀</option>
+    <option>朝阳</option>
+    </select>
+    </div>
+    </li>
+    
+    <li>  
+    <div class="vocation">
+    <select class="select3">
+    <option>知春路</option>
+    <option>中关村</option>
+    </select>
+    </div>
+    </li>
+    
+    <li><label>&nbsp;</label><input name="" type="button" class="scbtn" value="查 询"/></li>
+    
+    </ul>
+    
+    </div>
+    
+    <div class="chauxnJS jsTool">
+    
+    <span style="float:right;">
+    <div class="pagin" style="margin:0; width:180px;">
+    <div class="message">共<i class="blue">1256</i>条记录</div>
+    <div class="vocation paginList" style=" margin:4px 6px 0 6px;right:0px;">
+    <select class="select3">
+    <option>当前查看10条</option>
+    <option>当前查看30条</option>
+    <option>当前查看50条</option></select>
+    </div>
+    
+    </div>
+    </span>
+    </div>
+    
+    
+    <table class="tablelist">
+    	<thead>
+    	<tr>
+        <th width="4%">教师姓名</th>
+        <th width="6%">身份证号</th>
+        <th width="3%" >性别</th>
+        <th width="12%">原地区</th>
+        <th width="12%">目标地区</th>
+        <th width="4%">操作人</th>
+        <th width="6%">操作时间</th>
+        <th width="6%">调动详情</th>
+        </tr>
+        </thead>
+        <tbody>
+        
+        <tr>
+        <td>贾迪</td>
+        <td>371523190001011001</td>
+        <td>男</td>
+        <td>广州市天河区师范附属中学</td>
+        <td>广州市天河区市属第一中学</td>
+        <td>XX管理员</td>
+        <td>2014-01-01</td>
+        <td>&nbsp;<a href="teacherGLY_1.3.3.html">详情</a></td>
+        </tr>
+        
+        <tr>
+        <td>贾迪</td>
+        <td>371523190001011003</td>
+        <td>男</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>XX管理员</td>
+        <td>2014-01-01</td>
+        <td>&nbsp;</td>
+        </tr>
+    
+        </tbody>
+    </table>
+    <div class="pagin">
+<div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+        <ul class="paginList">
+        <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+        <li class="paginItem"><a href="javascript:;">1</a></li>
+        <li class="paginItem current"><a href="javascript:;">2</a></li>
+        <li class="paginItem"><a href="javascript:;">3</a></li>
+        <li class="paginItem"><a href="javascript:;">4</a></li>
+        <li class="paginItem"><a href="javascript:;">5</a></li>
+        <li class="paginItem more"><a href="javascript:;">...</a></li>
+        <li class="paginItem"><a href="javascript:;">10</a></li>
+        <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+        </ul>
+    </div><br>
+    
+    
+    <div class="kuang" style="width:auto;">
+		<b>[校管理员]：</b>不能发起调动（即不能在校内调动）；能查询我校调出的所有教师信息；若教师在本校内工作信息有变动，走信息变更途径。<br>
+		<b>[省市县管理员]：</b>能对我省/市/县范围内教师，在本范围内发起调动；能查询我省/市/县内调动（含调出）的所有教师信息；<br></div>
+    
+    </div>
+    
+    <div id="tab2" class="tabson">  
+    
+    
+  <!--  teacherGLY——1.3.2内容部分-->
+
+
+   <div class="formtitle"><span>查询要调动的教师</span></div>
+  <div class="tabson">
+    
+    
+    <ul class="seachform">
+    
+    <li><label>教师姓名：</label><input name="" type="text" class="scinput" /></li>
+    <li><label>身份证号：</label><input name="" type="text" class="scinput" /></li>
+        
+    <li><label>&nbsp;</label><input type="button" class="scbtn" value="查 询" onclick="$('.teacherdlxinxi').fadeIn(200);"/></li>
+    </ul>
+    
+    </div>
+  
+   <div class="formtitle"><span>查询结果</span></div>
+    
+   <dl class="teacherdlxinxi" style="display:none;" onmouseover="$('.tohaid1').fadeIn(200);" onmouseout="$('.tohaid1').fadeOut(2);">
+    <dt style="height:170px;"><img src="images/u8_normal.jpg"  title="头像" /></dt>
+    <dd><span class="titlewidth">姓名：</span><span>张天</span></dd>
+    <dd><span class="titlewidth">身份证号：</span><span>371223455556666</span></dd>
+    <dd><span class="titlewidth">原地区：</span><span>广州市天河区师范附属中学</span></dd>
+    <dd><span class="titlewidth">教师资格证书号：</span><span>1223455556666</span></dd>
+    <dd><span class="titlewidth">(评)教师职称：</span><span>一级教师</span></dd>
+    <dd><span class="titlewidth">(聘)教师职称：</span><span>二级教师</span></dd>
+    <dd><span class="titlewidth">学校行政职务：</span><span>普通教师</span></dd>
+    <dd><span class="titlewidth">当前任教学段：</span><span>初中</span></dd>
+    <dd><span class="titlewidth">当前任教学科：</span><span>语文</span></dd>
+    <dd><span class="titlewidth">是否为骨干教师：</span><span>是</span></dd>
+    <dd><span class="titlewidth">是否为班主任：</span><span>否</span></dd>
+    <dd><span class="titlewidth">国培计划农村骨干教师：</span><span>是</span></dd>
+    <dd class="tohaid1" style="display:none;"><span></span></dd>
+    <dd class="tohaid1" style="display:none;"><span></span><span><input name="" type="button" class="btn click" value="调动"/></span></dd>
+    </dl>
+	
+   <dl class="teacherdlxinxi" style="background-color:#fff;display:none;" onmouseover="$('.tohaid2').fadeIn(200);" onmouseout="$('.tohaid2').fadeOut(2);">
+    <dt style="height:170px;"><img src="images/u8_normal.jpg"  title="头像" /></dt>
+    <dd><span class="titlewidth">姓名：</span><span>张天</span></dd>
+    <dd><span class="titlewidth">身份证号：</span><span>371223455556666</span></dd>
+    <dd><span class="titlewidth">原地区：</span><span>广州市天河区师范附属中学</span></dd>
+    <dd><span class="titlewidth">教师资格证书号：</span><span>1223455556666</span></dd>
+    <dd><span class="titlewidth">(评)教师职称：</span><span>一级教师</span></dd>
+    <dd><span class="titlewidth">(聘)教师职称：</span><span>二级教师</span></dd>
+    <dd><span class="titlewidth">学校行政职务：</span><span>普通教师</span></dd>
+    <dd><span class="titlewidth">当前任教学段：</span><span>初中</span></dd>
+    <dd><span class="titlewidth">当前任教学科：</span><span>语文</span></dd>
+    <dd><span class="titlewidth">是否为骨干教师：</span><span>是</span></dd>
+    <dd><span class="titlewidth">是否为班主任：</span><span>否</span></dd>
+    <dd><span class="titlewidth">国培计划农村骨干教师：</span><span>是</span></dd>
+    <dd class="tohaid2" style="display:none;"><span></span></dd>
+    <dd class="tohaid2" style="display:none;"><span></span><span><input name="" type="button" class="btn click" value="调动"/></span></dd>
+    </dl>
+	
+   <dl class="teacherdlxinxi" style="display:none;" onmouseover="$('.tohaid3').fadeIn(200);" onmouseout="$('.tohaid3').fadeOut(2);">
+    <dt style="height:170px;"><img src="images/u8_normal.jpg"  title="头像" /></dt>
+    <dd><span class="titlewidth">姓名：</span><span>张天</span></dd>
+    <dd><span class="titlewidth">身份证号：</span><span>371223455556666</span></dd>
+    <dd><span class="titlewidth">原地区：</span><span>广州市天河区师范附属中学</span></dd>
+    <dd><span class="titlewidth">教师资格证书号：</span><span>1223455556666</span></dd>
+    <dd><span class="titlewidth">(评)教师职称：</span><span>一级教师</span></dd>
+    <dd><span class="titlewidth">(聘)教师职称：</span><span>二级教师</span></dd>
+    <dd><span class="titlewidth">学校行政职务：</span><span>普通教师</span></dd>
+    <dd><span class="titlewidth">当前任教学段：</span><span>初中</span></dd>
+    <dd><span class="titlewidth">当前任教学科：</span><span>语文</span></dd>
+    <dd><span class="titlewidth">是否为骨干教师：</span><span>是</span></dd>
+    <dd><span class="titlewidth">是否为班主任：</span><span>否</span></dd>
+    <dd><span class="titlewidth">国培计划农村骨干教师：</span><span>是</span></dd>
+    <dd class="tohaid3" style="display:none;"><span></span></dd>
+    <dd class="tohaid3" style="display:none;"><span></span><span><input name="" type="button" class="btn click" value="调动"/></span></dd>
+    </dl>
+    
+    
+    
+    <div class="tip" style="height:500px;">
+    	<div class="tiptop"><span>发起调动</span><span>&nbsp;&nbsp;带“<b style="color:#F00;"">*</b>”为必填项</span><a></a></div>
+        
+      <div class="tipinfo" style="width:470px; height:360px;padding:10px; margin:0;">
+        <ul class="forminfo" style="padding:0; margin:0;">
+    <li><label>目标市县校</label>
+    <div class="vocation" style="padding-right:8px;">
+    <select class="select3">
+    <option>全部</option>
+    <option>其他</option>
+    </select>
+    </div>
+    <div class="vocation" style="padding-right:8px;">
+    <select class="select3">
+    <option>全部</option>
+    <option>其他</option>
+    </select>
+    </div>
+    <div class="vocation" style="padding-right:8px;">
+    <select class="select3">
+    <option>全部</option>
+    <option>其他</option>
+    </select>
+    </div>
+      <cite style="color:#F00;">*</cite>
+    </li>
+    <li><label>(评)教师职称</label>  
+    <div class="vocation" style="padding-right:8px;">
+    <select class="select3">
+    <option>全部</option>
+    <option>其他</option>
+    </select>
+    </div>
+     
+    </li>
+    <li><label>(聘)教师职称</label>  
+    <div class="vocation" style="padding-right:8px;">
+    <select class="select3">
+    <option>全部</option>
+    <option>其他</option>
+    </select>
+    </div>
+    </li>
+    <li><label>学校行政职务</label>  
+    <div class="vocation" style="padding-right:8px;">
+    <select class="select3">
+    <option>全部</option>
+    <option>其他</option>
+    </select>
+    </div>
+    </li>
+    <li><label>任教学段/学科</label><cite><input name="" type="checkbox" value="" checked="checked" />语文&nbsp;&nbsp;&nbsp;&nbsp;<input name="" type="checkbox" value="" />英语</cite></li>
+    <li><label>是否骨干教师</label>  
+    <div class="vocation" style="padding-right:8px;">
+    <select class="select3">
+    <option>全部</option>
+    <option>其他</option>
+    </select>
+    </div>
+    </li>
+	 <li><label>是否为班主任</label><cite><input name="" type="radio" value="" checked="checked" />是&nbsp;&nbsp;&nbsp;&nbsp;<input name="" type="radio" value="" />否</cite></li>
+    <li><label>调动说明</label><div class="vocation" style="padding-right:8px;"><textarea name="" cols="" rows="" class="textinput" style="width:260px; height:30px;"></textarea></div><cite style="color:#F00;">*</cite></li>
+   
+    
+    </ul>
+        
+        
+      </div>
+        
+        <div class="tipbtn">
+        <input name="" type="button"  class="sure" value="提交" />&nbsp;
+        <input name="" type="button"  class="cancel" value="取消" />
+        </div>
+    
+    </div>
+    
+    
+    
+    
+</div> 
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".click").click(function(){
+  $(".tip").fadeIn(200);
+  });
+  
+  $(".tiptop a").click(function(){
+  $(".tip").fadeOut(200);
+});
+
+  $(".sure").click(function(){
+  $(".tip").fadeOut(100);
+});
+
+  $(".cancel").click(function(){
+  $(".tip").fadeOut(100);
+});
+
+});
+</script>
+
+  <!--1.3.2 end-->
+    
+    
+    
+    </div>
+    
+    </div>
+    
+    </div> 
+ 
+ 
+    
+
+
+</body>
+
+</html>
+<script type="text/javascript"> 
+      $("#usual1 ul").idTabs(); 
+    </script>
+    
+    <script type="text/javascript">
+	$('.tablelist tbody tr:odd').addClass('odd');
+	</script>

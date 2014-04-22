@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="teacherGLY_1.1.html">教师信息管理</a></li>
+    <li>导入</li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+    <div class="formtitle"><span>导入</span></div>
+      <ul class="forminfo">
+    
+      <div style="position:absolute; left:480px; top: 120px;"><a class="ibtn" title="查看之前导入记录">历次导入记录</a><a class="ibtn" title="导入数据文件样版">下载数据模板</a></div>
+      
+    <li><label>导入文件：</label><input name="" type="button" class="btn" value="添加附件"/></li>
+    </ul> 
+    
+    <div class="filediv">
+    <ol class="fileol"><li><img src="images/iconfile.png" /></li><li>iconsweets1.zip</li><li><div style="border:1px solid #657b90; margin-top:3px; width:100px;"><span style=" background-color:#5c7e9a; height:10px; width:40px;"></span></div></li><li><a href="#">删除</a></li></ol>
+    <ol class="fileol"><li><img src="images/iconfile_ok.png" /></li><li>培训管理系统-系统管理员菜单及页面.xlsx</li><li><a href="#">删除</a></li></ol>
+    <ol class="fileol"><li><img src="images/iconfile_x.png" /></li><li>培训管理系统-系统管理员菜单及页面.xlsx</li><li><a href="#">重新上传</a></li></ol>
+    <ul class="forminfo">
+     <li><input name="" type="button" class="btn" value="数据检测并提交"/></li>
+     </ul>
+    </div>
+    
+    
+    
+</div>
+
+
+</body>
+
+</html>

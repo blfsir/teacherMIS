@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>欢迎登录后台管理系统</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+	
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+
+</script>
+</head>
+
+<body style="background-color:#1c77ac; background-image:url(images/light.png); background-repeat:no-repeat; background-position:center top; overflow:hidden;">
+
+
+
+    <div id="mainBody" style="display:none;">
+      <div id="cloud1" class="cloud"></div>
+      <div id="cloud2" class="cloud"></div>
+    </div> 
+
+
+<div class="logintop">    
+    <span>欢迎登录后台管理界面平台</span>    
+    <ul>
+    <li><a href="#">回首页</a></li>
+    <li><a href="#">帮助</a></li>
+    <li><a href="#">关于</a></li>
+    </ul>    
+    </div>
+    
+    
+    <div class="loginContent" style="margin-top:80px; padding: 40px 0;">
+    <div class="itab" style="margin-bottom:40px;">
+        <ul> 
+        <li><a href="login_0.3.1.html" class="selected" id="1">通过邮箱找回</a></li> 
+        <li><a href="login_0.3.4.html" id="2">通过密保找回</a></li> 
+        </ul>
+        </div>
+    <div class="Uploadxu" style="padding-left:20px; margin-bottom:20px;"><span class="loadx">&nbsp;</span><span class="txtcolor">步骤1：输入您的账号信息</span><span class="loadx">&nbsp;</span><span>步骤2：获得密码找回邮件</span><span class="loadx">&nbsp;</span><span>步骤3：设置新密码</span></div>
+      
+      <div class="usual" style="width:100%"> 
+    
+        
+        <div id="tab1" >
+          <h2>找回密码已受理！</h2>
+          <p style="width:100%">系统已经向您的邮箱<a href="#" class="tablelink">a@b.com</a> 发送了一封确认邮件，请点击邮箱里的链接进行密码重置。</p>
+          <a href="login_0.3.3.html" class="dian3" style="margin:0 auto; margin-top:20px;">进入邮箱</a>
+        </div>
+        <div id="tab2" style="display:none;">
+          <table border="0" cellspacing="0" cellpadding="0" style="line-height:40px; margin:0 auto; margin-top:20px;">
+        <tr>
+          <td width="120">密码提示问题：</td>
+          <td><select name="select" class="select1"></select></td>
+        </tr>
+        <tr>
+          <td>密码提示问题答案：</td>
+          <td><select name="select" class="select1"></select></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><table border="0" cellspacing="0" cellpadding="0" style="margin:20px 0;">
+  <tr>
+    <td width="111"><a href="#" class="dian3">确 定</a></td>
+    <td width="60"></td>
+    <td width="111"><a href="#" class="dian3">返 回</a></td>
+  </tr>
+</table></td>
+        </tr>
+      </table>
+  
+        </div>
+   </div> 
+
+</div>
+    
+    
+    <div class="loginbm">中国教师教育网</div>
+	
+    
+</body>
+<script type="text/javascript"> 
+     var b1=document.getElementById('1')
+	 var b2=document.getElementById('2')
+	 var tab1=document.getElementById('tab1')
+	 var tab2=document.getElementById('tab2')
+	 b1.onclick=function(){
+		 b1.className='selected';
+		 b2.className=' ';
+		 tab1.style.display='block';
+		 tab2.style.display='none';
+		 }
+	 b2.onclick=function(){
+		 b2.className='selected';
+		 b1.className=' ';
+		 tab2.style.display='block';
+		 tab1.style.display='none';
+		 }
+    </script>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+<script language="javascript" type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+ <script  type="text/javascript" src="js/page.commons.js"></script>
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">培训实施机构</a></li>
+    <li><a href="#">教师管理</a></li>
+    </ul>
+    </div>
+    
+      <div class="formbody">
+    
+      
+	  
+
+      <div class="tabson">
+     <ul class="seachform">
+  <li>
+            <label>项目名称：</label>
+            <input name="input" type="text" class="scinput" />
+          </li>
+  <li>
+            <label>项目年度：</label>
+             <div class="vocation"><select  class="select3 yearpicker" name="yearpicker" id="yearpicker"></select> -- 
+			 </div>
+          </li>
+		  <li>--</li>
+		   <li>
+            <div class="vocation">   <select  class="select3 yearpicker" name="yearpicker" id="yearpicker"></select>  
+			 </div> 
+          </li>
+  <li>
+        <a href="#" class="dian3">查 询</a>
+        </li>
+           
+        </ul>
+        
+      </div>
+      <table class="tablelist">
+      <thead>
+        <tr>
+          <th width="15%">项目名称</th>
+          <th width="10%">开始时间</th>
+          <th width="10%">结束时间</th>
+		     <th width="10%">培训形式</th>
+          <th width="15%">计划人数</th>
+          <th width="10%">参培人数</th>
+           
+          <th width="15%">操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2014普通高中教师职务培训&nbsp;</td>
+          <td>2014-1-1&nbsp;</td>
+          <td>2014-8-31&nbsp;</td>
+		   <td>远程</td>
+          <td>50000&nbsp;</td>
+          <td>35000&nbsp;</td>
+           
+          <td>
+			<a href="peixun_4.1.1.html" class="tablelink">查看培训成绩</a>&nbsp;&nbsp; 
+				<!--<a href="jigouPX_1.1.html" class="tablelink">查看</a>-->
+		  </td>
+        </tr>
+		   <tr>
+          <td>2014普通高中教师职务培训&nbsp;</td>
+          <td>2014-1-1&nbsp;</td>
+          <td>2014-8-31&nbsp;</td>
+		   <td>面授</td>
+          <td>50000&nbsp;</td>
+          <td>35000&nbsp;</td>
+           
+          <td>
+			<a href="peixun_4.1.1.html" class="tablelink">查看培训成绩</a>&nbsp;&nbsp;<a href="#" class="tablelink">导入成绩</a>
+				<!--<a href="jigouPX_1.1.html" class="tablelink">查看</a>-->
+		  </td>
+        </tr>
+		
+      </tbody>
+    </table>
+      <div class="pagin">
+    	<div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+        <ul class="paginList">
+        <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+        <li class="paginItem"><a href="javascript:;">1</a></li>
+        <li class="paginItem current"><a href="javascript:;">2</a></li>
+        <li class="paginItem"><a href="javascript:;">3</a></li>
+        <li class="paginItem"><a href="javascript:;">4</a></li>
+        <li class="paginItem"><a href="javascript:;">5</a></li>
+        <li class="paginItem more"><a href="javascript:;">...</a></li>
+        <li class="paginItem"><a href="javascript:;">10</a></li>
+        <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+        </ul>
+    </div>
+    </div> 
+ 
+ 
+
+
+</body>
+
+</html>

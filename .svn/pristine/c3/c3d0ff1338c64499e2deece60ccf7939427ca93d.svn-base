@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".click").click(function(){
+  $(".tip").fadeIn(200);
+  });
+  
+  $(".tiptop a").click(function(){
+  $(".tip").fadeOut(200);
+});
+
+  $(".sure").click(function(){
+  $(".tip").fadeOut(100);
+});
+
+  $(".cancel").click(function(){
+  $(".tip").fadeOut(100);
+});
+
+});
+</script>
+
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="teacherGLY_1.1.html">教师信息</a></li>
+    <li><a href="teacherGLY_1.3.html">调动管理</a></li>
+    <li>发起调动</li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+  <div>
+  
+  <div class="choose" id="jqDiv1" style="display:none;">
+    
+<table border="0" cellspacing="0" cellpadding="0" style="line-height:42px; margin:0 auto;">
+  <tr>
+    <td width="90">教师姓名：</td>
+    <td><input name="input13" type="text" class="dfinput" style="width:200px;"/></td>
+    <td width="90">&nbsp;</td>
+    <td width="90">教师编号：</td>
+    <td><input name="input3" type="text" class="dfinput" style="width:200px;"/></td>
+  </tr>
+  <tr>
+    <td>身份证号码：</td>
+    <td><input name="input4" type="text" class="dfinput" style="width:200px;"/></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="90">&nbsp;</td>
+    <td><a href="#" class="dian3">查 询</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+    
+   
+</div>
+     
+</div>
+   <script>
+  
+    window.onload=function(){
+		var oList=document.getElementById('xuanzeTool').getElementsByTagName('a')
+        var oDiv=document.getElementById('xuanze').getElementsByTagName('div')
+		var btn1=document.getElementById('btn1')
+		var btn2=document.getElementById('btn2')
+		var jqDiv1=document.getElementById('jqDiv1')
+		var jqDiv2=document.getElementById('jqDiv2')
+		for(i=0;i<oList.length;i++){
+		oList[i].index=i;
+		oList[i].onclick=function(){
+		
+		if(	  oDiv[this.index].style.display=='block'){
+			for(i=0;i<oList.length;i++){
+			 oList[i].className='';
+			 oDiv[i].style.display='none';
+		         }
+		} else{
+		  for(i=0;i<oList.length;i++){
+			 oList[i].className='';
+			 oDiv[i].style.display='none';
+		         }
+				 
+				 
+			  this.className='onthis'; 
+		 
+			  oDiv[this.index].style.display='block';
+							 
+
+		}
+		
+		     }
+		   }
+		   btn1.onclick=function(){
+			   btn1.className='jq';
+			   btn2.className='';
+			   jqDiv1.style.display='block';
+			   jqDiv2.style.display='none';
+			   }
+		   btn2.onclick=function(){
+			   btn2.className='jq';
+			   btn1.className='';
+			   jqDiv2.style.display='block';
+			   jqDiv1.style.display='none';
+			   }
+		 }
+  </script>
+
+   <div class="formtitle"><span>查询要调动的教师</span></div>
+  <div class="tabson">
+    
+    
+    <ul class="seachform">
+    
+    <li><label>教师姓名：</label><input name="" type="text" class="scinput" /></li>
+    <li><label>身份证号：</label><input name="" type="text" class="scinput" /></li>
+        
+    <li><label>&nbsp;</label><input type="button" class="scbtn" value="查 询" onclick="$('.teacherdlxinxi').fadeIn(200);"/></li>
+    </ul>
+    
+    </div>
+  
+   <div class="formtitle"><span>查询结果</span></div>
+    
+   <dl class="teacherdlxinxi" style="display:none;" onmouseover="$('.tohaid1').fadeIn(200);" onmouseout="$('.tohaid1').fadeOut(2);">
+    <dt style="height:170px;"><img src="images/u8_normal.jpg"  title="头像" /></dt>
+    <dd><span class="titlewidth">姓名：</span><span>张天</span></dd>
+    <dd><span class="titlewidth">身份证号：</span><span>371223455556666</span></dd>
+    <dd><span class="titlewidth">原地区：</span><span>广州市天河区师范附属中学</span></dd>
+    <dd><span class="titlewidth">教师资格证书号：</span><span>1223455556666</span></dd>
+    <dd><span class="titlewidth">(评)教师职称：</span><span>一级教师</span></dd>
+    <dd><span class="titlewidth">(聘)教师职称：</span><span>二级教师</span></dd>
+    <dd><span class="titlewidth">学校行政职务：</span><span>普通教师</span></dd>
+    <dd><span class="titlewidth">当前任教学段：</span><span>初中</span></dd>
+    <dd><span class="titlewidth">当前任教学科：</span><span>语文</span></dd>
+    <dd><span class="titlewidth">是否为骨干教师：</span><span>是</span></dd>
+    <dd><span class="titlewidth">是否为班主任：</span><span>否</span></dd>
+    <dd><span class="titlewidth">国培计划农村骨干教师：</span><span>是</span></dd>
+    <dd class="tohaid1" style="display:none;"><span></span></dd>
+    <dd class="tohaid1" style="display:none;"><span></span><span><input name="" type="button" class="btn click" value="调动"/></span></dd>
+    </dl>
+	
+   <dl class="teacherdlxinxi" style="background-color:#fff;display:none;" onmouseover="$('.tohaid2').fadeIn(200);" onmouseout="$('.tohaid2').fadeOut(2);">
+    <dt style="height:170px;"><img src="images/u8_normal.jpg"  title="头像" /></dt>
+    <dd><span class="titlewidth">姓名：</span><span>张天</span></dd>
+    <dd><span class="titlewidth">身份证号：</span><span>371223455556666</span></dd>
+    <dd><span class="titlewidth">原地区：</span><span>广州市天河区师范附属中学</span></dd>
+    <dd><span class="titlewidth">教师资格证书号：</span><span>1223455556666</span></dd>
+    <dd><span class="titlewidth">(评)教师职称：</span><span>一级教师</span></dd>
+    <dd><span class="titlewidth">(聘)教师职称：</span><span>二级教师</span></dd>
+    <dd><span class="titlewidth">学校行政职务：</span><span>普通教师</span></dd>
+    <dd><span class="titlewidth">当前任教学段：</span><span>初中</span></dd>
+    <dd><span class="titlewidth">当前任教学科：</span><span>语文</span></dd>
+    <dd><span class="titlewidth">是否为骨干教师：</span><span>是</span></dd>
+    <dd><span class="titlewidth">是否为班主任：</span><span>否</span></dd>
+    <dd><span class="titlewidth">国培计划农村骨干教师：</span><span>是</span></dd>
+    <dd class="tohaid2" style="display:none;"><span></span></dd>
+    <dd class="tohaid2" style="display:none;"><span></span><span><input name="" type="button" class="btn click" value="调动"/></span></dd>
+    </dl>
+	
+   <dl class="teacherdlxinxi" style="display:none;" onmouseover="$('.tohaid3').fadeIn(200);" onmouseout="$('.tohaid3').fadeOut(2);">
+    <dt style="height:170px;"><img src="images/u8_normal.jpg"  title="头像" /></dt>
+    <dd><span class="titlewidth">姓名：</span><span>张天</span></dd>
+    <dd><span class="titlewidth">身份证号：</span><span>371223455556666</span></dd>
+    <dd><span class="titlewidth">原地区：</span><span>广州市天河区师范附属中学</span></dd>
+    <dd><span class="titlewidth">教师资格证书号：</span><span>1223455556666</span></dd>
+    <dd><span class="titlewidth">(评)教师职称：</span><span>一级教师</span></dd>
+    <dd><span class="titlewidth">(聘)教师职称：</span><span>二级教师</span></dd>
+    <dd><span class="titlewidth">学校行政职务：</span><span>普通教师</span></dd>
+    <dd><span class="titlewidth">当前任教学段：</span><span>初中</span></dd>
+    <dd><span class="titlewidth">当前任教学科：</span><span>语文</span></dd>
+    <dd><span class="titlewidth">是否为骨干教师：</span><span>是</span></dd>
+    <dd><span class="titlewidth">是否为班主任：</span><span>否</span></dd>
+    <dd><span class="titlewidth">国培计划农村骨干教师：</span><span>是</span></dd>
+    <dd class="tohaid3" style="display:none;"><span></span></dd>
+    <dd class="tohaid3" style="display:none;"><span></span><span><input name="" type="button" class="btn click" value="调动"/></span></dd>
+    </dl>
+    
+    
+    
+    <div class="tip">
+    	<div class="tiptop"><span>发起调动</span><a></a></div>
+        
+      <div class="tipinfo">
+        <ul class="forminfo" style="padding:0; margin:0;">
+    <li><label>目标地区</label>  
+    <div class="vocation">
+    <select class="select3">
+    <option>全部</option>
+    <option>其他</option>
+    </select>
+    </div><i>内容未完形式待探讨</i>
+    </li>
+    <li><label>是否为班主任</label><cite><input name="" type="radio" value="" checked="checked" />是&nbsp;&nbsp;&nbsp;&nbsp;<input name="" type="radio" value="" />否</cite></li>
+	
+    <li><label>提示：</label><cite>若该教师若有正在参与的培训项目，本系统中不进行任何处理；如需调整期培训情况，请联系相关培训机构进行数据处理。</cite></li>
+   
+    
+    </ul>
+        
+        
+      </div>
+        
+        <div class="tipbtn">
+        <input name="" type="button"  class="sure" value="提交" />&nbsp;
+        <input name="" type="button"  class="cancel" value="取消" />
+        </div>
+    
+    </div>
+    
+    
+    
+    
+</div> 
+ 
+ 
+
+
+</body>
+
+</html>

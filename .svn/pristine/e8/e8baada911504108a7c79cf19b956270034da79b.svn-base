@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+<script language="javascript" type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">个人中心</a></li>
+    <li><a href="#">通知</a></li>
+		 
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    <div class="noticeTool" style=" overflow:hidden;border-bottom:1px solid #ccc; line-height:32px; margin-bottom:30px;">
+      <dl>
+        <dt style="float:left; padding-right:12px;"><p>你有<b style="margin:0 4px;">3</b>条消息</p></dt>
+        <dd style="float:left"><a href="#" class="huibtn_a" style="background-color:#60C1E7; color:#fff; border-color:#2B89BF;">发短消息</a></dd>
+        <dd style="float:right"><a href="#" class="huibtn_a">全部删除</a></dd>
+      </dl>
+      
+    </div>
+    <div class="textContent">
+      <dl>
+        <dt><img src="images/i07.png" width="65" height="65" /></dt>
+        <dd class="ti"><h4>测试斯蒂芬物非人非人权威的评价哦</h4><cite>2014-3-4</cite></dd>
+        <dd><p>测试内容，想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么</p></dd>
+        <dd><cite><a href="#" class="tablelink">删 除</a></cite></dd>
+        </dl>
+        <dl>
+        <dt><img src="images/i07.png" width="65" height="65" /></dt>
+        <dd class="ti"><h4>测试斯蒂芬物非人非人权威的评价哦</h4><cite>2014-3-4</cite></dd>
+        <dd><p>测试内容，想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么</p></dd>
+        <dd><cite><a href="#" class="tablelink">删 除</a></cite></dd>
+        </dl>
+        <dl>
+        <dt><img src="images/i07.png" width="65" height="65" /></dt>
+        <dd class="ti"><h4>测试斯蒂芬物非人非人权威的评价哦</h4><cite>2014-3-4</cite></dd>
+        <dd><p>测试内容，想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么</p></dd>
+        <dd><cite><a href="#" class="tablelink">删 除</a></cite></dd>
+        </dl>
+        <dl>
+        <dt><img src="images/i07.png" width="65" height="65" /></dt>
+        <dd class="ti"><h4>测试斯蒂芬物非人非人权威的评价哦</h4><cite>2014-3-4</cite></dd>
+        <dd><p>测试内容，想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么想想写点什么</p></dd>
+        <dd><cite><a href="#" class="tablelink">删 除</a></cite></dd>
+        </dl>
+    
+    </div>
+</div> 
+  
+</body>
+
+</html>

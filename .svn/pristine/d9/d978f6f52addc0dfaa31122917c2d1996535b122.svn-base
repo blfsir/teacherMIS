@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">培训项目管理</a></li>
+    <li><a href="#">课程设置</a></li>
+ 
+    </ul>
+    </div>
+     
+    <div class="formbody">
+    
+    
+
+      <div class="tabson">
+        <p class="xmTool">项目名称：<b>2014普通高中教师职务培训</b>计划培训人数：<b>3000</b> </p>
+        
+         <ul class="seachform">
+         <li>培训学科：</li>
+  <li>
+            
+<select  class="select2" style="z-index:1;"><option>小学语文</option></select>
+          </li>
+    <li>
+            <label>课程名称：</label>
+            <input name="input" type="text" class="scinput" />
+          </li>
+  <li><a href="#" class="dian3">查 询</a></li>
+           <li></li>
+        </ul>
+         <a href="peixun_4.4.2.html" class="huibtn_a">添加新课程</a>
+        <div> 
+         <table class="tablelist" style="margin-top:12px;">
+        <thead>
+          <tr>
+            <th width="20%">培训学科</th>
+			<th width="20%">课程名称</th>
+			<th width="20%">课程类型</th>
+			<th width="20%">操作</th>
+            <!-- <th width="20%">操作</th>-->
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>小学语文&nbsp;</td>
+            <td>小学语文的专业知识&nbsp;</td>
+					<td>必修&nbsp;</td>
+			<td>查看&nbsp;修改&nbsp;删除&nbsp;</td>
+				
+            
+          </tr>
+         
+		   
+        </tbody>
+      </table>
+		 </div>
+      </div>
+  <div class="pagin">
+    	<div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+        <ul class="paginList">
+        <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+        <li class="paginItem"><a href="javascript:;">1</a></li>
+        <li class="paginItem current"><a href="javascript:;">2</a></li>
+        <li class="paginItem"><a href="javascript:;">3</a></li>
+        <li class="paginItem"><a href="javascript:;">4</a></li>
+        <li class="paginItem"><a href="javascript:;">5</a></li>
+        <li class="paginItem more"><a href="javascript:;">...</a></li>
+        <li class="paginItem"><a href="javascript:;">10</a></li>
+        <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+        </ul>
+    </div>
+    </div> 
+ 
+ 
+
+
+</body>
+
+</html>

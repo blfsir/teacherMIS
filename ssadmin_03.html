@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/jquery.treeview.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+<script language="javascript" type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="js/page.commons.js"></script>
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+
+</head>
+
+<body>
+
+<div class="place">
+		<span>位置：</span>
+		<ul class="placeul">
+			<li><a href="ssadmin.html">培训项目</a></li>
+
+			<li>承培机构任务分配</li>
+		</ul>
+</div>
+
+<div class="formbody">
+    
+    <div id="usual1" class="usual"> 
+    
+    <div class="itab">
+  	<ul> 
+    <li><a href="#tab1" class="selected">待分配 <span class="ctype"></span></a></li>
+    <li><a href="#tab2">已分配<span class="ctype"></span></a></li>
+	 
+  	</ul>
+    </div> 
+	
+    <div id="tab1" class="tabson">  
+       <div class="tabson">
+        <ul class="seachform">
+        <li>
+            <label>项目名称：</label>
+            <input name="input"  type="text" class="scinput" />
+          </li>
+         <li>
+            <label>项目年度：</label>
+             <div class="vocation"><select  class="select3 yearpicker" name="yearpicker" id="yearpicker"></select> -- 
+			 </div>
+          </li>
+		 <li>
+            <label>培训形式：</label>
+             <div class="vocation"><select  class="select3" name="yearpicker"  ><option>请选择...</option><option>远程</option><option>面授</option></select>  
+			 </div>
+          </li>
+			
+		 
+           <li><a href="#" class="dian3">查 询</a></li>
+           
+        </ul>
+		
+	   
+      </div>
+    
+    <div class="chauxnJS jsTool" style="display:none;">
+    
+    <span style="float:right;">
+    <div class="pagin" style="margin:0; width:180px;">
+    <div class="message">共<i class="blue">1256</i>条记录</div>
+    <div class="vocation paginList" style=" margin:4px 6px 0 6px;right:0px;">
+    <select class="select3">
+    <option>每页显示10条</option>
+    <option>每页显示30条</option>
+    <option>每页显示50条</option></select>
+    </div>
+    
+    </div>
+    </span>
+    </div>
+    
+    
+     <table class="tablelist">
+        <thead>
+          <tr>
+            <th width="40%">项目名称</th>
+            <th width="20%">项目范围</th>
+            <th width="20%">计划培训人数</th>
+            <!--<th width="20%">培训实施机构</th>-->
+            <th width="20%">操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2014普通高中教师职务培训&nbsp;</td>
+            <td>广东省&nbsp;</td>
+            <td>50000&nbsp;</td>
+            <!--<td>教师网,果实网&nbsp;</td>-->
+            <td><a href="peixun_2.1.1.html" class="tablelink">指定承培机构</a><a href="#" class="tablelink"></a></td>
+          </tr>
+		  <tr>
+			<td>&nbsp;</td>
+				<td>&nbsp;</td>
+					<td>&nbsp;</td>
+						<td>&nbsp;</td>
+		 </tr>
+           
+        </tbody>
+      </table>
+
+    <div class="pagin">
+<div class="message">共<i class="blue">296</i>条记录 每页 30 条，当前第&nbsp;<i class="blue">2&nbsp;</i>页 / 共&nbsp;<i class="blue">10</i>&nbsp;页</div>
+        <ul class="paginList">
+        <li class="paginItem"><a href="javascript:;">首页</a></li>
+        <li class="paginItem"><a href="javascript:;" class="longer">上一页</a></li>
+        <li class="paginItem"><a href="javascript:;">1</a></li>
+        <li class="paginItem"><a href="javascript:;">2</a></li>
+        <li class="paginItem"><a href="javascript:;">3</a></li>
+        <li class="paginItem current"><a href="javascript:;">4</a></li>
+        <li class="paginItem"><a href="javascript:;">5</a></li>
+        <li class="paginItem"><a href="javascript:;">6</a></li>
+        <li class="paginItem"><a href="javascript:;">7</a></li><!--
+        <li class="paginItem more"><a href="javascript:;">...</a></li>
+        <li class="paginItem"><a href="javascript:;">10</a></li>-->
+        <li class="paginItem"><a href="javascript:;" class="longer">下一页</a></li>
+        <li class="paginItem"><a href="javascript:;">末页</a></li>
+        </ul>
+    </div><br>
+    
+    
+		<div class="kuang" style="width:auto;display:none;">
+			<b>[校管理员]：</b>不能发起调动（即不能在校内调动）；能查询我校调出的所有教师信息；若教师在本校内工作信息有变动，走信息变更途径。<br>
+			<b>[省市县管理员]：</b>能对我省/市/县范围内教师，在本范围内发起调动；能查询我省/市/县内调动（含调出）的所有教师信息；<br>
+		</div>
+
+    
+    </div>
+
+    
+    <div id="tab2" class="tabson">  
+      
+      <div class="tabson">
+        <ul class="seachform">
+        <li>
+            <label>项目名称：</label>
+            <input name="input" type="text" class="scinput" />
+          </li>
+         <li>
+            <label>项目年度：</label>
+             <div class="vocation"><select  class="select3 yearpicker" name="yearpicker" id="yearpicker"></select> -- 
+			 </div>
+          </li>
+		  <li>--</li>
+		   <li>
+            <div class="vocation">   <select  class="select3 yearpicker" name="yearpicker" id="yearpicker"></select>  
+			 </div> 
+          </li>
+			
+		 
+           <li><a href="#" class="dian3">查 询</a></li>
+           
+        </ul>
+		
+	   
+      </div>
+    
+    <div class="chauxnJS jsTool" style="display:none;">
+    
+    <span style="float:right;">
+    <div class="pagin" style="margin:0; width:180px;">
+    <div class="message">共<i class="blue">1256</i>条记录</div>
+    <div class="vocation paginList" style=" margin:4px 6px 0 6px;right:0px;">
+    <select class="select3">
+    <option>每页显示10条</option>
+    <option>每页显示30条</option>
+    <option>每页显示50条</option></select>
+    </div>
+    
+    </div>
+    </span>
+    </div>
+    
+    
+    <table class="tablelist">
+    	<thead>
+    	<tr>
+        <th>项目名称</th>
+        <th>项目性质</th>
+        <th>计划人数</th>
+        <th>培训形式</th>
+<th>申报人</th>
+<th>申报时间</th>
+        <th>审核状态</th>
+        <th>审核人</th>
+        </tr>
+        </thead>
+        <tbody>
+        
+        <tr>
+        <td>语文教师培训</td>
+        <td>市级培训项目</td>
+        <td>4357</td>
+        <td>远程</td>
+		<td>白运河</td>
+		<td>2014-4-1 12:57:36</td>
+		
+        <td>审核通过</td>
+        <td>省级管理员</td>
+        </tr>
+        
+        <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+		 <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        </tr>
+    
+        </tbody>
+    </table>
+    <div class="pagin">
+<div class="message">共<i class="blue">296</i>条记录 每页 30 条，当前第&nbsp;<i class="blue">2&nbsp;</i>页 / 共&nbsp;<i class="blue">10</i>&nbsp;页</div>
+        <ul class="paginList">
+        <li class="paginItem"><a href="javascript:;">首页</a></li>
+        <li class="paginItem"><a href="javascript:;" class="longer">上一页</a></li>
+        <li class="paginItem"><a href="javascript:;">1</a></li>
+        <li class="paginItem"><a href="javascript:;">2</a></li>
+        <li class="paginItem"><a href="javascript:;">3</a></li>
+        <li class="paginItem current"><a href="javascript:;">4</a></li>
+        <li class="paginItem"><a href="javascript:;">5</a></li>
+        <li class="paginItem"><a href="javascript:;">6</a></li>
+        <li class="paginItem"><a href="javascript:;">7</a></li><!--
+        <li class="paginItem more"><a href="javascript:;">...</a></li>
+        <li class="paginItem"><a href="javascript:;">10</a></li>-->
+        <li class="paginItem"><a href="javascript:;" class="longer">下一页</a></li>
+        <li class="paginItem"><a href="javascript:;">末页</a></li>
+        </ul>
+    </div><br>
+    
+    
+		<div class="kuang" style="width:auto;display:none;">
+			<b>[校管理员]：</b>不能发起调动（即不能在校内调动）；能查询我校调出的所有教师信息；若教师在本校内工作信息有变动，走信息变更途径。<br>
+			<b>[省市县管理员]：</b>能对我省/市/县范围内教师，在本范围内发起调动；能查询我省/市/县内调动（含调出）的所有教师信息；<br>
+		</div>
+
+    
+    </div> 
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".click").click(function(){
+  $(".tip").fadeIn(200);
+  });
+  
+  $(".tiptop a").click(function(){
+  $(".tip").fadeOut(200);
+});
+
+  $(".sure").click(function(){
+  $(".tip").fadeOut(100);
+});
+
+  $(".cancel").click(function(){
+  $(".tip").fadeOut(100);
+});
+
+  $(".click2").click(function(){
+  $(".tip2").fadeIn(200);
+  });
+  
+  $(".tip2top a").click(function(){
+  $(".tip2").fadeOut(200);
+});
+
+  $(".sure2").click(function(){
+  $(".tip2").fadeOut(100);
+});
+
+  $(".cancel2").click(function(){
+  $(".tip2").fadeOut(100);
+});
+
+});
+</script>
+
+  <!--1.3.2 end-->
+    
+    
+    
+    </div>
+    
+    </div>
+
+</body>
+</html>
+<script type="text/javascript"> 
+      $("#usual1 ul").idTabs(); 
+    </script>
+    
+    <script type="text/javascript">
+	$('.tablelist tbody tr:odd').addClass('odd');
+	</script>

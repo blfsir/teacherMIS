@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>无标题文档</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/select.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/jquery.js"/>
+		<script type="text/javascript" src="js/jquery.idTabs.min.js"/>
+		<script type="text/javascript" src="js/select-ui.min.js"/>
+		<script type="text/javascript" src="editor/kindeditor.js"/>
+
+		<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+		</script>
+
+		<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+		</script>
+	</head>
+
+	<body>
+
+		<div class="place">
+			<span>位置：</span>
+			<ul class="placeul">
+				<li>
+					<a href="#">培训项目管理</a>
+				</li>
+				<li>
+					<a href="#">课程设置</a>
+				</li>
+
+			</ul>
+		</div>
+
+		<div class="formbody">
+
+
+
+			<div class="tabson">
+				<p class="xmTool">项目名称：<b>2014普通高中教师职务培训</b>计划培训人数：<b>3000</b>
+				</p>
+				<ul class="seachform">
+
+					<li>
+						<label>课程名称：</label>
+						<input name="input" type="text" class="scinput" />
+					</li>
+					<li>
+						<label>培训学科：</label>
+					</li>
+					<li>
+						<select  class="select2">
+							<option>小学语文</option>
+						</select>
+					</li>
+					<li>
+						<label>课程类型：</label>
+					</li>
+					<li>
+						<select  class="select2">
+							<option>必修</option>
+						</select>
+					</li>
+
+					<li>
+						<label>课程地址：</label>
+						<input name="input" type="text" class="scinput" />
+					</li>
+
+				</ul>
+
+				<ul class="seachform">
+
+					<li>
+						<label>课程介绍：</label>
+						<input name="input" type="text" class="scinput" />
+					</li>
+					<li>
+						<a href="peixun_4.4.2.html" class="dian3">确定</a>  
+					</li>
+					<li>
+
+						<a href="peixun_4.4.2.html" class="dian3">取消</a>  
+					</li>
+
+				</ul>
+
+
+
+			</div>
+		</div> 
+
+
+
+
+	</body>
+
+</html>

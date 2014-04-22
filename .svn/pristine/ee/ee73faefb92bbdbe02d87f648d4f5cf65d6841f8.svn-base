@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+<script language="javascript" type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">个人中心</a></li>
+    <li><a href="#">通知</a></li>
+		 
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+       <table border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+  <tr>
+    <td>你有3条通知</td>
+    <td><a href="person_3.1.html" class="dian3">发 送</a></td>
+    <td style="width:30px;">&nbsp;</td>
+    <td><a href="#" class="dian3">全部删除</a></td>
+  </tr>
+</table>
+      <h4 style="padding:20px 0 20px 40px; margin-top:30px;border-top:1px dashed #a7b5bc;"> </h4>
+       
+    <img src="msg.png"/>
+  
+
+    </div> 
+  
+<div class="black" style="display:none;" id="black"></div>
+
+
+</body>
+<script>
+  window.onload=function(){
+	  var chuang=document.getElementById('chuang')
+	  var black=document.getElementById('black')
+	  var btn=document.getElementById('xz')
+	  var closed=document.getElementById('closed')
+	  var txtBox=document.getElementById('txtBox')
+	  var baocun=document.getElementById('baocun')
+	  var quxiao=document.getElementById('quxiao')
+	  
+	  btn.onclick=function(){
+		  openDiv();
+		  }
+	  closed.onclick=baocun.onclick=quxiao.onclick=function(){
+		  closedDiv();
+		  }
+		function openDiv(){
+			chuang.style.display='block';
+			black.style.display='block';
+			txtBox.style.display='none';
+			}  
+		 function closedDiv(){
+			chuang.style.display='none';
+			black.style.display='none';
+			txtBox.style.display='block';
+			}  
+	  }
+</script>
+</html>

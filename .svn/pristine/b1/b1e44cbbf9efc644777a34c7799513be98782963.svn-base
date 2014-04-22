@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".click").click(function(){
+  $(".tip").fadeIn(200);
+  });
+  
+  $(".tiptop a").click(function(){
+  $(".tip").fadeOut(200);
+});
+
+  $(".sure").click(function(){
+  $(".tip").fadeOut(100);
+});
+
+  $(".cancel").click(function(){
+  $(".tip").fadeOut(100);
+});
+
+});
+</script>
+
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="teacherGLY_1.1.html">教师信息</a></li>
+    <li><a href="teacherGLY_1.4.html">离退休管理</a></li>
+    <li>发起离退休</li>
+    </ul>
+    </div>
+    
+    <div class="rightinfo">
+    
+  <div>
+  
+  <div class="choose" id="jqDiv1" style="display:none;">
+    
+<table border="0" cellspacing="0" cellpadding="0" style="line-height:42px; margin:0 auto;">
+  <tr>
+    <td width="90">教师姓名：</td>
+    <td><input name="input13" type="text" class="dfinput" style="width:200px;"/></td>
+    <td width="90">&nbsp;</td>
+    <td width="90">教师编号：</td>
+    <td><input name="input3" type="text" class="dfinput" style="width:200px;"/></td>
+  </tr>
+  <tr>
+    <td>身份证号码：</td>
+    <td><input name="input4" type="text" class="dfinput" style="width:200px;"/></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="90">&nbsp;</td>
+    <td><a href="#" class="dian3">查 询</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+    
+   
+</div>
+     
+</div>
+   <script>
+  
+    window.onload=function(){
+		var oList=document.getElementById('xuanzeTool').getElementsByTagName('a')
+        var oDiv=document.getElementById('xuanze').getElementsByTagName('div')
+		var btn1=document.getElementById('btn1')
+		var btn2=document.getElementById('btn2')
+		var jqDiv1=document.getElementById('jqDiv1')
+		var jqDiv2=document.getElementById('jqDiv2')
+		for(i=0;i<oList.length;i++){
+		oList[i].index=i;
+		oList[i].onclick=function(){
+		
+		if(	  oDiv[this.index].style.display=='block'){
+			for(i=0;i<oList.length;i++){
+			 oList[i].className='';
+			 oDiv[i].style.display='none';
+		         }
+		} else{
+		  for(i=0;i<oList.length;i++){
+			 oList[i].className='';
+			 oDiv[i].style.display='none';
+		         }
+				 
+				 
+			  this.className='onthis'; 
+		 
+			  oDiv[this.index].style.display='block';
+							 
+
+		}
+		
+		     }
+		   }
+		   btn1.onclick=function(){
+			   btn1.className='jq';
+			   btn2.className='';
+			   jqDiv1.style.display='block';
+			   jqDiv2.style.display='none';
+			   }
+		   btn2.onclick=function(){
+			   btn2.className='jq';
+			   btn1.className='';
+			   jqDiv2.style.display='block';
+			   jqDiv1.style.display='none';
+			   }
+		 }
+  </script>
+
+   <div class="formtitle"><span>查询要离退休的教师</span></div>
+  <div class="tabson">
+    
+    
+    <ul class="seachform">
+    
+    <li><label>身份证号：</label><input name="" type="text" class="scinput" /></li>
+    <li><label>姓名：</label><input name="" type="text" class="scinput" /></li>
+        
+    <li><label>&nbsp;</label><input type="button" class="scbtn" value="查 询"/></li>
+    
+    </ul>
+    
+    </div>
+  
+   <div class="formtitle"><span>查询结果</span></div>
+    
+   <dl class="teacherdlxinxi">
+    <dt style="height:246px;"><img src="images/u8_normal.jpg"  title="头像" /></dt>
+    <dd><span class="titlewidth">姓名：</span><span>张天</span></dd>
+    <dd><span class="titlewidth">所在地区：</span><span>所在地区</span></dd>
+    <dd><span class="titlewidth">所在学校：</span><span>所在学校</span></dd>
+    <dd><span class="titlewidth">(聘)教师职称：</span><span>(聘)教师职称</span></dd>
+    <dd><span class="titlewidth">(聘)职称时间：</span><span>2014-09-26</span></dd>
+    
+    <dd><span class="titlewidth">学校行政职务称：</span><span>学校行政职务</span></dd>
+    <dd><span class="titlewidth">当前任教学段：</span><span>当前任教学段</span></dd>
+    <dd><span class="titlewidth">当前任教学科：</span><span>当前任教学科</span></dd>
+    <dd><span class="titlewidth">学科带头人：</span><span>谁谁谁</span></dd>
+    <dd><span class="titlewidth">是否为班主任：</span><span>否</span></dd>
+    <dd><span class="titlewidth">骨干教师：</span><span>是</span></dd>
+    <dd><span><input name="" type="button" class="btn click" value="离退休"/></span></dd>
+    
+    </dl>
+    
+    
+    
+    <div class="tip">
+    	<div class="tiptop"><span>离退休修改</span><a></a></div>
+        
+      <div class="tipinfo">
+        <ul class="forminfo" style="padding:0; margin:0;">
+    <li><label>离退休类型</label>  
+    <div class="vocation">
+    <select class="select3">
+    <option>退休</option>
+    <option>离休</option>
+    <option>离岗</option>
+    <option>病休</option>
+    <option>死亡</option>
+    <option>其他</option>
+    </select>
+    </div><i>内容未完形式待探讨</i>
+    </li>
+	
+    <li><label>提示：</label><cite>离退休之后，教师信息不可被编辑，该教师登录后只能进行相关查询。</cite></li>
+       
+    
+    </ul>
+        
+        
+      </div>
+        
+        <div class="tipbtn">
+        <input name="" type="button"  class="sure" value="提交" />&nbsp;
+        <input name="" type="button"  class="cancel" value="取消" />
+        </div>
+    
+    </div>
+    
+    
+    
+    
+</div> 
+ 
+ 
+
+
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">培训实施机构</a></li>
+    <li><a href="#">参训教师管理</a></li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+    
+
+      <div class="tabson">
+     <ul class="seachform">
+  <li>
+            <label>项目名称：2014普通高中教师职务培训</label>
+           
+          </li>
+          
+		 
+           
+        </ul>
+		 <ul class="seachform">
+  <li>
+            <label>地 区：</label>
+           
+          </li>
+          <li>
+          <select name="select" class="select2"><option>广东省</option></select> 
+          </li>
+            <li>
+          <select name="select" class="select2"><option>广州市</option></select> 
+          </li>
+		  
+		  <li>
+          <select name="select" class="select2"><option>白云区</option></select> 
+          </li>
+		  <li>
+          <select name="select" class="select2"><option>第一小学</option></select> 
+          </li>
+		  
+        </ul>
+		  <ul class="seachform">
+      
+		  <li><label>学 科：</label></li>
+          <li><select name="select" class="select2"><option>语文</option><option>数学</option></select></li>
+           
+        </ul>
+		
+		  <ul class="seachform" style="padding-left:106px;">
+  <li>
+            <input name="input2" type="button" class="dian3" value="导出"/>
+          </li>
+		 
+		  
+		  
+	<li>
+            <input name="input2" type="button" class="dian3" value="查 询"/>
+          </li>	 
+           
+        </ul>
+	 
+		
+		 
+    <table class="tablelist">
+      <thead>
+        <tr>
+          <th width="4%"><input name="input3" type="checkbox" value=""/></th>
+          <th width="4%">姓名</th>
+          <th width="10%">身份证号</th>
+          <th width="3%" >学科</th>
+          <th width="6%">省</th>
+          <th width="6%">市</th>
+          <th width="6%">县</th>
+          <th width="6%">校</th>
+		  <th width="6%">手机</th><!--
+		  <th width="6%">审核状态</th>
+		   <th width="6%">审核人</th>
+		   <th width="6%">审核时间</th>
+		     <th width="6%">审核说明</th>
+		  <th width="6%">操作</th>-->
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+         <td><input name="input5" type="checkbox" value=""/></td>
+          <td>郑开义&nbsp;</td>
+          <td>123456789012345678&nbsp;</td>
+          <td>语文&nbsp;</td>
+          <td>广东省&nbsp;</td>
+          <td>广州市&nbsp;</td>
+          <td>白云区&nbsp;</td>
+          <td>第一小学&nbsp;</td>
+		  <td>13718160952&nbsp;</td><!--
+		  <td>未审核&nbsp;</td>
+		  <td>--&nbsp;</td>
+		  <td>--&nbsp;</td>
+		   <td>--&nbsp;</td>
+		  <td><a  class="tablelink">审核</a>&nbsp;</td>-->
+        </tr>
+		
+		<tr>
+         <td><input name="input5" type="checkbox" value=""/></td>
+          <td>扬义敬&nbsp;</td>
+          <td>123456789012345678&nbsp;</td>
+          <td>语文&nbsp;</td>
+          <td>广东省&nbsp;</td>
+          <td>广州市&nbsp;</td>
+          <td>白云区&nbsp;</td>
+          <td>第一小学&nbsp;</td>
+		  <td>13718160952&nbsp;</td><!--
+		  <td>已审核通过&nbsp;</td>
+		  <td>王辉(第一小学学校管理员)&nbsp;</td>
+		  <td>2014-2-21 14:57&nbsp;</td>
+		   <td>2014-2-21 14:57&nbsp;</td>
+		  <td><a  class="tablelink">取消审核</a>&nbsp;</td>-->
+        </tr>
+		
+			
+		<tr>
+         <td><input name="input5" type="checkbox" value=""/></td>
+          <td>鲁霞&nbsp;</td>
+          <td>123456789012345678&nbsp;</td>
+          <td>语文&nbsp;</td>
+          <td>广东省&nbsp;</td>
+          <td>广州市&nbsp;</td>
+          <td>白云区&nbsp;</td>
+          <td>第一小学&nbsp;</td>
+		  <td>13718160952&nbsp;</td><!--
+		  <td>未审核通过&nbsp;</td>
+		  <td>王辉(第一小学学校管理员)&nbsp;</td>
+		  <td>2014-2-21 14:57&nbsp;</td>
+		   <td>不需要参加此次培训&nbsp;</td>
+		  <td>&nbsp;</td>-->
+        </tr>
+		
+      </tbody>
+    </table>
+      </div>
+    </div> 
+ 
+ 
+
+
+</body>
+
+</html>

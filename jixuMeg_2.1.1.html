@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">继教信息管理</a></li>
+    <li><a href="#">继教信息登记</a></li>
+    <li><a href="#">信息查看</a></li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+    
+
+      <div class="tabson">
+      <table border="0" cellspacing="0" cellpadding="0" style="line-height:42px; margin:0 0 20px 40px;">
+        <tr>
+          <td width="80">地区：</td>
+          <td width="200"><div class="vocation">
+            <select name="select5" class="select2">
+              <option>湖南</option>
+              <option>湖北</option>
+              <option>河南</option>
+              <option>河北</option>
+              <option>江西</option>
+              <option>安徽</option>
+              <option>甘肃</option>
+              <option>宁夏</option>
+              <option>其他</option>
+            </select>
+          </div></td>
+          <td width="20">&nbsp;</td>
+          <td width="80">教师姓名：</td>
+          <td width="300"><input name="input8" type="text" class="scinput" value="请填写教师姓名"/></td>
+        </tr>
+        <tr>
+          <td>教师编号：</td>
+          <td><input name="input8" type="text" class="scinput" value="请填写编号"/></td>
+          <td>&nbsp;</td>
+          <td>身份证号：</td>
+          <td><input name="input9" type="text" class="scinput"/></td>
+        </tr>
+        <tr>
+          <td>上报学科：</td>
+          <td><div class="vocation">
+            <select name="select6" class="select2">
+            </select>
+          </div></td>
+          <td>&nbsp;</td>
+          <td>是否登记：</td>
+          <td><div class="vocation" style="margin-right:20px;">
+            <select name="select6" class="select3">
+            </select>
+          </div></td>
+        </tr>
+        <tr>
+          <td><label>状态：</label></td>
+          <td><div class="vocation">
+            <select name="select5" class="select2">
+            </select>
+          </div></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><a href="#" class="dian3">查 询</a></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+      <table class="tablelist">
+        <thead>
+            <tr>
+              <th width="4%"><input name="input3" type="checkbox" value=""/></th>
+              <th width="18%">项目编号</th>
+              <th width="6%">姓名</th>
+              <th width="10%">所在学校</th>
+              <th width="10%">任教学科</th>
+              <th width="10%">上报学科</th>
+              <th width="10%">是否合格</th>
+              <th width="10%">学分</th>
+              <th width="12%">证书编号</th>
+              <th width="10%">状态</th>
+            </tr>
+        </thead>
+          <tbody>
+            <tr>
+              <td><input name="input5" type="checkbox" value=""/></td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td><input name="input6" type="checkbox" value=""/></td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+          </tbody>
+        </table>
+        <table style="width:100%; line-height:40px; border:1px solid #cbcbcb; border-top:none;">
+          <thead>
+            <tr>
+              <td width="4%" style="border:none;" align="center"><input name="input7" type="checkbox" value=""/></th>
+              <td width="18%" style="border:none;"><a href="#" class="tablelink">批量删除</a>
+                </th>
+              <td style="border:none;"><a href="#" class="tablelink">确认上报</a>
+                </th>
+              <td width="10%" style="border:none;"><a href="#" class="tablelink">导入</a>
+                </th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="pagin">
+    	<div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+        <ul class="paginList">
+        <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+        <li class="paginItem"><a href="javascript:;">1</a></li>
+        <li class="paginItem current"><a href="javascript:;">2</a></li>
+        <li class="paginItem"><a href="javascript:;">3</a></li>
+        <li class="paginItem"><a href="javascript:;">4</a></li>
+        <li class="paginItem"><a href="javascript:;">5</a></li>
+        <li class="paginItem more"><a href="javascript:;">...</a></li>
+        <li class="paginItem"><a href="javascript:;">10</a></li>
+        <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+        </ul>
+    </div>
+    </div> 
+ 
+ 
+
+
+</body>
+
+</html>

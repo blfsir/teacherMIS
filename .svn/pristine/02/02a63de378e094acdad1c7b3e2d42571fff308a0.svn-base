@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="teacherGLY_1.1.html">离退休管理</a></li>
+    <li>导入</li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+      <div class="Uploadxu"><span class="txtcolor">1.准备数据</span><span class="loadok">&nbsp;</span><span class="txtcolor">2.上传数据</span><span class="loadok">&nbsp;</span><span class="txtcolor">3.校验数据</span><span class="loadx">&nbsp;</span><span>4.数据确认</span><span class="loadx">&nbsp;</span><span>5.提交数据</span></div>
+    
+    <div class="Uploadiv">
+    
+    <ul class="Uploadinfo">
+    <li><img src="images/tishi.png" />&nbsp;如存在异常数据，点击“查看异常”下载查找原因；多个附件异常可点击“合并下载”查看和编辑，以便下次导入。<br>&nbsp;&nbsp;&nbsp;&nbsp;已通过校验的数据将会在稍后提交到系统中去，无需再重复提交。</li>
+    <li>
+    <div class="filediv">
+    
+    <ol class="fileol"><li><img src="images/iconfile_ok.png" /></li><li>培训管理系统-系统管理员菜单及页面.xlsx</li><li>数据正常</li></ol>
+    <ol class="fileol"><li><img src="images/iconfile_x.png" /></li><li>培训管理系统-系统管理员菜单及页面.xlsx</li><li class="txtred">300条数据异常</li><li><a href="#">查看异常</a></li></ol>
+    
+    </div>
+    </li>
+    <li style="text-align:center;"><label>&nbsp;</label><input id="ff" type="file" value="ff" style="display:none"/>
+	<input name="" type="button" class="btn" value="合并下载" onclick="$('#ff').click();"/>&nbsp;&nbsp;&nbsp;&nbsp;<input name="" type="button" class="btn" value="检查数据"  onclick="window.open('teacherGLY_1.4.6-3.html','rightFrame');"/></li>
+    
+    </ul>
+    </div>
+</div>
+
+
+</body>
+
+</html>

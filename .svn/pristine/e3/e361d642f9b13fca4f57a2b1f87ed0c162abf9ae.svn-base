@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+      <ul class="placeul">
+    <li><a href="#">培训项目管理</a></li>
+    <li><a href="#">培训实施机构任务分配</a></li>
+	 <li><a href="#">指定培训实施机构</a></li> 
+	  <li><a href="#">任务分配</a></li> 
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+    
+
+      <div class="tabson">
+	  
+	   
+     <ul class="seachform">
+ 
+     <li> <p class="xmTool">项目名称：<b>2014普通高中教师职务培训</b>计划培训人数：<b>3000</b> </p></li>    
+		 
+           
+        </ul>
+	
+<ul class="seachform">
+ 
+            <li>
+            <label>培训实施机构：</label>
+       
+          </li>
+          <li>
+             <select name="select" class="select2"><option>果实网</option><option>教师网</option></select> 
+            
+          </li>
+		     <li>
+            <label>计划分配人数：</label>
+       
+          </li>
+          <li>
+			<input type="text" class="scinput" value="2000"/>
+            
+          </li>
+           
+        </ul>
+		
+		
+		
+		
+		 <ul class="seachform">
+  <li>
+            <label>地&nbsp;&nbsp;区：</label>
+           
+          </li>
+          <li>
+          <select name="select" class="select2"><option>广东省</option></select> 
+          </li>
+            <li>
+          <select name="select" class="select2"><option>广州市</option></select> 
+          </li>
+		  
+		  <li>
+          <select name="select" class="select2"><option>白云区</option></select> 
+          </li>
+		  <li>
+          <select name="select" class="select2"><option>第一小学</option></select> 
+          </li>
+		  
+        </ul>
+		  <ul class="seachform">
+           
+		  <li>
+            <label>学&nbsp;&nbsp;科：</label>
+       
+          </li>
+          <li>
+             <select name="select" class="select2"><option>语文</option><option>数学</option></select> 
+            
+          </li>
+           <li>
+				<input name="input2" type="button" class="dian3" value="确 定"/>
+			</li>	 
+           <li>
+				<input name="input2" type="button" class="dian3" value="取 消"/>
+			</li>	
+        </ul>
+		
+		
+      </div>
+    </div> 
+ 
+ 
+
+
+</body>
+
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".click").click(function(){
+  $(".tip").fadeIn(200);
+  });
+  
+  $(".tiptop a").click(function(){
+  $(".tip").fadeOut(200);
+});
+
+  $(".sure").click(function(){
+  $(".tip").fadeOut(100);
+});
+
+  $(".cancel").click(function(){
+  $(".tip").fadeOut(100);
+});
+
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="teacherGLY_1.1.html">教师信息</a></li>
+    <li>离退休管理</li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+    <div id="usual1" class="usual"> 
+    
+    <div class="itab">
+  	<ul> 
+    <li><a href="#tab1" class="selected">离退休管理</a></li> 
+    <li><a href="#tab2">发起离退休</a></li> 
+    &nbsp;&nbsp;<input name="" type="button" class="scbtn" style="width: 155px;" value="导入离退休信息" onclick="window.open('teacherGLY_1.4.6.html', 'rightFrame');"/> 
+  	</ul>
+    </div> 
+    <div id="tab1" class="tabson">
+
+      <div class="tabson"  style="padding-left:23px;">
+       <ul class="seachform" style="overflow:hidden">
+          <li>
+            <label>教师姓名：</label>
+            <input name="input" type="text" class="scinput" value="" />
+          </li>
+  <li>
+            <label>身份证号：</label>
+            <input name="input" type="text" class="scinput" value="" />
+         </li>
+          
+		   <li>
+            <label>离退休年份：</label>
+            <div class="vocation">
+    <select class="select3">
+    <option>2014年</option>
+    <option>2013年</option>
+    <option>2012年</option>
+    </select>
+            </div>
+          </li>
+    <li>
+            <label>离退休类型：</label>
+            <div class="vocation">
+    <select class="select3">
+    <option>退休</option>
+    <option>死亡</option>
+    <option>离休</option>
+    <option>离岗</option>
+    <option>病休</option>
+    <option>其他</option>
+    </select>
+            </div>
+          </li>        
+        </ul>
+        <ul class="seachform">
+    
+    <li><label>所在地区：</label>  
+    <div class="vocation">
+    <select class="select3">
+    <option>北京</option>
+    <option>天津</option>
+    </select>
+    </div>
+    </li>
+    
+    <li>  
+    <div class="vocation">
+    <select class="select3">
+    <option>海淀</option>
+    <option>朝阳</option>
+    </select>
+    </div>
+    </li>
+    
+    <li>  
+    <div class="vocation">
+    <select class="select3">
+    <option>知春路</option>
+    <option>中关村</option>
+    </select>
+    </div>
+    </li>
+    
+    <li><label>&nbsp;</label><input name="" type="button" class="scbtn" value="搜索"/></li>
+    
+    </ul>      
+      </div>
+      
+      
+      <div class="chauxnJS jsTool">
+    <!--<span style="float:left;">
+    <a href="teacherGLY_1.4.6.html" class="huibtn_a" style=" margin-left:6px">导入离退休信息</a></span>
+    <span style="float:left;">
+    <a href="teacherGLY_1.4.6.html" class="huibtn_a" style=" margin-left:6px">导入离退休信息</a></span>-->
+    <span style="float:right;">
+    <div class="pagin" style="margin:0; width:180px;">
+    <div class="message">共<i class="blue">1256</i>条记录</div>
+    <div class="vocation paginList" style=" margin:4px 6px 0 6px;right:0px;">
+    <select class="select3">
+    <option>当前查看10条</option>
+    <option>当前查看30条</option>
+    <option>当前查看50条</option></select>
+    </div>
+    
+    </div>
+    </span>
+    </div>
+      
+    <table class="tablelist">
+    	<thead>
+    	<tr>
+        <th width="8%">教师姓名</th>
+        <th width="12%">身份证号</th>
+        <th width="7%" >性别</th>
+        <th width="19%">所在地区</th>
+        <th width="7%">任教学段</th>
+        <th width="7%">任教学科</th>
+        <th width="8%">退休时间</th>
+        <th width="8%">离退休类型</th>
+        </tr>
+        </thead>
+        <tbody>
+        
+        <tr>
+        <td>贾迪</td>
+        <td>32013090720130907x</td>
+        <td>男</td>
+        <td>广州市天河区师范附属中学</td>
+        <td>初中</td>
+        <td>语文</td>
+        <td>2013-10-12</td>
+        <td>退休</td>
+        </tr>
+        
+        <tr>
+        <td>贾迪</td>
+        <td>20130907</td>
+        <td>男</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>2013-10-12</td>
+        <td>离休</td>
+        </tr>
+    
+        </tbody>
+    </table>
+   <div class="pagin">
+<div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+        <ul class="paginList">
+        <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+        <li class="paginItem"><a href="javascript:;">1</a></li>
+        <li class="paginItem current"><a href="javascript:;">2</a></li>
+        <li class="paginItem"><a href="javascript:;">3</a></li>
+        <li class="paginItem"><a href="javascript:;">4</a></li>
+        <li class="paginItem"><a href="javascript:;">5</a></li>
+        <li class="paginItem more"><a href="javascript:;">...</a></li>
+        <li class="paginItem"><a href="javascript:;">10</a></li>
+        <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+        </ul>
+    </div><br>
+    
+    <div class="kuang" style="width:auto;">
+		<b>[省市县校管理员]：</b>能对我省/市/县/校范围内教师发起离退休；能查询我省/市/县内离退休的所有教师信息；<br>
+		<b>离退休后：</b>该教师的教师信息不能被修改、删除；该教师不能被调动、再次离退休；该[教师]登录后，不能修改本人教师信息、不能参加培训项目；<br></div>
+    
+    </div>
+    
+    
+    <div id="tab2" class="tabson">
+    
+    
+     <div class="formtitle"><span>查询要离退休的教师</span></div>
+  <div class="tabson">
+    
+    
+    <ul class="seachform">
+    
+    <li><label>身份证号：</label><input name="" type="text" class="scinput" /></li>
+    <li><label>姓名：</label><input name="" type="text" class="scinput" /></li>
+        
+    <li><label>&nbsp;</label><input type="button" class="scbtn" value="查 询"/></li>
+    
+    </ul>
+    
+    </div>
+  
+   <div class="formtitle"><span>查询结果</span></div>
+    
+   <dl class="teacherdlxinxi">
+    <dt style="height:170px;"><img src="images/u8_normal.jpg"  title="头像" /></dt>
+    <dd><span class="titlewidth">姓名：</span><span>张天</span></dd>
+    <dd><span class="titlewidth">所在地区：</span><span>所在地区</span></dd>
+    <dd><span class="titlewidth">所在学校：</span><span>所在学校</span></dd>
+    <dd><span class="titlewidth">(聘)教师职称：</span><span>(聘)教师职称</span></dd>
+    <dd><span class="titlewidth">(聘)职称时间：</span><span>2014-09-26</span></dd>
+    
+    <dd><span class="titlewidth">学校行政职务称：</span><span>学校行政职务</span></dd>
+    <dd><span class="titlewidth">当前任教学段：</span><span>当前任教学段</span></dd>
+    <dd><span class="titlewidth">当前任教学科：</span><span>当前任教学科</span></dd>
+    <dd><span class="titlewidth">学科带头人：</span><span>谁谁谁</span></dd>
+    <dd><span class="titlewidth">是否为班主任：</span><span>否</span></dd>
+    <dd><span class="titlewidth">骨干教师：</span><span>是</span></dd>
+    <dd><span><input name="" type="button" class="btn click" value="离退休"/></span></dd>
+    
+    </dl>
+    
+    
+    
+    <div class="tip">
+    	<div class="tiptop"><span>离退休修改</span><a></a></div>
+        
+      <div class="tipinfo">
+        <ul class="forminfo" style="padding:0; margin:0;">
+    <li><label>离退休类型</label>  
+    <div class="vocation">
+    <select class="select3">
+    <option>退休</option>
+    <option>离休</option>
+    <option>离岗</option>
+    <option>病休</option>
+    <option>死亡</option>
+    <option>其他</option>
+    </select>
+    </div><i>内容未完形式待探讨</i>
+    </li>
+	
+    <li><label>提示：</label><cite>离退休之后，教师信息不可被编辑，该教师登录后只能进行相关查询。</cite></li>
+       
+    
+    </ul>
+        
+        
+      </div>
+        
+        <div class="tipbtn">
+        <input name="" type="button"  class="sure" value="提交" />&nbsp;
+        <input name="" type="button"  class="cancel" value="取消" />
+        </div>
+    
+    </div>
+    
+    
+    
+    </div>
+    
+    </div>
+    
+    </div> 
+</body>
+
+</html>
+<script type="text/javascript"> 
+      $("#usual1 ul").idTabs(); 
+    </script>
+    
+    <script type="text/javascript">
+	$('.tablelist tbody tr:odd').addClass('odd');
+	</script>

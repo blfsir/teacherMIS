@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="js/jquery.js"></script>
+
+<script type="text/javascript">
+$(function(){	
+	//导航切换
+	$(".menuson li").click(function(){
+		$(".menuson li.active").removeClass("active")
+		$(this).addClass("active");
+	});
+	
+	$('.title').click(function(){
+		var $ul = $(this).next('ul');
+		$('dd').find('ul').slideUp();
+		if($ul.is(':visible')){
+			$(this).next('ul').slideUp();
+		}else{
+			$(this).next('ul').slideDown();
+		}
+	});
+})	
+</script>
+
+
+</head>
+
+<body style="background:#f0f9fd;">
+	<div class="lefttop"><span></span>工具栏</div>
+    
+    <dl class="leftmenu">
+      <dd>
+    <div class="title">
+    <span><img src="images/leftico01.png" /></span>培训项目管理
+    </div>
+    	<ul class="menuson" style="display:block;">
+		 <li  ><cite></cite><a href="ssadmin_0.html" target="rightFrame">培训项目-管理	</a><i></i></li>
+<!--<li class="active"><cite></cite><a href="ssadmin_1.html" target="rightFrame">继教信息版块管理	</a><i></i></li> -->
+<li  ><cite></cite><a href="peixun_1.1.html" target="rightFrame">培训项目创建	</a><i></i></li>
+<li  ><cite></cite><a href="ssadmin_3.html" target="rightFrame">培训项目申报	</a><i></i></li>
+<li ><cite></cite><a href="peixun_3.1.html" target="rightFrame">报名方式设置	</a><i></i></li>
+<li ><cite></cite><a href="peixun_2.1.html" target="rightFrame">承培机构任务分配	</a><i></i></li>
+<li ><cite></cite><a href="peixun_3.2.html" target="rightFrame">教师报名审核	</a><i></i></li>
+<li ><cite></cite><a href="ssadmin_7.html" target="rightFrame">培训项目启动	</a><i></i></li>
+<li ><cite></cite><a href="ssadmin_zt.html" target="rightFrame">培训项目状态设置	</a><i></i></li>
+<li ><cite></cite><a href="ssadmin_9.html" target="rightFrame">培训项目过程管理	</a><i></i></li>
+<li ><cite></cite><a href="peixun_4.1.html" target="rightFrame">培训教师成绩	</a><i></i></li>
+<li ><cite></cite><a href="ssadmin_11.html" target="rightFrame">培训总结	</a><i></i></li>
+<li ><cite></cite><a href="ssadmin_12.html" target="rightFrame">项目评价	</a><i></i></li>
+<li ><cite></cite><a href="ssadmin_13.html" target="rightFrame">调查问卷	</a><i></i></li>
+
+
+
+		
+		
+		
+		<!--
+		
+        <li class="active"><cite></cite><a href="peixun_1.1.html" target="rightFrame">项目管理</a><i></i></li>
+		<li><cite></cite><a href="peixun_3.1.html" target="rightFrame">报名方式设置</a><i></i></li>
+              
+	   <li><cite></cite><a href="peixun_2.1.html" target="rightFrame">培训机构任务分配</a><i></i></li>
+       
+        <li><cite></cite><a href="peixun_3.2.html" target="rightFrame">教师报名审核</a><i></i></li>
+		 
+        <li><cite></cite><a href="peixun_4.1.html" target="rightFrame">教师成绩查询</a><i></i></li>
+        
+        <li><cite></cite><a href="peixun_4.4.html" target="rightFrame">课程设置</a><i></i></li>
+        
+        <li><cite></cite><a href="peixun_4.2.html" target="rightFrame">项目评价</a><i></i></li>
+        <li><cite></cite><a href="peixun_4.3.html" target="rightFrame">项目汇总统计</a><i></i></li>-->
+		
+		
+		  
+        </ul>    
+    </dd>
+    </dl>
+    
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+	
+	$("dt").attr({'style': 'width : 100px'});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="teacherGLY_1.1.html">系统管理</a></li>
+    <li>系统设置</li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    <div class="chauxnJS jsTool">
+     <span style="float:left;"><h4 style="float:left;"></h4><a href="javascript:;" style=" float:left; line-height:18px; margin:7px 0 0 10px;" id="btn2" class="jq" >平台设置</a><a href="javascript:;" style=" float:left; line-height:18px; margin:7px 0 0 10px;"id="btn1">功能设置</a></span>
+     <span style="float:right;"></span>
+     </div>
+  <div>
+  
+    <div class="choose" id="jqDiv2">
+    
+<table border="0" cellspacing="0" cellpadding="0" style="line-height:42px; margin:0 auto;width:100%;">
+  <tr>
+    <td width="140" style="background-color: #EDF6FA;text-align:right;">系统风格：</td>
+    <td><select name="select3" class="select3"><option>深蓝色</option>
+		<option>蓝色</option> 
+		<option>绿色</option>
+		<option>红色</option></select></td>
+  </tr>
+  <tr>
+    <td width="140" style="background-color: #EDF6FA;text-align:right;">系统名称：</td>
+    <td><input name="input13" type="text" class="dfinput" style="width:200px;" value="教师继续教育管理平台"/></td>
+  </tr>
+  <tr>
+    <td style="background-color: #EDF6FA;text-align:right;">系统LOGO：</td>
+    <td><input name="input13" type="file" class="dfinput" style="width:200px;" /><br>
+			<img src="images/logo.png"></td>
+  </tr>
+  <tr>
+    <td style="background-color: #EDF6FA;text-align:right;">登录LOGO：</td>
+    <td><input name="input13" type="file" class="dfinput" style="width:200px;" /><br>
+			<img src="images/logininfo.png"></td>
+  </tr>
+  <tr>
+    <td style="background-color: #EDF6FA;text-align:right;">版权声明：</td>
+    <td><input name="input13" type="text" class="dfinput" style="width:400px;" value="2012-2062 中国教师教育网 版权所有"/></td>
+  </tr>
+  <tr>
+    <td style="background-color: #EDF6FA;text-align:right;">联系方式：</td>
+    <td><input name="input13" type="text" class="dfinput" style="width:400px;" value=""/></td>
+  </tr>
+
+  <tr>
+    <td width="90">&nbsp;</td>
+    <td><a href="#" class="dian3">保存</a></td>
+  </tr>
+</table>
+
+
+       </div> 
+
+  <div class="choose" id="jqDiv1" style="display:none;">
+    
+<table border="0" cellspacing="0" cellpadding="0" style="line-height:42px; margin:0 auto;width:100%;">
+  <tr>
+    <td width="140" style="background-color: #EDF6FA;text-align:right;">可用登录方式：</td>
+    <td><input name="input13-" type="checkbox" class="dfinput-" value="" checked/>身份证号
+		<input name="input13-" type="checkbox" class="dfinput-" value="" checked/>用户名
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>教师编号</td>
+  </tr>
+  <tr>
+    <td style="background-color: #EDF6FA;text-align:right;">是否停用教师角色：</td>
+    <td><input name="input13-" type="checkbox" class="dfinput-" value="" checked/>不停用
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>停用</td>
+  </tr>
+  <tr>
+    <td style="background-color: #EDF6FA;text-align:right;">是否开放注册教师：</td>
+    <td><input name="input13-" type="checkbox" class="dfinput-" value="" checked/>是
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>否</td>
+  </tr>
+  <tr>
+    <td style="background-color: #EDF6FA;text-align:right;">教师信息变更审核项：</td>
+    <td><input name="input13-" type="checkbox" class="dfinput-" value="" checked/>教师资格证书号
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>教师编制
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>任教时间
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>(评)教师职称
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>(聘)教师职称
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>学校行政职务<br>
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>当前任教学段学科
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>是否骨干教师
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>是否班主任
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>国培计划农村骨干教师</td>
+  </tr>
+  <tr>
+    <td style="background-color: #EDF6FA;text-align:right;">自由报名审核级别：</td>
+    <td><input name="input13-" type="checkbox" class="dfinput-" value="" checked/>校级及以上
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>区县级及以上
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>市级及以上
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>省级</td>
+  </tr>
+  <tr>
+    <td style="background-color: #EDF6FA;text-align:right;">教师信息审核级别：</td>
+    <td><input name="input13-" type="checkbox" class="dfinput-" value="" checked/>校级及以上
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>区县级及以上
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>市级及以上
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>省级</td>
+  </tr>
+  <tr>
+    <td style="background-color: #EDF6FA;text-align:right;">继教信息审核级别：</td>
+    <td><input name="input13-" type="checkbox" class="dfinput-" value="" checked/>校级及以上
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>区县级及以上
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>市级及以上
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>省级</td>
+  </tr>
+  <tr>
+    <td style="background-color: #EDF6FA;text-align:right;">教师调动终审级别：</td>
+    <td><input name="input13-" type="radio" class="dfinput-" value="" checked/>无需审核
+		<input name="input13-" type="radio" class="dfinput-" value=""/>区县级
+		<input name="input13-" type="radio" class="dfinput-" value=""/>市级
+		<input name="input13-" type="radio" class="dfinput-" value=""/>省级</td>
+  </tr>
+  <tr>
+    <td style="background-color: #EDF6FA;text-align:right;">离退休终审级别：</td>
+    <td><input name="input14-" type="radio" class="dfinput-" value="" checked/>无需审核
+		<input name="input14-" type="radio" class="dfinput-" value=""/>区县级
+		<input name="input14-" type="radio" class="dfinput-" value=""/>市级
+		<input name="input14-" type="radio" class="dfinput-" value=""/>省级</td>
+  </tr>
+  <tr>
+    <td style="background-color: #EDF6FA;text-align:right;">年度考核设定所在级别：</td>
+	<td><input name="input13-" type="checkbox" class="dfinput-" value=""/>校级
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>区县级
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>市级
+		<input name="input13-" type="checkbox" class="dfinput-" value=""/>省级
+		<input name="input13-" type="checkbox" class="dfinput-" value="" checked/>不限制</td>
+  </tr>
+
+  <tr>
+    <td width="90">&nbsp;</td>
+    <td><a href="#" class="dian3">保存</a></td>
+  </tr>
+</table>
+   
+</div>
+
+
+</div>
+   <script>
+  
+    window.onload=function(){
+		var btn1=document.getElementById('btn1')
+		var btn2=document.getElementById('btn2')
+		var jqDiv1=document.getElementById('jqDiv1')
+		var jqDiv2=document.getElementById('jqDiv2')
+		btn1.onclick=function(){
+			   btn1.className='jq';
+			   btn2.className='';
+			   jqDiv1.style.display='block';
+			   jqDiv2.style.display='none';
+			   }
+		   btn2.onclick=function(){
+			   btn2.className='jq';
+			   btn1.className='';
+			   jqDiv2.style.display='block';
+			   jqDiv1.style.display='none';
+			   }
+		 }
+  </script>
+    
+    <br>
+    
+    
+    
+    </div> 
+ 
+ 
+
+
+</body>
+
+</html>
